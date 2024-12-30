@@ -1,0 +1,19 @@
+.flex{
+    display: flex;
+}
+
+.navigation{
+    padding: 20px;
+    background-color: red;
+}
+
+.nav-bar{
+    margin-left: auto;
+}
+
+.nav-list{
+    margin-right: 20px;
+}
+.nav-list:last-child{
+    margin-right: 0px;
+}
