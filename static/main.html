@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЭкоПрофКлин</title>
     <link rel="stylesheet" href="../public/normalize.css">
-    <link rel="stylesheet" href="../public/main.css">
+    <link rel="stylesheet" href="../public/style.css">
 </head>
 <body>
     <section class="navigation flex">
@@ -28,132 +28,222 @@
         </nav>
         <div class="flex nav-contact">
             <button class="nav-button">Обрытный звонок</button>
-            <div>
-                <a href=""><img src="../public/Images/Telegram.svg" alt="Telegram"></a>
-                <a href=""><img src=".././public/Images/WhatsApp.svg" alt="WhatsApp"></a>
+            <div class="images-contacts">
+                <a href="">
+                    <img src="../public/images/Telegram.svg" alt="Telegram" class="image-contacts">
+                </a>
+                <a href="">
+                    <img src="../public/images/WhatsApp.svg" alt="WhatsApp" class="image-contacts">
+                </a>
             </div>
             <div>
-                <div>
-                    <img src="../public/Images/phone.svg" alt="">
-                    <a href="">+7 906 800 68 08</a>
+                <div class="flex nav-phone">
+                    <img src="../public/images/phone.svg" alt="">
+                    <a href="" class="nav-phone-text">+7 906 800 68 08</a>
                 </div>
-                <div>
-                    <img src="../public/Images/mail.svg" alt="">
-                    <a href="">maslakov20@mail.ru</a>
+                <div class="flex nav-phone">
+                    <img src="../public/images/mail.svg" alt="">
+                    <a href="" class="nav-phone-text">maslakov20@mail.ru</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="hero flex">
-        <div>
-            <div class="flex">
-                <img src="../public/Images/location.svg" alt="">
-                <p>Работаем по городам России</p>
-            </div>
-            <h1>ЭкоПрофКлин</h1>
-            <h2>Ваш партнер по чистоте и безопасности!</h2>
-            <p>Оставьте заявку, и менеджер ответит на все вопросы, проконсультирует по набору услуг и рассчитает стоимость</p>
-            <button>Заказать клининг</button>
+    <section class="hero">
+        <div class="flex hero-location">
+            <img src="../public/Images/location.svg" alt="" class="hero-location-image">
+            <p class="hero-pf">Работаем по городам России</p>
         </div>
-        <img src="../public/Images/HeroMan.png" alt="" class="hero-image">
+        <h1 class="hero-h1">ЭкоПрофКлин</h1>
+        <h2 class="hero-h2">Ваш партнер по чистоте <br> и безопасности!</h2>
+        <p class="hero-p">Оставьте заявку, и менеджер ответит на все вопросы, проконсультирует по набору услуг и рассчитает стоимость</p>
+        <button class="hero-btn">Заказать клининг</button>
     </section>
     <section class="description">
-        <div class="description-block">
-            <p>ЭкоПрофКлин  - мы команда профессионалов, специализирующихся на клининге помещений после происшествий и уничтожении вредителей. 
-                Все сотрудники являются опытными специалистами со стажем более 3-х лет.
-            </p>
-            <p>
-                Наши эксперты, при проведении работ, используют современное оборудование и экологически чистые 
-                средства для обеспечения максимальной безопасности и комфорта.
-            </p>
-            <p>
-                Мы уделяем особое внимание каждой детали, стремясь создать идеальные условия для вашего дома или рабочего пространства.
-            </p>
+        <div class="description-wrapper">
+            <div class="description-block">
+                    <p class="description-p"> <b>ЭкоПрофКлин</b> - мы команда профессионалов, специализирующихся на клининге помещений после происшествий и уничтожении вредителей. 
+                        Все сотрудники являются опытными специалистами со стажем более 3-х лет.
+                    </p>
+                    <p class="description-p">
+                        Наши эксперты, при проведении работ, используют современное оборудование и экологически чистые 
+                        средства для обеспечения максимальной безопасности и комфорта.
+                    </p>
+                    <p class="description-p">
+                        Мы уделяем особое внимание каждой детали, стремясь создать идеальные условия для вашего дома или рабочего пространства.
+                    </p>
+            </div>
         </div>
     </section>
     <section class="services">
-        <h2>Наши услуги</h2>
+        <h2 class="services-title">Наши услуги</h2>
         <div class="flex">
             <div class="flex services-cards">
                 <button class="services-card flex">
-                    <img src="../public/Images/photoServices1.png" alt="photo">
-                    <div>
-                        <ul>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                        </ul>
-                        <div class="flex">
-                            <p>от 1000 р</p>
+                    <img src="../public/Images/photoServices1.png" alt="photo" class="services-image">
+                    <div class="services-card-wrapper flex">
+                        <div class="services-card-text flex">
+                            <h3 class="services-card-title">Осушение</h3>
+                            <ul class="services-card-ul">
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                            </ul>
+                        </div>
+                        <div class="flex services-price">
+                            <p class="price">от 1000 р</p>
                             <img src="../public/Images/row.svg" alt="row">
                         </div>
                     </div>
                 </button>
                 <button class="services-card flex">
-                    <img src="../public/Images/photoServices1.png" alt="photo">
-                    <div>
-                        <ul>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                        </ul>
-                        <div class="flex">
-                            <p>от 1000 р</p>
+                    <img src="../public/Images/photoServices1.png" alt="photo" class="services-image">
+                    <div class="services-card-wrapper flex">
+                        <div class="services-card-text flex">
+                            <h3 class="services-card-title">Осушение</h3>
+                            <ul class="services-card-ul">
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                            </ul>
+                        </div>
+                        <div class="flex services-price">
+                            <p class="price">от 1000 р</p>
                             <img src="../public/Images/row.svg" alt="row">
                         </div>
                     </div>
                 </button>
                 <button class="services-card flex">
-                    <img src="../public/Images/photoServices1.png" alt="photo">
-                    <div>
-                        <ul>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                        </ul>
-                        <div class="flex">
-                            <p>от 1000 р</p>
+                    <img src="../public/Images/photoServices1.png" alt="photo" class="services-image">
+                    <div class="services-card-wrapper flex">
+                        <div class="services-card-text flex">
+                            <h3 class="services-card-title">Осушение</h3>
+                            <ul class="services-card-ul">
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                            </ul>
+                        </div>
+                        <div class="flex services-price">
+                            <p class="price">от 1000 р</p>
                             <img src="../public/Images/row.svg" alt="row">
                         </div>
                     </div>
                 </button>
                 <button class="services-card flex">
-                    <img src="../public/Images/photoServices1.png" alt="photo">
-                    <div>
-                        <ul>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                            <li>Откачка воды</li>
-                        </ul>
-                        <div class="flex">
-                            <p>от 1000 р</p>
+                    <img src="../public/Images/photoServices1.png" alt="photo" class="services-image">
+                    <div class="services-card-wrapper flex">
+                        <div class="services-card-text flex">
+                            <h3 class="services-card-title">Осушение</h3>
+                            <ul class="services-card-ul">
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                                <li class="services-card-li">Откачка воды</li>
+                            </ul>
+                        </div>
+                        <div class="flex services-price">
+                            <p class="price">от 1000 р</p>
                             <img src="../public/Images/row.svg" alt="row">
                         </div>
                     </div>
                 </button>
             </div>
             <form action="" class="flex services-form">
-                <input type="text" name="name"/>
-                <input type="email" name="email"/>
-                <textarea name="message"></textarea>
-                <button type="submit">Submit Form</button>
+                <h3 class="services-form-title">Оставить заявку</h3>
+                <input type="text" name="name" placeholder="Как вас зовут?" class="form-input"/>
+                <input type="email" name="email" placeholder="Контактный номер" class="form-input"/>
+                <textarea name="message" placeholder="Ваше сообщение" class="form-textarea"></textarea>
+                <div class="flex form-foto-wrapper">
+                    <img src="../public/images/foto.svg" alt="foto" class="form-foto">
+                    <a href="" class="form-foto-text">Прикрепить фотографии</a>
+                </div>
+                <button type="submit" class="form-btn">Отправить</button>
             </form>
         </div>
     </section>
-    <section class="advantages"></section>
-    <section class="work"></section>
+    <section class="advantages">
+        <h2 class="advantages-title">Почему выбирают нас</h2>
+        <div class="flex advantages-blocks">
+            <div class="flex advantages-block">
+                <img src="../public/images/advantages1.svg" alt="" class="advantages-image">
+                <div>
+                    <h3 class="advantages-block-title">Уверенность</h3>
+                    <p class="advantages-block-text">Более 10 лет работы <br> в сфере клининга</p>
+                </div>
+            </div>
+            <div class="flex advantages-block">
+                <img src="../public/images/advantages1.svg" alt="" class="advantages-image">
+                <div>
+                    <h3 class="advantages-block-title">Уверенность</h3>
+                    <p class="advantages-block-text">Более 10 лет работы <br> в сфере клининга</p>
+                </div>
+            </div>
+            <div class="flex advantages-block">
+                <img src="../public/images/advantages1.svg" alt="" class="advantages-image">
+                <div>
+                    <h3 class="advantages-block-title">Уверенность</h3>
+                    <p class="advantages-block-text">Более 10 лет работы <br> в сфере клининга</p>
+                </div>
+            </div>
+            <div class="flex advantages-block">
+                <img src="../public/images/advantages1.svg" alt="" class="advantages-image">
+                <div>
+                    <h3 class="advantages-block-title">Уверенность</h3>
+                    <p class="advantages-block-text">Более 10 лет работы <br> в сфере клининга</p>
+                </div>
+            </div>
+            <div class="flex advantages-block">
+                <img src="../public/images/advantages1.svg" alt="" class="advantages-image">
+                <div>
+                    <h3 class="advantages-block-title">Уверенность</h3>
+                    <p class="advantages-block-text">Более 10 лет работы <br> в сфере клининга</p>
+                </div>
+            </div>
+            <div class="flex advantages-block">
+                <img src="../public/images/advantages1.svg" alt="" class="advantages-image">
+                <div>
+                    <h3 class="advantages-block-title">Уверенность</h3>
+                    <p class="advantages-block-text">Более 10 лет работы <br> в сфере клининга</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work flex">
+        <div class="work-info flex">
+            <h2 class="work-title">Как мы работаем</h2>
+            <div class="work-wrapper">
+                <div>
+                    <img src="" alt="">
+                    <p class="work-text">Оформление заявки</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p class="work-text">Оценка помещения</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p class="work-text">Проведение работы</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p class="work-text">Оплата результата</p>
+                </div>
+            </div>
+            <button class="work-btn">Заказать клининг</button>
+        </div>
+        <h3>Проводите  время с близкими, а не с вредителями!</h3>
+    </section>
     <section class="photo"></section>
     <section class="locations"></section>
     <section class="reviews"></section>
