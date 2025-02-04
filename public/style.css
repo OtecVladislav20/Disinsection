@@ -140,29 +140,51 @@ button {
 }
 
 .services-cards {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(2, 274px);
+    gap: 30px;
+    grid-template-areas: 
+    "card1 card2 form1"
+    "card3 card4 form1";
+}
+.card1 {
+    grid-area: card1;
+}
+.card2 {
+    grid-area: card2;
+}
+.card3 {
+    grid-area: card3;
+}
+.card4 {
+    grid-area: card4;
+}
+.form1 {
+    grid-area: form1;
+}
+
+.services-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid #2A5F4F;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
 }
 
 .services-card {
     background-color: #ffffff;
-    margin-right: 30px;
-    margin-bottom: 30px;
     padding: 16px;
     border-radius: 16px;
     border: 1px solid #2A5F4F;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
 }
 
-.services-form {
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 40px;
-    width: 33%;
-    min-width: 400px;
-    background-color: #fff;
-    border-radius: 16px;
-    border: 1px solid #2A5F4F;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+.services-price {
+    justify-content: space-between;
 }
 
 .hero-pf {
@@ -219,6 +241,7 @@ button {
 }
 
 .services-form-title {
+    text-align: center;
     font-size: 32px;
     color: #2A5F4F;
     margin: 0;
@@ -233,6 +256,7 @@ button {
     margin-bottom: 20px;
 }
 .form-textarea {
+    overflow: hidden;
     width: 100%;
     height: 114px;
     border-radius: 16px;
@@ -265,7 +289,7 @@ button {
 
 .price {
     margin: 0px;
-    margin-right: 70px;
+    margin-right: 20px;
     font-size: 24px;
     color: #2A5F4F;
 }
@@ -276,6 +300,7 @@ button {
 
 .services-card-wrapper {
     flex-direction: column;
+    width: 100%;
     height: 100%;
     justify-content: space-between;
 }
@@ -367,6 +392,7 @@ button {
     padding: 30px 64px;
     flex-direction: column;
     align-items: center;
+    margin-right: 100px;
 }
 
 .work-title {
@@ -395,4 +421,170 @@ button {
 
 .work-wrapper {
     margin-bottom: 70px;
+}
+
+.work-info-title {
+    font-size: 36px;
+    color: #75ADFA;
+    width: 580px;
+}
+
+.photo {
+    padding: 50px 162px;
+    background-image: url('./images/background-photo.png');
+    background-position: 15%;
+    background-repeat: no-repeat;
+}
+
+.photo-info {
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.photo-title {
+    font-size: 32px;
+    color: #2A5F4F;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.photo-p {
+    width: 600px;
+    font-family: "Inter";
+    color: #2A5F4F;
+    font-size: 24px;
+    margin: 0;
+}
+
+.photo-info-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.photo-info-title {
+    font-size: 32px;
+    color: #86BF88;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.pfoto-btn {
+    background-color: transparent;
+}
+
+.locations {
+    padding: 50px 162px;
+    background-image: url('./images/map.png');
+    background-position: 78%;
+    background-repeat: no-repeat;
+}
+
+.form-wrapper {
+    width: 382px;
+}
+
+.footer-link {
+    flex-direction: column;
+}
+
+.footer-title {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #2A5F4F;
+    font-size: 32px;
+}
+
+.footer-contacts {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    color: #2A5F4F;
+    font-size: 24px;
+    font-family: "Inter";
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer {
+    padding: 50px 162px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid #2A5F4F;
+    box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+.footer-wrapper {
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.reviews {
+    padding: 50px 162px;
+}
+
+.review-wrapper {
+    justify-content: space-between;
+}
+
+.review {
+    padding: 30px;
+    background-color: #EAF1FF;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.review-name {
+    color: #2A5F4F;
+    font-size: 32px;
+    margin: 0;
+}
+
+.review-service {
+    color: #2A5F4F;
+    font-size: 20px;
+    margin: 0;
+}
+
+.review-text {
+    font-family: "Inter";
+    font-size: 24px;
+    margin: 0;
+}
+
+.review-title-wrapper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.review-p {
+    font-size: 24px;
+    color: #2A5F4F;
+    font-family: "Inter";
+    margin: 0;
+    max-width: 1130px;
+    margin-right: 30px;
+}
+
+.reviews-title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #2A5F4F;
+}
+
+.review-btn-wrapper {
+    margin-bottom: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.review-btn {
+    color: #ffffff;
+    font-size: 32px;
+    background-color: #75ADFA;
+    border-radius: 16px;
+    padding: 25px;
 }

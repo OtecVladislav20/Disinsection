@@ -1,0 +1,55 @@
+@media (max-width: 1645px) {
+    .services-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        grid-template-areas: 
+        "card1 card2"
+        "card3 card4"
+        "form1 form1";
+    }
+
+    .form1 {
+        grid-column-end: -1;
+    }
+
+    .services-form {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2);
+        gap: 20px;
+        grid-template-areas: 
+        "input-title1 input-title1 input-title1 input-title1"
+        "input1 input1 input3 input3"
+        "input2 input2 input4 input-btn";
+    }
+    .input-title1 {
+        grid-area: input-title1;
+    }
+    .input1 {
+        grid-area: input1;
+    }
+    .input2 {
+        grid-area: input2;
+    }
+    .input3 {
+        grid-area: input3;
+    }
+    .input4 {
+        grid-area: input4;
+    }
+    .input-btn {
+        grid-area: input-btn;
+    }
+    .form-input {
+        margin: 0;
+    }
+    .form-textarea {
+        width: 100%;
+        height: 47px;
+        margin: 0;
+    }
+    .services-form-title {
+        margin: 0;
+    }
+}
