@@ -3,7 +3,7 @@
     font-display: swap;
     font-style: normal;
     font-weight: 800;
-    src: url("./fonts/ofont.ru_Rubik.ttf") format("ttf");
+    src: url("../fonts/ofont.ru_Rubik.ttf") format("ttf");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-display: swap;
     font-style: normal;
     font-weight: 800;
-    src: url("./fonts/inter_medium.ttf") format("ttf");
+    src: url("../fonts/inter_medium.ttf") format("ttf");
 }
 
 body {
@@ -237,7 +237,7 @@ button {
     font-size: 32px;
     color: #2A5F4F;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .services-form-title {
@@ -587,4 +587,108 @@ button {
     background-color: #75ADFA;
     border-radius: 16px;
     padding: 25px;
+}
+
+.hero-info-sp {
+    background-image: url('../public/Images/Service-hero.png');
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+    width: 100%;
+    padding: 50px 0px 300px 162px;
+}
+
+.hero-h1-sp {
+    font-size: 48px;
+    color: #75ADFA;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.hero-h2-sp {
+    font-size: 36px;
+    color: #86BF88;
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 474px;
+}
+
+.form-sp {
+    padding: 50px 162px 50px 200px;
+}
+
+.description-block-sp {
+    padding: 30px 60px;
+    border-radius: 26px;
+    background-color: #75ADFA;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+.description-sp {
+    position: relative;
+    background-color: #EAF1FF;
+    height: 1px;
+}
+.description-wrapper-sp {
+    position: absolute;
+    max-width: 1000px;
+    top: -150px;
+    left: 0%;
+    transform: translate(15%);
+}
+
+.main-left {
+    width: 100%;
+}
+
+.description-p-sp {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-size: 32px;
+    margin: 0;
+}
+
+.services-sp {
+    padding: 50px 0px 50px 162px;
+    background-color: #EAF1FF;
+}
+
+.services-cards-sp {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.achivments-sp {
+    padding: 50px 0px 20px 162px;
+}
+
+.checkmark {
+    margin-right: 30px;
+}
+
+.achivments-text-sp {
+    margin: 0;
+    font-family: "Inter";
+    font-size: 24px;
+    color: #2A5F4F;
+}
+
+.achivments-block-sp {
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.work-sp {
+    padding: 50px 0px 50px 162px;
+}
+
+.work-photo-wrapper-sp {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 240px 240px 240px;
+}
+
+.form-wrapper-sp {
+    position: sticky;
+    width: 384px;
+    top: 50px;
 }
