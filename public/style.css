@@ -496,7 +496,7 @@ button {
 
 .footer-contacts {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .footer-text {
@@ -612,7 +612,7 @@ button {
 }
 
 .form-sp {
-    padding: 50px 162px 50px 200px;
+    padding: 50px 162px 50px 0px;
 }
 
 .description-block-sp {
@@ -637,6 +637,8 @@ button {
 
 .main-left {
     width: 100%;
+    padding-bottom: 50px;
+    padding-right: 162px;
 }
 
 .description-p-sp {
@@ -691,4 +693,136 @@ button {
     position: sticky;
     width: 384px;
     top: 50px;
+}
+
+.info-sp {
+    padding: 0px 0px 0px 162px;
+}
+
+.info-p-sp { 
+    color: #2A5F4F;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.info-title-sp {
+    font-size: 40px;
+    color: #75ADFA;
+    margin: 0;
+}
+
+.price-sp {
+    padding: 50px 0px 50px 162px;
+    background-image: url('../public/Images/bg-price-sp.png');
+    background-repeat: no-repeat;
+    background-position: 30px;
+    background-size: 100%;
+}
+
+table {
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    width: 100%;
+}
+
+.blue {
+    background-color: #EAF1FF;
+}
+
+.table-title {
+    color: #2A5F4F;
+    font-size: 24px;
+}
+
+.table-p {
+    font-family: "Inter";
+    font-size: 24px;
+    color: #2A5F4F;
+}
+
+.need-sp {
+    padding: 50px 0px 0px 162px;
+}
+
+.need-cerd-sp {
+    font-family: "Inter";
+    font-size: 24px;
+    color: #2A5F4F;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.price-p {
+    padding: 50px 0px 0px 162px;
+}
+
+.photo-wrapper-a {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 400px 400px 400px 400px;
+}
+
+.photo-a {
+    padding: 50px 162px;
+}
+
+.hero-h1-a {
+    font-size: 64px;
+    color: #75ADFA;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.hero-a {
+    color: #86BF88;
+    font-family: "Inter";
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 822px;
+}
+
+.hero-about {
+    padding: 50px 162px;
+    position: relative;
+    background-image: url('./images/aboutus-bg.png');
+    background-repeat: no-repeat;
+    background-position: 85% 100%;
+    background-size: 550px;
+}
+
+.about-bottom {
+    height: 50px;
+    width: 100%;
+    background-color: #EAF1FF;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+}
+
+.requisites {
+    padding: 30px 162px 50px 162px;
+    background-color: #EAF1FF;
+    justify-content: space-between;
+}
+
+.hero-bottom-a {
+    height: 50px;
+    width: 100%;
+    background-color: #EAF1FF;
+}
+
+.requisites-item {
+    font-size: 24px;
+    color: #2A5F4F;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.requisites-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 30px;
 }
