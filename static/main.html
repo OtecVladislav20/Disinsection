@@ -4,53 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЭкоПрофКлин</title>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../public/normalize.css">
     <link rel="stylesheet" href="../public/style.css">
     <link rel="stylesheet" href="../public/media.css">
 </head>
 <body>
     <header class="navigation flex">
-        <a href="#">
-            <img src="../public/Images/Logo.svg" alt="Logo">
+        <a href="#" class="logo-header">
+            <img src="../public/Images/Logo.svg" alt="Logo" class="Logo">
         </a>
-        <nav class="nav-bar flex">
-            <a href="" class="nav-list">
-                О нас
-            </a>
-            <a href="" class="nav-list">
-                Услуги
-            </a>
-            <a href="" class="nav-list">
-                Цены
-            </a>
-            <a href="" class="nav-list">
-                Контакты
-            </a>
+        <nav class="nav-bar">
+            <div class="nav-links flex">
+                <a href="" class="nav-list">
+                    О нас
+                </a>
+                <a href="" class="nav-list">
+                    Услуги
+                </a>
+                <a href="" class="nav-list">
+                    Цены
+                </a>
+                <a href="" class="nav-list">
+                    Контакты
+                </a>
+            </div>
+            <div class="flex nav-contact">
+                <button class="nav-button">Обрытный звонок</button>
+                <div class="images-contacts">
+                    <a href="">
+                        <img src="../public/images/Telegram.svg" alt="Telegram" class="image-contacts">
+                    </a>
+                    <a href="">
+                        <img src="../public/images/WhatsApp.svg" alt="WhatsApp" class="image-contacts">
+                    </a>
+                </div>
+                <div>
+                    <div class="flex nav-phone">
+                        <img src="../public/images/phone.svg" alt="">
+                        <a href="" class="nav-phone-text">+7 906 800 68 08</a>
+                    </div>
+                    <div class="flex nav-phone">
+                        <img src="../public/images/mail.svg" alt="">
+                        <a href="" class="nav-phone-text">maslakov20@mail.ru</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <div class="flex nav-contact">
-            <button class="nav-button">Обрытный звонок</button>
-            <div class="images-contacts">
-                <a href="">
-                    <img src="../public/images/Telegram.svg" alt="Telegram" class="image-contacts">
-                </a>
-                <a href="">
-                    <img src="../public/images/WhatsApp.svg" alt="WhatsApp" class="image-contacts">
-                </a>
-            </div>
-            <div>
-                <div class="flex nav-phone">
-                    <img src="../public/images/phone.svg" alt="">
-                    <a href="" class="nav-phone-text">+7 906 800 68 08</a>
-                </div>
-                <div class="flex nav-phone">
-                    <img src="../public/images/mail.svg" alt="">
-                    <a href="" class="nav-phone-text">maslakov20@mail.ru</a>
-                </div>
-            </div>
+        <div class="burger">
+            <span></span>
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="open-form">
+            <form action="" class="services-form-def open-form-element">
+                <h3 class="services-form-title-def">Оставить заявку</h3>
+                <input type="text" name="name" placeholder="Как вас зовут?" class="form-input-def"/>
+                <input type="email" name="email" placeholder="Контактный номер" class="form-input-def"/>
+                <textarea name="message" placeholder="Ваше сообщение" class="form-textarea-def"></textarea>
+                <div class="flex form-foto-wrapper">
+                    <img src="../public/images/foto.svg" alt="foto" class="form-foto">
+                    <a href="" class="form-foto-text">Прикрепить фотографии</a>
+                </div>
+                <button type="submit" class="form-btn">Отправить</button>
+            </form>
+            <div class="close-form"></div>
+        </section>
+        <section class="hero conteiner">
             <div class="flex hero-location">
                 <img src="../public/Images/location.svg" alt="" class="hero-location-image">
                 <p class="hero-pf">Работаем по городам России</p>
@@ -76,8 +96,8 @@
                 </div>
             </div>
         </section>
-        <section class="services">
-            <h2 class="services-title">Наши услуги</h2>
+        <section class="services conteiner">
+            <h2 class="services-title title-h2">Наши услуги</h2>
             <div class="services-cards">
                 <div class="services-card card1 flex">
                     <img src="../public/Images/photoServices1.png" alt="photo" class="services-image">
@@ -95,7 +115,7 @@
                         </div>
                         <div class="flex services-price">
                             <p class="price">от 1000 р</p>
-                            <img src="../public/Images/row.svg" alt="row">
+                            <img src="../public/Images/row.svg" alt="row" class="row">
                         </div>
                     </div>
                 </div>
@@ -115,7 +135,7 @@
                         </div>
                         <div class="flex services-price">
                             <p class="price">от 1000 р</p>
-                            <img src="../public/Images/row.svg" alt="row">
+                            <img src="../public/Images/row.svg" alt="row" class="row">
                         </div>
                     </div>
                 </div>
@@ -135,7 +155,7 @@
                         </div>
                         <div class="flex services-price">
                             <p class="price">от 1000 р</p>
-                            <img src="../public/Images/row.svg" alt="row">
+                            <img src="../public/Images/row.svg" alt="row" class="row">
                         </div>
                     </div>
                 </div>
@@ -155,7 +175,7 @@
                         </div>
                         <div class="flex services-price">
                             <p class="price">от 1000 р</p>
-                            <img src="../public/Images/row.svg" alt="row">
+                            <img src="../public/Images/row.svg" alt="row" class="row">
                         </div>
                     </div>
                 </div>
@@ -174,8 +194,8 @@
                 </div>
             </div>
         </section>
-        <section class="advantages">
-            <h2 class="advantages-title">Почему выбирают нас</h2>
+        <section class="advantages conteiner">
+            <h2 class="advantages-title title-h2">Почему выбирают нас</h2>
             <div class="flex advantages-blocks">
                 <div class="flex advantages-block">
                     <img src="../public/images/advantages1.svg" alt="" class="advantages-image">
@@ -221,24 +241,24 @@
                 </div>
             </div>
         </section>
-        <section class="work flex">
+        <section class="work flex conteiner">
             <div class="work-info flex">
-                <h2 class="work-title">Как мы работаем</h2>
+                <h2 class="work-title title-h2">Как мы работаем</h2>
                 <div class="work-wrapper">
-                    <div>
-                        <img src="" alt="">
+                    <div class="flex work-item">
+                        <img src="../public/images/1.svg" alt="" class="work-img">
                         <p class="work-text">Оформление заявки</p>
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="flex work-item">
+                        <img src="../public/images/2.svg" alt="" class="work-img">
                         <p class="work-text">Оценка помещения</p>
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="flex work-item">
+                        <img src="../public/images/3.svg" alt="" class="work-img">
                         <p class="work-text">Проведение работы</p>
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="flex work-item">
+                        <img src="../public/images/4.svg" alt="" class="work-img">
                         <p class="work-text">Оплата результата</p>
                     </div>
                 </div>
@@ -246,11 +266,11 @@
             </div>
             <h3 class="work-info-title">Проводите  время с близкими, а не с вредителями!</h3>
         </section>
-        <section class="photo">
-            <h2 class="photo-title">Часть наших работ</h2>
+        <section class="photo conteiner">
+            <h2 class="photo-title title-h2">Часть наших работ</h2>
             <div class="flex photo-info">
                 <div>
-                    <img src="../public/images/photo-image1.png" alt="photo">
+                    <img src="../public/images/photo-image1.png" alt="photo" class="pfoto">
                 </div>
                 <div class="flex photo-info-wrapper">
                     <div>
@@ -260,60 +280,60 @@
                             Это предотвращает распространение инфекционных заболеваний среди людей
                         </p>
                     </div>
-                    <div class="flex">
+                    <div class="flex pfoto-wrapper">
                         <button class="pfoto-btn">
-                            <img src="../public/images/photo-image-button1.png" alt="button">
+                            <img src="../public/images/photo-image-button1.png" alt="button" class="pfoto-img">
                         </button>
                         <button class="pfoto-btn">
-                            <img src="../public/images/photo-image-button1.png" alt="button">
+                            <img src="../public/images/photo-image-button1.png" alt="button" class="pfoto-img">
                         </button>
                         <button class="pfoto-btn">
-                            <img src="../public/images/photo-image-button1.png" alt="button">
+                            <img src="../public/images/photo-image-button1.png" alt="button" class="pfoto-img">
                         </button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="locations">
-            <h2 class="photo-title">Часть наших работ</h2>
+        <section class="locations conteiner">
+            <h2 class="photo-title title-h2">Где мы работаем</h2>
             <div class="flex">
-                <div class="form-wrapper">
-                    <form action="" class="services-form">
-                        <h3 class="services-form-title input-title1">Оставить заявку</h3>
-                        <input type="text" name="name" placeholder="Как вас зовут?" class="form-input input1"/>
-                        <input type="email" name="email" placeholder="Контактный номер" class="form-input input2"/>
-                        <textarea name="message" placeholder="Ваше сообщение" class="form-textarea input3"></textarea>
-                        <div class="flex form-foto-wrapper input4">
-                            <img src="../public/images/foto.svg" alt="foto" class="form-foto">
-                            <a href="" class="form-foto-text">Прикрепить фотографии</a>
-                        </div>
-                        <button type="submit" class="form-btn input-btn">Отправить</button>
-                    </form>
-                </div>
-                <div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                <form action="" class="services-form-def form-to-hide">
+                    <h3 class="services-form-title-def">Оставить заявку</h3>
+                    <input type="text" name="name" placeholder="Как вас зовут?" class="form-input-def"/>
+                    <input type="email" name="email" placeholder="Контактный номер" class="form-input-def"/>
+                    <textarea name="message" placeholder="Ваше сообщение" class="form-textarea-def"></textarea>
+                    <div class="flex form-foto-wrapper">
+                        <img src="../public/images/foto.svg" alt="foto" class="form-foto">
+                        <a href="" class="form-foto-text">Прикрепить фотографии</a>
+                    </div>
+                    <button type="submit" class="form-btn">Отправить</button>
+                </form>
+                <div class="locations-city">
+                    <ul class="cities">
+                        <li class="city">Санкт-Петербург</li>
+                        <li class="city">Нижний Новгород</li>
+                        <li class="city">Краснодар</li>
+                        <li class="city">Ростов-на-Дону</li>
+                        <li class="city">Воронеж</li>
+                        <li class="city">Волгоград</li>
+                        <li class="city">Казань</li>
+                        <li class="city">Самара</li>
+                        <li class="city">Пермь</li>
+                        <li class="city">Уфа</li>
+                        <li class="city">Екатеринбург</li>
+                        <li class="city">Челябинск</li>
+                        <li class="city">Курган</li>
+                        <li class="city">Тюмень</li>
+                        <li class="city">Омск</li>
+                        <li class="city">Новосибирск</li>
+                        <li class="city">Красноярск</li>
+                        <li class="city">Барнаул</li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="reviews">
-            <h2 class="reviews-title">
+        <section class="reviews conteiner">
+            <h2 class="reviews-title title-h2">
                 Отзывы
             </h2>
             <div class="flex review-btn-wrapper">
@@ -322,46 +342,98 @@
                 </p>
                 <button class="review-btn">Оставить отзывы</button>
             </div>
-            <div class="flex review-wrapper">
-                <div class="review">
-                    <div class="flex review-title-wrapper">
-                        <div>
-                            <p class="review-name">Владислав</p>
-                            <p class="review-service">Клининг помещения</p>
-                        </div>
-                        <div>
-                            <img src="../public/images/Star.svg" alt="">
-                            <img src="../public/images/Star.svg" alt="">
-                            <img src="../public/images/Star.svg" alt="">
-                            <img src="../public/images/Star.svg" alt="">
-                            <img src="../public/images/Star.svg" alt="">
-                        </div>
-                    </div>
-                    <p class="review-text">
-                        Очень довольна клининговой компании "ЭкоПрофКлин". 
-                        Женщина справилась с уборкой быстро и качественно. 
-                        Настоящий мастер своего дела. 
-                    </p>
-                </div>
-                <div class="review">
-                    <div class="flex review-title-wrapper">
-                        <div>
-                            <p class="review-name">Владислав</p>
-                            <p class="review-service">Клининг помещения</p>
-                        </div>
-                        <div>
-                            <img src="../public/images/Star.svg" alt="">
-                            <img src="../public/images/Star.svg" alt="">
-                            <img src="../public/images/Star.svg" alt="">
-                            <img src="../public/images/Star.svg" alt="">
-                            <img src="../public/images/Star.svg" alt="">
-                        </div>
-                    </div>
-                    <p class="review-text">
-                        Очень довольна клининговой компании "ЭкоПрофКлин". 
-                        Женщина справилась с уборкой быстро и качественно. 
-                        Настоящий мастер своего дела. 
-                    </p>
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="review">
+                                <div class="flex review-title-wrapper">
+                                    <div>
+                                        <p class="review-name">Владислав</p>
+                                        <p class="review-service">Клининг помещения</p>
+                                    </div>
+                                    <div>
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                    </div>
+                                </div>
+                                <p class="review-text">
+                                    Очень довольна клининговой компании "ЭкоПрофКлин". 
+                                    Женщина справилась с уборкой быстро и качественно. 
+                                    Настоящий мастер своего дела. 
+                                </p>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="review">
+                                <div class="flex review-title-wrapper">
+                                    <div>
+                                        <p class="review-name">Владислав</p>
+                                        <p class="review-service">Клининг помещения</p>
+                                    </div>
+                                    <div>
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                    </div>
+                                </div>
+                                <p class="review-text">
+                                    Очень довольна клининговой компании "ЭкоПрофКлин". 
+                                    Женщина справилась с уборкой быстро и качественно. 
+                                    Настоящий мастер своего дела. 
+                                </p>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="review">
+                                <div class="flex review-title-wrapper">
+                                    <div>
+                                        <p class="review-name">Владислав</p>
+                                        <p class="review-service">Клининг помещения</p>
+                                    </div>
+                                    <div>
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                    </div>
+                                </div>
+                                <p class="review-text">
+                                    Очень довольна клининговой компании "ЭкоПрофКлин". 
+                                    Женщина справилась с уборкой быстро и качественно. 
+                                    Настоящий мастер своего дела. 
+                                </p>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="review">
+                                <div class="flex review-title-wrapper">
+                                    <div>
+                                        <p class="review-name">Владислав</p>
+                                        <p class="review-service">Клининг помещения</p>
+                                    </div>
+                                    <div>
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                        <img src="../public/images/Star.svg" alt="" class="star">
+                                    </div>
+                                </div>
+                                <p class="review-text">
+                                    Очень довольна клининговой компании "ЭкоПрофКлин". 
+                                    Женщина справилась с уборкой быстро и качественно. 
+                                    Настоящий мастер своего дела. 
+                                </p>
+                            </div>
+                          </li>
+                      </ul>
                 </div>
             </div>
         </section>
@@ -403,6 +475,9 @@
                 </a>
             </div>
         </div>
-    </footer>
+    </footer>   
+    <script src="../src/burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="../src/swiper.js"></script>
 </body>
 </html>

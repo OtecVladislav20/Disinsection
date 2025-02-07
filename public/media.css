@@ -1,3 +1,31 @@
+@media (max-width: 1805px) {
+    .conteiner {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .navigation {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .footer {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .logo-header {
+        margin-right: 100px;
+    }
+
+    .locations {
+        background-image: url('./images/map.png');
+        background-position: 90%;
+        background-size: 60%;
+        background-repeat: no-repeat;
+    }
+}
+
 @media (max-width: 1645px) {
     .services-cards {
         grid-template-columns: repeat(2, 1fr);
@@ -17,7 +45,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2);
-        gap: 20px;
+        gap: 40px;
         grid-template-areas: 
         "input-title1 input-title1 input-title1 input-title1"
         "input1 input1 input3 input3"
@@ -45,11 +73,341 @@
         margin: 0;
     }
     .form-textarea {
-        width: 100%;
+        width: calc(100% - 20px);
         height: 47px;
         margin: 0;
     }
     .services-form-title {
         margin: 0;
+    }
+
+    .image-contacts {
+        display: none;
+    }
+
+    .review-p {
+        margin-bottom: 20px;
+    }
+    .photo-p {
+        margin-bottom: 20px;
+    }
+
+    .pfoto-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .pfoto {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .nav-contact {
+        flex-direction: column-reverse;
+    }
+
+    .logo-header {
+        margin-right: 50px;
+    }
+
+    .hero {
+        padding-bottom: 250px;
+        background-size: 50%;
+        background-position: 75% 60%;
+    }
+    
+    .description {
+        height: 400px;
+    }
+
+    .locations {
+        background-image: url('./images/map.png');
+        background-position: 90%;
+        background-size: 50%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 1100px) {
+    .burger {
+        display: flex;
+    }
+    .nav-bar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0px; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        background-color: #fff;
+    }
+    .nav-links {
+        padding: 100px 30px;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .nav-contact {
+        padding: 40px 60px;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .logo-header {
+        margin: 0;
+    }
+    
+    .Logo {
+        height: 62px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .image-contacts {
+        display: block;
+    }
+    .images-contacts {
+        display: flex;
+    }
+
+    
+    .navigation {
+        padding: 10px 30px;
+    }
+    
+    .conteiner {
+        padding: 20px 30px;
+    }
+    
+    .hero {
+        background-image: url('./images/bg-hero-mobile.png');
+        background-repeat: repeat;
+        background-position: 75% 0%;
+        padding-bottom: 200px !important;
+    }
+
+    .hero-location{
+        margin-bottom: 10px;
+    }
+
+    .hero-location-image {
+        height: 24px;
+        width: 24px;
+    }
+
+    .hero-pf {
+        font-size: 12px;
+    }
+
+    .hero-h1 {
+        font-size: 40px;
+    }
+
+    .hero-h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .hero-p {
+        font-size: 16px;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .description-block {
+        padding: 20px;
+    }
+    .description-p {
+        font-size: 12px;
+    }
+    .description {
+        height: 150px;
+    }
+
+    .hero-btn {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .services-cards {
+        grid-template-columns: repeat(1, 100%);
+        gap: 20px;
+        grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "form1"
+        "form1";
+    }
+    .services-card {
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 16px;
+        border: 1px solid #2A5F4F;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    }
+    .services-card-title {
+        font-size: 16px;
+        color: #2A5F4F;
+    }
+    .services-card-li {
+        font-size: 12px;
+    }
+    .price {
+        font-size: 16px;
+        min-width: 80px;
+    }
+    .services-image {
+        height: 200px;
+    }
+    .row {
+        width: 30px;
+    }
+
+    .services-form {
+        display: flex;
+    }
+
+    .title-h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .advantages-image {
+        height: 70px;
+        margin-right: 20px;
+    }
+    .advantages-block-title {
+        font-size: 20px;
+        margin: 0;
+    }
+    .advantages-block-text {
+        font-size: 16px;
+    }
+    .advantages-block {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .work {
+        background-color: #EAF1FF;
+        background-image: none;
+    }
+    .work-info-title {
+        display: none;
+    }
+    .work-info {
+        padding: 30px;
+        width: 100%;
+        margin: 0;
+    }
+    .work-item {
+        margin-bottom: 20px;
+    }
+    .work-text {
+        font-size: 16px;
+    }
+    .work-wrapper {
+        margin-bottom: 30px;
+    }
+    .work-btn {
+        font-size: 16px;
+    }
+
+    .photo-info-title {
+        font-size: 16px;
+    }
+    .photo-p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .pfoto-img {
+        width: 90px;
+    }
+    .pfoto {
+        width: 100%;
+    }
+    .pfoto-btn {
+        padding: 0;
+    }
+
+    .pfoto-wrapper {
+        justify-content: space-between;
+    }
+
+    .locations-form {
+        display: none;
+    }
+    .locations-city {
+        display: block;
+    }
+    .locations {
+        background-image: url('./images/def-map.png');
+        background-position: 50%;
+        background-size: 90%;
+        background-repeat: no-repeat;
+    }
+    .photo-title {
+        margin-bottom: 10px;
+    }
+    .city {
+        color: #2A5F4F;
+        font-size: 16px;
+    }
+
+    .review-p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .review-btn {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .review-name {
+        font-size: 20px;
+    }
+    .review-service {
+        font-size: 14px;
+    }
+    .star {
+        width: 24px;
+    }
+    .review-text {
+        font-size: 16px;
+    }
+
+    .footer-title {
+        font-size: 20px;
+    }
+    .footer-text {
+        font-size: 16px;
+    }
+
+    .services-form-title {
+        font-size: 20px;
+    }
+
+    .form-btn {
+        font-size: 20px;
+    }
+
+    .form-textarea {
+        width: 100%;
+        height: 47px;
+        margin: 0;
+    }
+
+    .services-form {
+        gap: 20px;
+    }
+
+    .form-to-hide {
+        display: none;
     }
 }
