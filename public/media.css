@@ -24,6 +24,30 @@
         background-size: 60%;
         background-repeat: no-repeat;
     }
+
+    .form-sp {
+        display: none;
+    }
+    .open-button {
+        display: block;
+    }
+
+    .hero-info-sp {
+        background-image: url('../public/Images/Service-hero.png');
+        background-repeat: no-repeat;
+        background-position: 90% 0%;
+    }
+
+    .price-container {
+        padding-right: 0;
+    }
+
+    .photo-wrapper-a {
+        grid-template-columns: 300px 300px 300px 300px;
+    }
+    .photo-a-img {
+        width: 300px;
+    }
 }
 
 @media (max-width: 1645px) {
@@ -99,6 +123,13 @@
     .pfoto {
         margin-right: 20px;
     }
+
+    .info-p-sp {
+        padding-right: 0;
+    }
+    .info-title-sp {
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -125,6 +156,18 @@
         background-position: 90%;
         background-size: 50%;
         background-repeat: no-repeat;
+    }
+
+    .description-wrapper-sp {
+        transform: translate(8%);
+        width: 94vw;
+    }
+
+    .photo-wrapper-a {
+        grid-template-columns: 300px 300px 300px;
+    }
+    .photo-a-img {
+        width: 300px;
     }
 }
 
@@ -409,5 +452,135 @@
 
     .form-to-hide {
         display: none;
+    }
+
+    .hero-info-sp {
+        padding-bottom: 100px;
+        background-image: none;
+    }
+    .description-wrapper-sp {
+        transform: translate(3%);
+        top: -100px
+    }
+
+    .hero-h1-sp {
+        font-size: 36px;
+    }
+
+    .hero-h2-sp {
+        font-size: 24px;
+    }
+
+    .description-block-sp {
+        padding: 30px;
+    }
+
+    .description-p-sp {
+        font-size: 20px;
+    }
+
+    .hero-mobile-sp {
+        display: block;
+    }
+    .close-mobile {
+        display: none;
+    }
+
+    .services-sp {
+        padding-top: 70px;
+    }
+
+    .services-img-sp {
+        height: 120px;
+    }
+
+    .achivments-text-sp {
+        font-size: 16px;
+    }
+    .achivments-block-sp {
+        margin-bottom: 20px;
+    }
+    .checkmark {
+        height: 32px;
+        margin-right: 10px;
+    }
+
+    .info-p-sp {
+        font-size: 16px
+    }
+    .info-title-sp {
+        font-size: 24px;
+    }
+    .table-title {
+        font-size: 16px;
+    }
+    .table-p {
+        font-size: 16px;
+    }
+    .need-cerd-sp {
+        font-size: 16px;
+    }
+    .price-sp {
+        background-image: none;
+    }
+
+    .hero-about {
+        background-image: url('./images/bg-hero-mobile.png');
+        background-repeat: repeat;
+    }
+    .hero-h1-a {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .hero-a {
+        font-size: 20px;
+    }
+    .requisites-item {
+        font-size: 20px;
+    }
+    .photo-wrapper-a {
+        grid-template-columns: 300px 300px;
+    }
+    .photo-a-img {
+        width: 300px;
+    }
+    .form-close-1100 {
+        display: none;
+    }
+}
+
+@media (max-width: 790px) {
+    .work-photo-wrapper-sp {
+        grid-template-columns: 150px 150px 150px;
+    }
+    .work-photo-img {
+        width: 100%;
+    }
+
+    .photo-wrapper-a {
+        grid-template-columns: 200px 200px;
+    }
+    .photo-a-img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 558px) {
+    .services-sp {
+        padding-top: 150px;
+    }
+    .services-cards-sp {
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+    .work-photo-wrapper-sp {
+        grid-template-columns: 150px 150px;
+    }
+
+    .photo-wrapper-a {
+        grid-template-columns: 150px 150px;
+    }
+    .photo-a-img {
+        width: 150px;
     }
 }

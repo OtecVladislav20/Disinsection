@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЭкоПрофКлин</title>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../public/normalize.css">
     <link rel="stylesheet" href="../public/style.css">
     <link rel="stylesheet" href="../public/media.css">
@@ -55,7 +56,12 @@
         </div>
     </header>
     <main>
-        <section class="hero-about">
+        <section id="open-button" class="open-button">
+            <a href=""><img src="../public/images/open-button.svg" alt=""></a>
+        </section>
+
+
+        <section class="hero-about conteiner">
             <h1 class="hero-h1-a">ЭкоПрофКлин</h1>
             <p class="hero-a">Мы команда профессионалов, специализирующихся на клининге помещений после происшествий и уничтожении вредителей. Все сотрудники являются опытными специалистами со стажем более 3-х лет. </p>
             <p class="hero-a">
@@ -63,9 +69,9 @@
             <p class="hero-a">Мы уделяем особое внимание каждой детали, стремясь создать идеальные условия для вашего дома или рабочего пространства.</p>
             <div class="about-bottom"></div>
         </section>
-        <section class="requisites flex">
+        <section class="requisites flex conteiner">
             <div>
-                <h2 class="services-title">Реквизиты</h2>
+                <h2 class="services-title title-h2">Реквизиты</h2>
                 <ul class="requisites-list">
                     <li class="requisites-item">Расчетный счет: 40802810620000072838</li>
                     <li class="requisites-item">Расчетный счет: 40802810620000072838</li>
@@ -77,7 +83,7 @@
                 </ul>
             </div>
             <div>
-                <form action="" class="services-form-def">
+                <form action="" class="services-form-def form-close-1100">
                     <h3 class="services-form-title-def">Оставить заявку</h3>
                     <input type="text" name="name" placeholder="Как вас зовут?" class="form-input-def"/>
                     <input type="email" name="email" placeholder="Контактный номер" class="form-input-def"/>
@@ -90,8 +96,8 @@
                 </form>
             </div>
         </section>
-        <section class="advantages">
-            <h2 class="advantages-title">Почему выбирают нас</h2>
+        <section class="advantages conteiner">
+            <h2 class="advantages-title title-h2">Почему выбирают нас</h2>
             <div class="flex advantages-blocks">
                 <div class="flex advantages-block">
                     <img src="../public/images/advantages1.svg" alt="" class="advantages-image">
@@ -137,29 +143,29 @@
                 </div>
             </div>
         </section>
-        <section class="photo-a">
-            <h2 class="services-title">Наши работы</h2>
+        <section class="photo-a conteiner">
+            <h2 class="services-title title-h2">Наши работы</h2>
             <div class="photo-wrapper-a">
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
-                <div><img src="../public/Images/aboutus1.png" alt=""></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
+                <div><img src="../public/Images/aboutus1.png" alt="" class="photo-a-img"></div>
             </div>
         </section>
-        <section class="reviews">
-            <h2 class="reviews-title">
+        <section class="reviews conteiner">
+            <h2 class="reviews-title title-h2">
                 Отзывы
             </h2>
             <div class="flex review-btn-wrapper">
@@ -301,6 +307,9 @@
                 </a>
             </div>
         </div>
-    </footer>   
+    </footer>
+    <script src="../src/burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="../src/swiper.js"></script>
 </body>
 </html>
