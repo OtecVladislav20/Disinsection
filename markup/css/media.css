@@ -19,7 +19,7 @@
     }
 
     .locations {
-        background-image: url('./images/map.png');
+        background-image: url('../img/map.png');
         background-position: 90%;
         background-size: 60%;
         background-repeat: no-repeat;
@@ -33,7 +33,7 @@
     }
 
     .hero-info-sp {
-        background-image: url('../public/Images/Service-hero.png');
+        background-image: url('../img/Service-hero.png');
         background-repeat: no-repeat;
         background-position: 90% 0%;
     }
@@ -152,7 +152,7 @@
     }
 
     .locations {
-        background-image: url('./images/map.png');
+        background-image: url('../img/map.png');
         background-position: 90%;
         background-size: 50%;
         background-repeat: no-repeat;
@@ -226,7 +226,7 @@
     }
     
     .hero {
-        background-image: url('./images/bg-hero-mobile.png');
+        background-image: url('../img/bg-hero-mobile.png');
         background-repeat: repeat;
         background-position: 75% 0%;
         padding-bottom: 200px !important;
@@ -390,7 +390,7 @@
         display: block;
     }
     .locations {
-        background-image: url('./images/def-map.png');
+        background-image: url('../img/def-map.png');
         background-position: 50%;
         background-size: 90%;
         background-repeat: no-repeat;
@@ -525,7 +525,7 @@
     }
 
     .hero-about {
-        background-image: url('./images/bg-hero-mobile.png');
+        background-image: url('../img/bg-hero-mobile.png');
         background-repeat: repeat;
     }
     .hero-h1-a {
