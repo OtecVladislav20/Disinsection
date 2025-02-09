@@ -13,9 +13,9 @@ export default function Header({ handlerCloseForm, isActiveForm}): JSX.Element {
   return (
     <header className="navigation flex">
       <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
-      <a href="#" className="logo-header">
+      <Link to={AppRoute.Main} className="logo-header">
         <img src="../markup/img/Logo.svg" alt="Logo" className="Logo" />
-      </a>
+      </Link>
       <nav className={`nav-bar ${isBurger ? 'flex' : ''}`}>
         <div className="nav-links flex">
           <Link to={AppRoute.AboutUs} className="nav-list">

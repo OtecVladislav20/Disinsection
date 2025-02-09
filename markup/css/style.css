@@ -1130,3 +1130,13 @@ table {
     top: -50px;
     background: none;
 }
+
+.btn__work--active {
+    border-bottom: 3px solid #2A5F4F;
+}
+.tabs-item {
+    display: none;
+}
+.tabs-item--active {
+    display: block !important;
+}

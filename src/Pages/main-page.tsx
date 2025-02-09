@@ -5,6 +5,7 @@ import FormService from '../components/form-service/form-service';
 import FormOpen from '../components/form-open/form-open';
 import FormDef from '../components/form-def/form-def';
 import Adventages from '../components/adventages/adventages';
+import Photo from '../components/photo/photo';
 
 
 export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element {
@@ -183,52 +184,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element
             Проводите время с близкими, а не с вредителями!
           </h3>
         </section>
-        <section className="photo conteiner">
-          <h2 className="photo-title title-h2">Часть наших работ</h2>
-          <div className="flex photo-info">
-            <div>
-              <img
-                src="../markup/img/photo-image1.png"
-                alt="photo"
-                className="pfoto"
-              />
-            </div>
-            <div className="flex photo-info-wrapper">
-              <div>
-                <h3 className="photo-info-title">Дезинсекция</h3>
-                <p className="photo-p">
-                  Дезинфекция - важнейший процесс, обеспечивающий чистоту и
-                  безопасность окружающей среды. Она помогает уничтожать патогенные
-                  микроорганизмы, такие как вирусы, бактерии и грибки. Это
-                  предотвращает распространение инфекционных заболеваний среди людей
-                </p>
-              </div>
-              <div className="flex pfoto-wrapper">
-                <button className="pfoto-btn">
-                  <img
-                    src="../markup/img/photo-image-button1.png"
-                    alt="button"
-                    className="pfoto-img"
-                  />
-                </button>
-                <button className="pfoto-btn">
-                  <img
-                    src="../markup/img/photo-image-button1.png"
-                    alt="button"
-                    className="pfoto-img"
-                  />
-                </button>
-                <button className="pfoto-btn">
-                  <img
-                    src="../markup/img/photo-image-button1.png"
-                    alt="button"
-                    className="pfoto-img"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Photo/>
         <section className="locations conteiner">
           <h2 className="photo-title title-h2">Где мы работаем</h2>
           <div className="flex">

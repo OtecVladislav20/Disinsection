@@ -6,4 +6,4 @@ export enum AppRoute {
   NotFoundScreen = '/*',
 }
 
-export const EMAILTOKEN = '45fffb7e-0401-4be9-8aaa-623800990150';
+export const EMAILTOKEN = '2eb95cf6-e924-449b-9a58-a42e21cf63ef';
