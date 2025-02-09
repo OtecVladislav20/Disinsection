@@ -2,14 +2,21 @@ import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 import Reviews from '../components/reviews/reviews';
 import FormService from '../components/form-service/form-service';
+import { useState } from 'react';
 import FormOpen from '../components/form-open/form-open';
 
 export default function MainPage(): JSX.Element {
+  const [isActiveForm, setActiveForm] = useState(false);
+  const handlerCloseForm = (event) => {
+    event.preventDefault();
+    setActiveForm(!isActiveForm);
+  };
+
   return (
     <>
-      <Header/>
+      <Header />
       <main>
-        <FormOpen />
+        <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <section className="hero conteiner">
           <div className="flex hero-location">
             <img
@@ -27,7 +34,7 @@ export default function MainPage(): JSX.Element {
             Оставьте заявку, и менеджер ответит на все вопросы, проконсультирует по
             набору услуг и рассчитает стоимость
           </p>
-          <button className="hero-btn">Заказать клининг</button>
+          <button className="hero-btn" onClick={handlerCloseForm}>Заказать клининг</button>
         </section>
         <section className="description">
           <div className="description-wrapper">
@@ -256,7 +263,7 @@ export default function MainPage(): JSX.Element {
                 <p className="work-text">Оплата результата</p>
               </div>
             </div>
-            <button className="work-btn">Заказать клининг</button>
+            <button className="work-btn" onClick={handlerCloseForm}>Заказать клининг</button>
           </div>
           <h3 className="work-info-title">
             Проводите время с близкими, а не с вредителями!
@@ -311,8 +318,8 @@ export default function MainPage(): JSX.Element {
         <section className="locations conteiner">
           <h2 className="photo-title title-h2">Где мы работаем</h2>
           <div className="flex">
-            <form action="" className="services-form-def form-to-hide" >
-              <h3 className='services-form-title-def'>Оставить заявку</h3>
+            <form action="" className="services-form-def open-form-element">
+              <h3 className="services-form-title-def">Оставить заявку</h3>
               <input
                 type="text"
                 name="name"
@@ -320,8 +327,8 @@ export default function MainPage(): JSX.Element {
                 className="form-input-def"
               />
               <input
-                type="email"
-                name="email"
+                type="phone"
+                name="phone"
                 placeholder="Контактный номер"
                 className="form-input-def"
               />
@@ -331,16 +338,6 @@ export default function MainPage(): JSX.Element {
                 className="form-textarea-def"
                 defaultValue=""
               />
-              <div className="flex form-foto-wrapper">
-                <img
-                  src="../markup/img/foto.svg"
-                  alt="foto"
-                  className="form-foto"
-                />
-                <a href="" className="form-foto-text">
-                  Прикрепить фотографии
-                </a>
-              </div>
               <button type="submit" className="form-btn">
                 Отправить
               </button>
@@ -369,7 +366,7 @@ export default function MainPage(): JSX.Element {
             </div>
           </div>
         </section>
-        <Reviews/>
+        <Reviews handlerCloseForm={handlerCloseForm}/>
       </main>
       <Footer/>
     </>

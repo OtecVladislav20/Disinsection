@@ -2,7 +2,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 
 
-export default function Reviews() {
+export default function Reviews({handlerCloseForm}) {
   return (
     <section className="reviews conteiner">
       <h2 className="reviews-title title-h2">Отзывы</h2>
@@ -12,7 +12,7 @@ export default function Reviews() {
           надежного партнера для тысяч клиентов, подтвержденную высоким
           качеством предоставляемых услуг и профессионализмом нашего персонала.
         </p>
-        <button className="review-btn">Оставить отзывы</button>
+        <button className="review-btn" onClick={handlerCloseForm}>Оставить отзывы</button>
       </div>
       <Splide
         options={ {
