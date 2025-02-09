@@ -2,51 +2,14 @@ import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 import Reviews from '../components/reviews/reviews';
 import FormService from '../components/form-service/form-service';
+import FormOpen from '../components/form-open/form-open';
 
 export default function MainPage(): JSX.Element {
   return (
     <>
       <Header/>
       <main>
-        <section className="open-form">
-          <form action="" className="services-form-def open-form-element">
-            <h3 className="services-form-title-def">Оставить заявку</h3>
-            <input
-              type="text"
-              name="name"
-              placeholder="Как вас зовут?"
-              className="form-input-def"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Контактный номер"
-              className="form-input-def"
-            />
-            <textarea
-              name="message"
-              placeholder="Ваше сообщение"
-              className="form-textarea-def"
-              defaultValue="Тест"
-            />
-            <div className="flex form-foto-wrapper">
-              <img
-                src="../markup/img/foto.svg"
-                alt="foto"
-                className="form-foto"
-              />
-              <a href="" className="form-foto-text">
-                Прикрепить фотографии
-              </a>
-            </div>
-            <button type="submit" className="form-btn">
-              Отправить
-            </button>
-          </form>
-          <div className="close-form" />
-        </section>
-
-
+        <FormOpen />
         <section className="hero conteiner">
           <div className="flex hero-location">
             <img

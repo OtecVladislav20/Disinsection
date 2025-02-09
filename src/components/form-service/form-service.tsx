@@ -38,7 +38,7 @@ export default function FormService(): JSX.Element {
 
   return (
     <>
-      <section className={`sended-window ${isSendedForm ? 'display-block' : ''}`}>Форма успешно отправлена!</section>
+      <div className={`sended-window ${isSendedForm ? 'display-block' : ''}`}>Форма успешно отправлена!</div>
       <div className="form1">
         <form action="" className="services-form" onSubmit={handlerSubmit}>
           <h3 className="services-form-title input-title1">

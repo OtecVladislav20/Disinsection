@@ -3,10 +3,6 @@ import { AppRoute } from '../../const';
 import { useState } from 'react';
 
 export default function Header(): JSX.Element {
-  // const burger = document.querySelector('.burger');
-  // const navBar = document.querySelector('.nav-bar');
-  // const openButton = document.querySelector('.open-button');
-
   const [isBurger, setBurger] = useState(false);
 
   function handlerBurger() {

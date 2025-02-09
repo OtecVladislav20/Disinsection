@@ -574,6 +574,28 @@
     .photo-a-img {
         width: 200px;
     }
+
+    .services-form-def {
+        width: 220px;
+    }
+    .services-form-title-def {
+        font-size: 20px;
+    }
+    .form-input-def {
+        height: 40px;
+        border-radius: 10px;
+    }
+    .form-textarea-def {
+        height: 40px;
+        border-radius: 10px;
+    }
+    .close-btn-form {
+        height: 32px;
+    }
+    .close-form {
+        right: -40px;
+        top: -30px;
+    }
 }
 
 @media (max-width: 558px) {
