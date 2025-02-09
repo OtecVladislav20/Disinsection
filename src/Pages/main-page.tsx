@@ -1,63 +1,12 @@
+import Footer from '../components/footer/footer';
+import Header from '../components/header/header';
+import Reviews from '../components/reviews/reviews';
+import FormService from '../components/form-service/form-service';
+
 export default function MainPage(): JSX.Element {
   return (
     <>
-      <header className="navigation flex">
-        <a href="#" className="logo-header">
-          <img src="../markup/img/Logo.svg" alt="Logo" className="Logo" />
-        </a>
-        <nav className="nav-bar">
-          <div className="nav-links flex">
-            <a href="" className="nav-list">
-              О нас
-            </a>
-            <a href="" className="nav-list">
-              Услуги
-            </a>
-            <a href="" className="nav-list">
-              Цены
-            </a>
-            <a href="" className="nav-list">
-              Контакты
-            </a>
-          </div>
-          <div className="flex nav-contact">
-            <button className="nav-button">Обрытный звонок</button>
-            <div className="images-contacts">
-              <a href="">
-                <img
-                  src="../markup/img/Telegram.svg"
-                  alt="Telegram"
-                  className="image-contacts"
-                />
-              </a>
-              <a href="">
-                <img
-                  src="../markup/img/WhatsApp.svg"
-                  alt="WhatsApp"
-                  className="image-contacts"
-                />
-              </a>
-            </div>
-            <div>
-              <div className="flex nav-phone">
-                <img src="../markup/img/phone.svg" alt="" />
-                <a href="" className="nav-phone-text">
-                  +7 906 800 68 08
-                </a>
-              </div>
-              <div className="flex nav-phone">
-                <img src="../markup/img/mail.svg" alt="" />
-                <a href="" className="nav-phone-text">
-                  maslakov20@mail.ru
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <div className="burger">
-          <span />
-        </div>
-      </header>
+      <Header/>
       <main>
         <section className="open-form">
           <form action="" className="services-form-def open-form-element">
@@ -96,7 +45,9 @@ export default function MainPage(): JSX.Element {
           </form>
           <div className="close-form" />
         </section>
-        <section className="hero container">
+
+
+        <section className="hero conteiner">
           <div className="flex hero-location">
             <img
               src="../markup/img/location.svg"
@@ -235,44 +186,7 @@ export default function MainPage(): JSX.Element {
                 </div>
               </div>
             </div>
-            <div className="form1">
-              <form action="" className="services-form">
-                <h3 className="services-form-title input-title1">
-                  Оставить заявку
-                </h3>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Как вас зовут?"
-                  className="form-input input1"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Контактный номер"
-                  className="form-input input2"
-                />
-                <textarea
-                  name="message"
-                  placeholder="Ваше сообщение"
-                  className="form-textarea input3"
-                  defaultValue=""
-                />
-                <div className="flex form-foto-wrapper input4">
-                  <img
-                    src="../markup/img/foto.svg"
-                    alt="foto"
-                    className="form-foto"
-                  />
-                  <a href="" className="form-foto-text">
-                    Прикрепить фотографии
-                  </a>
-                </div>
-                <button type="submit" className="form-btn input-btn">
-                  Отправить
-                </button>
-              </form>
-            </div>
+            <FormService/>
           </div>
         </section>
         <section className="advantages conteiner">
@@ -434,8 +348,8 @@ export default function MainPage(): JSX.Element {
         <section className="locations conteiner">
           <h2 className="photo-title title-h2">Где мы работаем</h2>
           <div className="flex">
-            <form action="" className="services-form-def form-to-hide">
-              <h3 className="services-form-title-def">Оставить заявку</h3>
+            <form action="" className="services-form-def form-to-hide" >
+              <h3 className='services-form-title-def'>Оставить заявку</h3>
               <input
                 type="text"
                 name="name"
@@ -492,260 +406,9 @@ export default function MainPage(): JSX.Element {
             </div>
           </div>
         </section>
-        <section className="reviews conteiner">
-          <h2 className="reviews-title title-h2">Отзывы</h2>
-          <div className="flex review-btn-wrapper">
-            <p className="review-p">
-              За более 10 лет работы в сфере клининга мы смогли заслужить репутацию
-              надежного партнера для тысяч клиентов, подтвержденную высоким
-              качеством предоставляемых услуг и профессионализмом нашего персонала.
-            </p>
-            <button className="review-btn">Оставить отзывы</button>
-          </div>
-          <div
-            className="splide"
-            role="group"
-            aria-label="Splide Basic HTML Example"
-          >
-            <div className="splide__track">
-              <ul className="splide__list">
-                <li className="splide__slide">
-                  <div className="review">
-                    <div className="flex review-title-wrapper">
-                      <div>
-                        <p className="review-name">Владислав</p>
-                        <p className="review-service">Клининг помещения</p>
-                      </div>
-                      <div>
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                      </div>
-                    </div>
-                    <p className="review-text">
-                      Очень довольна клининговой компании ЭкоПрофКлин. Женщина
-                      справилась с уборкой быстро и качественно. Настоящий мастер
-                      своего дела.
-                    </p>
-                  </div>
-                </li>
-                <li className="splide__slide">
-                  <div className="review">
-                    <div className="flex review-title-wrapper">
-                      <div>
-                        <p className="review-name">Владислав</p>
-                        <p className="review-service">Клининг помещения</p>
-                      </div>
-                      <div>
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                      </div>
-                    </div>
-                    <p className="review-text">
-                      Очень довольна клининговой компании ЭкоПрофКлин. Женщина
-                      справилась с уборкой быстро и качественно. Настоящий мастер
-                      своего дела.
-                    </p>
-                  </div>
-                </li>
-                <li className="splide__slide">
-                  <div className="review">
-                    <div className="flex review-title-wrapper">
-                      <div>
-                        <p className="review-name">Владислав</p>
-                        <p className="review-service">Клининг помещения</p>
-                      </div>
-                      <div>
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                      </div>
-                    </div>
-                    <p className="review-text">
-                      Очень довольна клининговой компании ЭкоПрофКлин. Женщина
-                      справилась с уборкой быстро и качественно. Настоящий мастер
-                      своего дела.
-                    </p>
-                  </div>
-                </li>
-                <li className="splide__slide">
-                  <div className="review">
-                    <div className="flex review-title-wrapper">
-                      <div>
-                        <p className="review-name">Владислав</p>
-                        <p className="review-service">Клининг помещения</p>
-                      </div>
-                      <div>
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                        <img
-                          src="../markup/img/Star.svg"
-                          alt=""
-                          className="star"
-                        />
-                      </div>
-                    </div>
-                    <p className="review-text">
-                      Очень довольна клининговой компании ЭкоПрофКлин. Женщина
-                      справилась с уборкой быстро и качественно. Настоящий мастер
-                      своего дела.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+        <Reviews/>
       </main>
-      <footer className="flex footer">
-        <div className="footer-wrapper">
-          <h3 className="footer-title">Услуги</h3>
-          <div className="flex footer-link">
-            <a href="" className="footer-text">
-              Осушение
-            </a>
-            <a href="" className="footer-text">
-              Уборка помещений
-            </a>
-            <a href="" className="footer-text">
-              Демонтажные работы
-            </a>
-            <a href="" className="footer-text">
-              ДДДД
-            </a>
-          </div>
-        </div>
-        <div className="footer-wrapper">
-          <h3 className="footer-title">О нас</h3>
-          <div className="flex footer-link">
-            <a href="" className="footer-text">
-              Контакты
-            </a>
-            <a href="" className="footer-text">
-              О компании
-            </a>
-          </div>
-        </div>
-        <div className="footer-wrapper">
-          <h3 className="footer-title">Режим работы</h3>
-          <div className="flex footer-link">
-            <p className="footer-text footer-p">С 9:00 до 22:00</p>
-            <p className="footer-text footer-p">7 дней в неделю</p>
-          </div>
-        </div>
-        <div className="flex footer-link">
-          <a href="" className="footer-title footer-contacts">
-            +7 906 800 68 08
-          </a>
-          <a href="" className="footer-title footer-contacts">
-            maslakov20@mail.ru
-          </a>
-          <a href="" className="footer-title footer-contacts">
-            ул.Мира 19 г.Екатеринбург
-          </a>
-          <div className="images-contacts">
-            <a href="">
-              <img
-                src="../markup/img/Telegram.svg"
-                alt="Telegram"
-                className="image-contacts"
-              />
-            </a>
-            <a href="">
-              <img
-                src="../markup/img/WhatsApp.svg"
-                alt="WhatsApp"
-                className="image-contacts"
-              />
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </>
   );
 }

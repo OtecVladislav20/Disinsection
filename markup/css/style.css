@@ -14,6 +14,20 @@
     src: url("../fonts/inter_medium.ttf") format("ttf");
 }
 
+.visually-hidden {
+    position:absolute;
+    width:1px;
+    height:1px;
+    margin:-1px;
+    padding:0;
+    overflow:hidden;
+    white-space:nowrap;
+    border:0;
+    clip:rect(0 0 0 0);
+    -webkit-clip-path:inset(100%)
+    ;clip-path:inset(100%)
+}
+
 body {
     font-family: "Rubik", "Inter";
 }
@@ -39,6 +53,9 @@ button {
 }
 .display-none {
     display: none !important;
+}
+.display-block {
+    display: block !important;
 }
 
 .conteiner {
@@ -114,6 +131,7 @@ button {
 
 .burger {
     display: none;
+    cursor: pointer;
     position: relative;
     z-index: 50;
     align-items: center;
@@ -261,6 +279,7 @@ button {
 
 .services-form {
     display: flex;
+    height: 538px;
     align-items: center;
     flex-direction: column;
     padding: 20px 40px;
@@ -369,9 +388,13 @@ button {
     height: 114px;
     border-radius: 16px;
     border: 3px solid #86BF88;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     padding-top: 20px;
     padding-left: 20px;
+}
+.form-textarea::placeholder {
+    color: #2A5F4F;
+    font-family: "Inter";
 }
 
 .form-input::placeholder {
@@ -386,6 +409,13 @@ button {
     background-color: #2A5F4F;
     font-size: 24px;
     padding: 20px;
+    transition: transform 0.15s ease;
+}
+.form-btn:hover {
+    transform: scale(1.1);
+}
+.form-btn:active {
+    transform: scale(0.9);
 }
 
 .services-card-title {
@@ -1067,5 +1097,21 @@ table {
     color: #2A5F4F;
 }
 .footer-p:active {
+    color: #2A5F4F;
+}
+
+.sended-window {
+    display: none;
+    position: fixed;
+    border-radius: 16px;
+    padding: 30px;
+    top: 40px;
+    right: 40px;
+    border: 3px solid #2A5F4F;
+    background-color: #EAF1FF;
+    z-index: 200;
+
+    font-family: "Inter";
+    font-size: 32px;
     color: #2A5F4F;
 }
