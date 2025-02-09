@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { EMAILTOKEN } from '../../const';
 
-export default function FormOpen({handlerCloseForm, isActiveForm}): JSX.Element {
+export default function FormDef(): JSX.Element {
   const handlerSend = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -35,7 +35,7 @@ export default function FormOpen({handlerCloseForm, isActiveForm}): JSX.Element 
   }, [isSendedForm]);
 
   return (
-    <section className={`open-form ${isActiveForm ? 'flex' : ''}`}>
+    <>
       <div className={`sended-window ${isSendedForm ? 'display-block' : ''}`}>Форма успешно отправлена!</div>
       <form className="services-form-def open-form-element" onSubmit={handlerSend}>
         <h3 className="services-form-title-def">Оставить заявку</h3>
@@ -60,10 +60,7 @@ export default function FormOpen({handlerCloseForm, isActiveForm}): JSX.Element 
         <button type="submit" className="form-btn">
           Отправить
         </button>
-        <button className='close-form' onClick={handlerCloseForm}>
-          <img src="../markup/img/close-btn.svg" alt="" className='close-btn-form'/>
-        </button>
       </form>
-    </section>
+    </>
   );
 }

@@ -2,19 +2,15 @@ import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 import Reviews from '../components/reviews/reviews';
 import FormService from '../components/form-service/form-service';
-import { useState } from 'react';
 import FormOpen from '../components/form-open/form-open';
+import FormDef from '../components/form-def/form-def';
+import Adventages from '../components/adventages/adventages';
 
-export default function MainPage(): JSX.Element {
-  const [isActiveForm, setActiveForm] = useState(false);
-  const handlerCloseForm = (event) => {
-    event.preventDefault();
-    setActiveForm(!isActiveForm);
-  };
 
+export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element {
   return (
     <>
-      <Header />
+      <Header handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
       <main>
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <section className="hero conteiner">
@@ -159,89 +155,7 @@ export default function MainPage(): JSX.Element {
             <FormService/>
           </div>
         </section>
-        <section className="advantages conteiner">
-          <h2 className="advantages-title title-h2">Почему выбирают нас</h2>
-          <div className="flex advantages-blocks">
-            <div className="flex advantages-block">
-              <img
-                src="../markup/img/advantages1.svg"
-                alt=""
-                className="advantages-image"
-              />
-              <div>
-                <h3 className="advantages-block-title">Уверенность</h3>
-                <p className="advantages-block-text">
-                  Более 10 лет работы <br /> в сфере клининга
-                </p>
-              </div>
-            </div>
-            <div className="flex advantages-block">
-              <img
-                src="../markup/img/advantages1.svg"
-                alt=""
-                className="advantages-image"
-              />
-              <div>
-                <h3 className="advantages-block-title">Уверенность</h3>
-                <p className="advantages-block-text">
-                  Более 10 лет работы <br /> в сфере клининга
-                </p>
-              </div>
-            </div>
-            <div className="flex advantages-block">
-              <img
-                src="../markup/img/advantages1.svg"
-                alt=""
-                className="advantages-image"
-              />
-              <div>
-                <h3 className="advantages-block-title">Уверенность</h3>
-                <p className="advantages-block-text">
-                  Более 10 лет работы <br /> в сфере клининга
-                </p>
-              </div>
-            </div>
-            <div className="flex advantages-block">
-              <img
-                src="../markup/img/advantages1.svg"
-                alt=""
-                className="advantages-image"
-              />
-              <div>
-                <h3 className="advantages-block-title">Уверенность</h3>
-                <p className="advantages-block-text">
-                  Более 10 лет работы <br /> в сфере клининга
-                </p>
-              </div>
-            </div>
-            <div className="flex advantages-block">
-              <img
-                src="../markup/img/advantages1.svg"
-                alt=""
-                className="advantages-image"
-              />
-              <div>
-                <h3 className="advantages-block-title">Уверенность</h3>
-                <p className="advantages-block-text">
-                  Более 10 лет работы <br /> в сфере клининга
-                </p>
-              </div>
-            </div>
-            <div className="flex advantages-block">
-              <img
-                src="../markup/img/advantages1.svg"
-                alt=""
-                className="advantages-image"
-              />
-              <div>
-                <h3 className="advantages-block-title">Уверенность</h3>
-                <p className="advantages-block-text">
-                  Более 10 лет работы <br /> в сфере клининга
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Adventages/>
         <section className="work flex conteiner">
           <div className="work-info flex">
             <h2 className="work-title title-h2">Как мы работаем</h2>
@@ -318,30 +232,9 @@ export default function MainPage(): JSX.Element {
         <section className="locations conteiner">
           <h2 className="photo-title title-h2">Где мы работаем</h2>
           <div className="flex">
-            <form action="" className="services-form-def open-form-element">
-              <h3 className="services-form-title-def">Оставить заявку</h3>
-              <input
-                type="text"
-                name="name"
-                placeholder="Как вас зовут?"
-                className="form-input-def"
-              />
-              <input
-                type="phone"
-                name="phone"
-                placeholder="Контактный номер"
-                className="form-input-def"
-              />
-              <textarea
-                name="message"
-                placeholder="Ваше сообщение"
-                className="form-textarea-def"
-                defaultValue=""
-              />
-              <button type="submit" className="form-btn">
-                Отправить
-              </button>
-            </form>
+            <div className='form-def-main'>
+              <FormDef/>
+            </div>
             <div className="locations-city">
               <ul className="cities">
                 <li className="city">Санкт-Петербург</li>

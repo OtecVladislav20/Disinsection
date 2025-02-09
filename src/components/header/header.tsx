@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { AppRoute } from '../../const';
 import { useState } from 'react';
+import FormOpen from '../form-open/form-open';
 
-export default function Header(): JSX.Element {
+export default function Header({ handlerCloseForm, isActiveForm}): JSX.Element {
   const [isBurger, setBurger] = useState(false);
 
   function handlerBurger() {
@@ -11,6 +12,7 @@ export default function Header(): JSX.Element {
 
   return (
     <header className="navigation flex">
+      <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
       <a href="#" className="logo-header">
         <img src="../markup/img/Logo.svg" alt="Logo" className="Logo" />
       </a>
@@ -25,12 +27,12 @@ export default function Header(): JSX.Element {
           <Link to={AppRoute.Price} className="nav-list">
             Цены
           </Link>
-          <Link to={AppRoute.Services} className="nav-list">
+          <Link to={AppRoute.AboutUs} className="nav-list">
             Контакты
           </Link>
         </div>
         <div className="flex nav-contact">
-          <button className="nav-button">Обрытный звонок</button>
+          <button className="nav-button" onClick={handlerCloseForm}>Обрытный звонок</button>
           <div className="images-contacts">
             <a href="">
               <img
@@ -50,13 +52,13 @@ export default function Header(): JSX.Element {
           <div>
             <div className="flex nav-phone">
               <img src="../markup/img/phone.svg" alt="" />
-              <a href="" className="nav-phone-text">
+              <a href="tel:+79068006808" className="nav-phone-text">
                 +7 906 800 68 08
               </a>
             </div>
             <div className="flex nav-phone">
               <img src="../markup/img/mail.svg" alt="" />
-              <a href="" className="nav-phone-text">
+              <a href="mailto:maslakov20@mail.ru" className="nav-phone-text">
                 maslakov20@mail.ru
               </a>
             </div>

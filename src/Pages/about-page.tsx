@@ -1,17 +1,19 @@
+import Adventages from '../components/adventages/adventages';
 import Footer from '../components/footer/footer';
+import FormDef from '../components/form-def/form-def';
+import FormOpen from '../components/form-open/form-open';
 import Header from '../components/header/header';
+import OpenButton from '../components/open-button/open-button';
 import Reviews from '../components/reviews/reviews';
 
-export default function About(): JSX.Element {
+
+export default function About({ handlerCloseForm, isActiveForm}): JSX.Element {
   return (
     <>
-      <Header/>
+      <Header handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
       <main>
-        <section id="open-button" className="open-button">
-          <a href="">
-            <img src="../public/images/open-button.svg" alt="" />
-          </a>
-        </section>
+        <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
+        <OpenButton handlerCloseForm={handlerCloseForm}/>
         <section className="hero-about conteiner">
           <h1 className="hero-h1-a">ЭкоПрофКлин</h1>
           <p className="hero-a">
@@ -57,244 +59,129 @@ export default function About(): JSX.Element {
               </li>
             </ul>
           </div>
-          <div>
-            <form action="" className="services-form-def form-close-1100">
-              <h3 className="services-form-title-def">Оставить заявку</h3>
-              <input
-                type="text"
-                name="name"
-                placeholder="Как вас зовут?"
-                className="form-input-def"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Контактный номер"
-                className="form-input-def"
-              />
-              <textarea
-                name="message"
-                placeholder="Ваше сообщение"
-                className="form-textarea-def"
-                defaultValue=""
-              />
-              <div className="flex form-foto-wrapper">
-                <img
-                  src="../public/images/foto.svg"
-                  alt="foto"
-                  className="form-foto"
-                />
-                <a href="" className="form-foto-text">
-                  Прикрепить фотографии
-                </a>
-              </div>
-              <button type="submit" className="form-btn">
-                Отправить
-              </button>
-            </form>
+          <div className='form-close-1100'>
+            <FormDef/>
           </div>
         </section>
-        <section className="advantages conteiner">
-          <h2 className="advantages-title title-h2">Почему выбирают нас</h2>
-          <div className="flex advantages-blocks">
-            <div className="flex advantages-block">
-              <img
-                src="../public/images/advantages1.svg"
-                alt=""
-                className="advantages-image"
-              />
-              <div>
-                <h3 className="advantages-block-title">Уверенность</h3>
-                <p className="advantages-block-text">
-                  Более 10 лет работы <br /> в сфере клининга
-                </p>
-              </div>
-            </div>
-            <div className="flex advantages-block">
-              <img
-                src="../public/images/advantages1.svg"
-                alt=""
-                className="advantages-image"
-              />
-              <div>
-                <h3 className="advantages-block-title">Уверенность</h3>
-                <p className="advantages-block-text">
-                  Более 10 лет работы <br /> в сфере клининга
-                </p>
-              </div>
-            </div>
-            <div className="flex advantages-block">
-              <img
-                src="../public/images/advantages1.svg"
-                alt=""
-                className="advantages-image"
-              />
-              <div>
-                <h3 className="advantages-block-title">Уверенность</h3>
-                <p className="advantages-block-text">
-                  Более 10 лет работы <br /> в сфере клининга
-                </p>
-              </div>
-            </div>
-            <div className="flex advantages-block">
-              <img
-                src="../public/images/advantages1.svg"
-                alt=""
-                className="advantages-image"
-              />
-              <div>
-                <h3 className="advantages-block-title">Уверенность</h3>
-                <p className="advantages-block-text">
-                  Более 10 лет работы <br /> в сфере клининга
-                </p>
-              </div>
-            </div>
-            <div className="flex advantages-block">
-              <img
-                src="../public/images/advantages1.svg"
-                alt=""
-                className="advantages-image"
-              />
-              <div>
-                <h3 className="advantages-block-title">Уверенность</h3>
-                <p className="advantages-block-text">
-                  Более 10 лет работы <br /> в сфере клининга
-                </p>
-              </div>
-            </div>
-            <div className="flex advantages-block">
-              <img
-                src="../public/images/advantages1.svg"
-                alt=""
-                className="advantages-image"
-              />
-              <div>
-                <h3 className="advantages-block-title">Уверенность</h3>
-                <p className="advantages-block-text">
-                  Более 10 лет работы <br /> в сфере клининга
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Adventages/>
         <section className="photo-a conteiner">
           <h2 className="services-title title-h2">Наши работы</h2>
           <div className="photo-wrapper-a">
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/Images/aboutus1.png"
+                src="../markup/img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
           </div>
         </section>
-        <Reviews/>
+        <Reviews handlerCloseForm={handlerCloseForm}/>
       </main>
       <Footer/>
     </>

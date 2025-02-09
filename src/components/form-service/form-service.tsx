@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
+import { EMAILTOKEN } from '../../const';
 
 export default function FormService(): JSX.Element {
   const handlerSend = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-    formData.append('access_key', '45fffb7e-0401-4be9-8aaa-623800990150');
+    formData.append('access_key', EMAILTOKEN);
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       body: formData
@@ -12,6 +13,7 @@ export default function FormService(): JSX.Element {
     const data = await response.json();
     if (data.success) {
       event.target.reset();
+      handlerSendedForm();
     } else {
       console.log('Error', data);
     }
@@ -61,7 +63,7 @@ export default function FormService(): JSX.Element {
             defaultValue=""
             required
           />
-          <button type="submit" className="form-btn input-btn" onClick={handlerSendedForm}>
+          <button type="submit" className="form-btn input-btn">
             Отправить
           </button>
         </form>

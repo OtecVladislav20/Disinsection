@@ -1,18 +1,18 @@
 import Footer from '../components/footer/footer';
+import FormDef from '../components/form-def/form-def';
+import FormOpen from '../components/form-open/form-open';
 import Header from '../components/header/header';
+import OpenButton from '../components/open-button/open-button';
 
-/* eslint-disable react/no-unknown-property */
-export default function ServicePage(): JSX.Element {
+
+export default function ServicePage({ handlerCloseForm, isActiveForm }): JSX.Element {
   return (
     <>
-      <Header/>
+      <Header handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
       <main className="flex">
+        <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <div className="main-left">
-          <section id="open-button" className="open-button">
-            <a href="">
-              <img src="../markup/img/open-button.svg" alt="" />
-            </a>
-          </section>
+          <OpenButton handlerCloseForm={handlerCloseForm}/>
           <section className="hero-info-sp conteiner">
             <h1 className="hero-h1-sp close-mobile">Осушение</h1>
             <h2 className="hero-h2-sp close-mobile">
@@ -232,40 +232,7 @@ export default function ServicePage(): JSX.Element {
         </div>
         <div className="form-sp">
           <div className="form-wrapper-sp">
-            <form action="" className="services-form-def">
-              <h3 className="services-form-title-def">Оставить заявку</h3>
-              <input
-                type="text"
-                name="name"
-                placeholder="Как вас зовут?"
-                className="form-input-def"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Контактный номер"
-                className="form-input-def"
-              />
-              <textarea
-                name="message"
-                placeholder="Ваше сообщение"
-                className="form-textarea-def"
-                defaultValue=""
-              />
-              <div className="flex form-foto-wrapper">
-                <img
-                  src="../markup/img/foto.svg"
-                  alt="foto"
-                  className="form-foto"
-                />
-                <a href="" className="form-foto-text">
-                  Прикрепить фотографии
-                </a>
-              </div>
-              <button type="submit" className="form-btn">
-                Отправить
-              </button>
-            </form>
+            <FormDef/>
           </div>
         </div>
       </main>

@@ -1,32 +1,35 @@
+import { Link } from 'react-router-dom';
+import { AppRoute } from '../../const';
+
 export default function Footer(): JSX.Element {
   return (
     <footer className="flex footer">
       <div className="footer-wrapper">
         <h3 className="footer-title">Услуги</h3>
         <div className="flex footer-link">
-          <a href="" className="footer-text">
+          <Link to={AppRoute.Services} className="footer-text">
             Осушение
-          </a>
-          <a href="" className="footer-text">
+          </Link>
+          <Link to={AppRoute.Services} className="footer-text">
             Уборка помещений
-          </a>
-          <a href="" className="footer-text">
+          </Link>
+          <Link to={AppRoute.Services} className="footer-text">
             Демонтажные работы
-          </a>
-          <a href="" className="footer-text">
+          </Link>
+          <Link to={AppRoute.Services} className="footer-text">
             ДДДД
-          </a>
+          </Link>
         </div>
       </div>
       <div className="footer-wrapper">
         <h3 className="footer-title">О нас</h3>
         <div className="flex footer-link">
-          <a href="" className="footer-text">
+          <Link to={AppRoute.AboutUs} className="footer-text">
             Контакты
-          </a>
-          <a href="" className="footer-text">
+          </Link>
+          <Link to={AppRoute.AboutUs} className="footer-text">
             О компании
-          </a>
+          </Link>
         </div>
       </div>
       <div className="footer-wrapper">
@@ -37,15 +40,15 @@ export default function Footer(): JSX.Element {
         </div>
       </div>
       <div className="flex footer-link">
-        <a href="" className="footer-title footer-contacts">
+        <a href="tel:+79068006808" className="footer-title footer-contacts">
           +7 906 800 68 08
         </a>
-        <a href="" className="footer-title footer-contacts">
+        <a href="mailto:maslakov20@mail.ru" className="footer-title footer-contacts">
           maslakov20@mail.ru
         </a>
-        <a href="" className="footer-title footer-contacts">
+        <p className="footer-title footer-contacts">
           ул.Мира 19 г.Екатеринбург
-        </a>
+        </p>
         <div className="images-contacts">
           <a href="">
             <img

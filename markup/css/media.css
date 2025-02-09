@@ -596,6 +596,10 @@
         right: -40px;
         top: -30px;
     }
+
+    .services-img-sp {
+        height: 100px;
+    }
 }
 
 @media (max-width: 558px) {
@@ -615,5 +619,13 @@
     }
     .photo-a-img {
         width: 150px;
+    }
+
+    .form-def-main {
+        display: none;
+    }
+
+    .services-img-sp {
+        height: 90px;
     }
 }
