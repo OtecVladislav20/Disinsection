@@ -20,14 +20,14 @@ export default function Photo() {
         </div>
         <div className={`tabs-item ${activeTab === '2' ? 'tabs-item--active' : ''}`} data-target="two">
           <img
-            src="../markup/img/photo-image1.png"
+            src="../markup/img/photo-image2.png"
             alt="photo"
             className="pfoto"
           />
         </div>
         <div className={`tabs-item ${activeTab === '3' ? 'tabs-item--active' : ''}`} data-target="three">
           <img
-            src="../markup/img/photo-image1.png"
+            src="../markup/img/photo-image3.png"
             alt="photo"
             className="pfoto"
           />
@@ -72,14 +72,14 @@ export default function Photo() {
             </button>
             <button className={`pfoto-btn btn__work ${activeTab === '2' ? 'btn__work--active' : ''}`} data-path="two" onClick={() => handlerTabs('2')}>
               <img
-                src="../markup/img/photo-image-button1.png"
+                src="../markup/img/photo-image-button2.png"
                 alt="button"
                 className="pfoto-img"
               />
             </button>
             <button className={`pfoto-btn btn__work ${activeTab === '3' ? 'btn__work--active' : ''}`} data-path="three" onClick={() => handlerTabs('3')}>
               <img
-                src="../markup/img/photo-image-button1.png"
+                src="../markup/img/photo-image-button3.png"
                 alt="button"
                 className="pfoto-img"
               />

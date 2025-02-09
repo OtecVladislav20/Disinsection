@@ -18,66 +18,66 @@ export default function Adventages() {
         </div>
         <div className="flex advantages-block">
           <img
-            src="../markup/img/advantages1.svg"
+            src="../markup/img/advantages2.svg"
             alt=""
             className="advantages-image"
           />
           <div>
-            <h3 className="advantages-block-title">Уверенность</h3>
+            <h3 className="advantages-block-title green">Технологичность</h3>
             <p className="advantages-block-text">
-              Более 10 лет работы <br /> в сфере клининга
+              Работаем с современным профессиональным оборудованием
             </p>
           </div>
         </div>
         <div className="flex advantages-block">
           <img
-            src="../markup/img/advantages1.svg"
+            src="../markup/img/advantages3.svg"
             alt=""
             className="advantages-image"
           />
           <div>
-            <h3 className="advantages-block-title">Уверенность</h3>
+            <h3 className="advantages-block-title">Безопасность</h3>
             <p className="advantages-block-text">
-              Более 10 лет работы <br /> в сфере клининга
+              Используем только сертифицированные препараты
             </p>
           </div>
         </div>
         <div className="flex advantages-block">
           <img
-            src="../markup/img/advantages1.svg"
+            src="../markup/img/advantages4.svg"
             alt=""
             className="advantages-image"
           />
           <div>
-            <h3 className="advantages-block-title">Уверенность</h3>
+            <h3 className="advantages-block-title green">Пунктуальность</h3>
             <p className="advantages-block-text">
-              Более 10 лет работы <br /> в сфере клининга
+              Мы ценим ваше время, поэтому заканчиваем работу в срок
             </p>
           </div>
         </div>
         <div className="flex advantages-block">
           <img
-            src="../markup/img/advantages1.svg"
+            src="../markup/img/advantages5.svg"
             alt=""
             className="advantages-image"
           />
           <div>
-            <h3 className="advantages-block-title">Уверенность</h3>
+            <h3 className="advantages-block-title">Комфорт</h3>
             <p className="advantages-block-text">
-              Более 10 лет работы <br /> в сфере клининга
+              Вам ничего не нужно предоставлять, кроме доступа к розеткам и воде
             </p>
           </div>
         </div>
         <div className="flex advantages-block">
           <img
-            src="../markup/img/advantages1.svg"
+            src="../markup/img/advantages6.svg"
             alt=""
             className="advantages-image"
           />
           <div>
-            <h3 className="advantages-block-title">Уверенность</h3>
+            <h3 className="advantages-block-title green">Качество</h3>
             <p className="advantages-block-text">
-              Более 10 лет работы <br /> в сфере клининга
+              Все сотрудники имеют стаж более 3 лет
             </p>
           </div>
         </div>

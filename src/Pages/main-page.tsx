@@ -68,11 +68,11 @@ export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element
                   <h3 className="services-card-title">Осушение</h3>
                   <ul className="services-card-ul">
                     <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
+                    <li className="services-card-li">Просушка дома после затопа</li>
+                    <li className="services-card-li">Просушка пола</li>
+                    <li className="services-card-li">Просушка потолка</li>
+                    <li className="services-card-li">Просушка стен</li>
+                    <li className="services-card-li">Просушка строительной площадки</li>
                   </ul>
                 </div>
                 <div className="flex services-price">
@@ -83,20 +83,20 @@ export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element
             </div>
             <div className="services-card card2 flex">
               <img
-                src="../markup/img/photoServices1.png"
+                src="../markup/img/photoServices2.png"
                 alt="photo"
                 className="services-image"
               />
               <div className="services-card-wrapper flex">
                 <div className="services-card-text flex">
-                  <h3 className="services-card-title">Осушение</h3>
+                  <h3 className="services-card-title">Уборка помещений</h3>
                   <ul className="services-card-ul">
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
+                    <li className="services-card-li">Уборка запущенного помещения</li>
+                    <li className="services-card-li">Уборка после пожара</li>
+                    <li className="services-card-li">Уборка после умершего</li>
+                    <li className="services-card-li">Уборка после ремонта</li>
+                    <li className="services-card-li">Уборка после затопления</li>
+                    <li className="services-card-li">Уничтожение плесени</li>
                   </ul>
                 </div>
                 <div className="flex services-price">
@@ -107,20 +107,16 @@ export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element
             </div>
             <div className="services-card card3 flex">
               <img
-                src="../markup/img/photoServices1.png"
+                src="../markup/img/photoServices3.png"
                 alt="photo"
                 className="services-image"
               />
               <div className="services-card-wrapper flex">
                 <div className="services-card-text flex">
-                  <h3 className="services-card-title">Осушение</h3>
+                  <h3 className="services-card-title">Демонтажные работы</h3>
                   <ul className="services-card-ul">
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
+                    <li className="services-card-li">Вывоз мебели</li>
+                    <li className="services-card-li">Демонтаж старого ремонта</li>
                   </ul>
                 </div>
                 <div className="flex services-price">
@@ -131,20 +127,18 @@ export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element
             </div>
             <div className="services-card card4 flex">
               <img
-                src="../markup/img/photoServices1.png"
+                src="../markup/img/photoServices4.png"
                 alt="photo"
                 className="services-image"
               />
               <div className="services-card-wrapper flex">
                 <div className="services-card-text flex">
-                  <h3 className="services-card-title">Осушение</h3>
+                  <h3 className="services-card-title">ДДДД</h3>
                   <ul className="services-card-ul">
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
-                    <li className="services-card-li">Откачка воды</li>
+                    <li className="services-card-li">Дезодорация</li>
+                    <li className="services-card-li">Дезинсекция</li>
+                    <li className="services-card-li">Дезинфекция</li>
+                    <li className="services-card-li">Дератизация</li>
                   </ul>
                 </div>
                 <div className="flex services-price">

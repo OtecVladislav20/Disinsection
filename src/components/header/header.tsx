@@ -5,9 +5,14 @@ import FormOpen from '../form-open/form-open';
 
 export default function Header({ handlerCloseForm, isActiveForm}): JSX.Element {
   const [isBurger, setBurger] = useState(false);
+  const [isActiveDropMenu, setActiveDropMenu] = useState(false);
 
   function handlerBurger() {
     setBurger(!isBurger);
+  }
+
+  function handlerDropMenu() {
+    setActiveDropMenu(!isActiveDropMenu);
   }
 
   return (
@@ -21,15 +26,22 @@ export default function Header({ handlerCloseForm, isActiveForm}): JSX.Element {
           <Link to={AppRoute.AboutUs} className="nav-list">
             О нас
           </Link>
-          <a href="" className="nav-list">
-            Услуги
-          </a>
+          <div className="drop-menu flex">
+            <p className='nav-list-drop' onClick={handlerDropMenu}>Услуги</p>
+            <img src="../markup/img/arrow-header.svg" alt="" />
+            <ul className={`drop-menu-list ${isActiveDropMenu ? 'display-block' : ''}`}>
+              <li className='drop-menu-item'>Осушение</li>
+              <li className='drop-menu-item'>Уборка помещений</li>
+              <li className='drop-menu-item'>Демонтажные работы</li>
+              <li className='drop-menu-item'>ДДДД</li>
+            </ul>
+          </div>
           <Link to={AppRoute.Price} className="nav-list">
             Цены
           </Link>
-          <Link to={AppRoute.AboutUs} className="nav-list">
+          <a href='#contacts' className="nav-list">
             Контакты
-          </Link>
+          </a>
         </div>
         <div className="flex nav-contact">
           <button className="nav-button" onClick={handlerCloseForm}>Обрытный звонок</button>

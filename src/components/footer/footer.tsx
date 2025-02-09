@@ -3,7 +3,7 @@ import { AppRoute } from '../../const';
 
 export default function Footer(): JSX.Element {
   return (
-    <footer className="flex footer">
+    <footer className="flex footer" id='contacts'>
       <div className="footer-wrapper">
         <h3 className="footer-title">Услуги</h3>
         <div className="flex footer-link">

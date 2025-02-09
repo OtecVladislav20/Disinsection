@@ -908,6 +908,7 @@ table {
     font-family: "Inter";
     font-size: 24px;
     color: #2A5F4F;
+    width: 70%;
 }
 
 .need-sp {
@@ -1139,4 +1140,70 @@ table {
 }
 .tabs-item--active {
     display: block !important;
+}
+
+.green {
+    color: #86BF88;
+}
+
+.drop-menu {
+    position: relative;
+    cursor: pointer;
+}
+.drop-menu-list {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    width: 300px;
+    background-color: #EAF1FF;
+    border-radius: 16px;
+    border: 3px solid #2A5F4F;
+    padding: 10px;
+    top: 30px;
+    z-index: 300;
+}
+.drop-menu-list::before {
+    content: '';
+    position: absolute;
+    top: -14px;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: #EAF1FF;
+    border-left: 3px solid #2A5F4F;
+    border-top: 3px solid #2A5F4F;
+}
+.drop-menu-item {
+    font-family: "Inter";
+    font-size: 24px;
+    color: #2A5F4F;
+    margin-bottom: 10px;
+}
+.drop-menu-item:last-child {
+    margin-bottom: 0px;
+}
+.drop-menu-item:hover {
+    color: #86BF88;
+}
+.drop-menu-item:active {
+    color: #000;
+}
+.nav-list-drop {
+    min-width: 68px;
+    margin: 0px;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #2A5F4F;
+    transition: transform 0.15s ease;
+}
+.nav-list-drop:hover {
+    color: #86BF88;
+}
+.nav-list-drop:active {
+    color: #000;
+}
+.drop-menu img{
+    margin-right: 40px;
 }
