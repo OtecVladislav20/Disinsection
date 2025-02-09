@@ -76,105 +76,105 @@ export default function About({ handlerCloseForm, isActiveForm}): JSX.Element {
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus2.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus3.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus4.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus5.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus6.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus7.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus8.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus9.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus10.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus11.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus12.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus13.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus14.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus15.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../markup/img/aboutus1.png"
+                src="../markup/img/aboutus16.png"
                 alt=""
                 className="photo-a-img"
               />

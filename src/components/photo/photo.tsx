@@ -35,7 +35,7 @@ export default function Photo() {
 
         <div className="flex photo-info-wrapper">
           <div className={`tabs-item ${activeTab === '1' ? 'tabs-item--active' : ''}`} data-target="one">
-            <h3 className="photo-info-title">Осушение</h3>
+            <h3 className="photo-info-title">Уборка после пожара</h3>
             <p className="photo-p">
               Дезинфекция - важнейший процесс, обеспечивающий чистоту и
               безопасность окружающей среды. Она помогает уничтожать патогенные
