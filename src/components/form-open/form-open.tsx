@@ -9,9 +9,6 @@ export default function FormOpen({handlerCloseForm, isActiveForm}: TCloseForm): 
     formData.append('access_key', EMAILTOKEN);
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
       body: formData
     });
     const data = await response.json();
