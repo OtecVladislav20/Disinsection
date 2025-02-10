@@ -22,7 +22,7 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
             </h2>
             <div className="hero-mobile-sp">
               <img
-                src="../markup/img/hero-sp-mobile1.png"
+                src="../public/img/hero-sp-mobile1.png"
                 alt=""
                 className="hero-img-mobile"
               />
@@ -43,42 +43,42 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
             <div className="services-cards-sp">
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp1.png"
+                  src="../public/img/services-sp1.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp2.png"
+                  src="../public/img/services-sp2.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp3.png"
+                  src="../public/img/services-sp3.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp4.png"
+                  src="../public/img/services-sp4.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp5.png"
+                  src="../public/img/services-sp5.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp6.png"
+                  src="../public/img/services-sp6.png"
                   alt=""
                   className="services-img-sp"
                 />
@@ -88,7 +88,7 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
           <section className="achivments-sp conteiner">
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -98,7 +98,7 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -108,7 +108,7 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -118,7 +118,7 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -132,63 +132,63 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
             <div className="work-photo-wrapper-sp">
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp1o.png"
+                  src="../public/img/work-photo-sp1o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp2o.png"
+                  src="../public/img/work-photo-sp2o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp3o.png"
+                  src="../public/img/work-photo-sp3o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp4o.png"
+                  src="../public/img/work-photo-sp4o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp5o.png"
+                  src="../public/img/work-photo-sp5o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp6o.png"
+                  src="../public/img/work-photo-sp6o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp7o.png"
+                  src="../public/img/work-photo-sp7o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp8o.png"
+                  src="../public/img/work-photo-sp8o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp9o.png"
+                  src="../public/img/work-photo-sp9o.png"
                   alt=""
                   className="work-photo-img"
                 />

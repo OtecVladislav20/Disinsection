@@ -21,7 +21,7 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
             </h2>
             <div className="hero-mobile-sp">
               <img
-                src="../markup/img/hero-sp-mobile1.png"
+                src="../public/img/hero-sp-mobile1.png"
                 alt=""
                 className="hero-img-mobile"
               />
@@ -42,35 +42,35 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
             <div className="services-cards-sp">
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp1dd.png"
+                  src="../public/img/services-sp1dd.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp2dd.png"
+                  src="../public/img/services-sp2dd.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp3dd.png"
+                  src="../public/img/services-sp3dd.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp4dd.png"
+                  src="../public/img/services-sp4dd.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp5dd.png"
+                  src="../public/img/services-sp5dd.png"
                   alt=""
                   className="services-img-sp"
                 />
@@ -80,7 +80,7 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
           <section className="achivments-sp conteiner">
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -90,7 +90,7 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -100,7 +100,7 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -110,7 +110,7 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -124,42 +124,42 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
             <div className="work-photo-wrapper-sp">
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp1dd.png"
+                  src="../public/img/work-photo-sp1dd.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp2dd.png"
+                  src="../public/img/work-photo-sp2dd.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp3dd.png"
+                  src="../public/img/work-photo-sp3dd.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp4dd.png"
+                  src="../public/img/work-photo-sp4dd.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp5dd.png"
+                  src="../public/img/work-photo-sp5dd.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp6dd.png"
+                  src="../public/img/work-photo-sp6dd.png"
                   alt=""
                   className="work-photo-img"
                 />

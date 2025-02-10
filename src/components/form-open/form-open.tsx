@@ -62,7 +62,7 @@ export default function FormOpen({handlerCloseForm, isActiveForm}: TCloseForm): 
           Отправить
         </button>
         <button className='close-form' onClick={handlerCloseForm}>
-          <img src="../markup/img/close-btn.svg" alt="" className='close-btn-form'/>
+          <img src="../public/img/close-btn.svg" alt="" className='close-btn-form'/>
         </button>
       </form>
     </section>

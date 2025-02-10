@@ -21,7 +21,7 @@ export default function ServicePageC({ handlerCloseForm, isActiveForm }: TCloseF
             </h2>
             <div className="hero-mobile-sp">
               <img
-                src="../markup/img/hero-sp-mobile1.png"
+                src="../public/img/hero-sp-mobile1.png"
                 alt=""
                 className="hero-img-mobile"
               />
@@ -42,42 +42,42 @@ export default function ServicePageC({ handlerCloseForm, isActiveForm }: TCloseF
             <div className="services-cards-sp">
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp1c.png"
+                  src="../public/img/services-sp1c.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp2c.png"
+                  src="../public/img/services-sp2c.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp3c.png"
+                  src="../public/img/services-sp3c.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp4c.png"
+                  src="../public/img/services-sp4c.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp5c.png"
+                  src="../public/img/services-sp5c.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp6c.png"
+                  src="../public/img/services-sp6c.png"
                   alt=""
                   className="services-img-sp"
                 />
@@ -87,7 +87,7 @@ export default function ServicePageC({ handlerCloseForm, isActiveForm }: TCloseF
           <section className="achivments-sp conteiner">
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -97,7 +97,7 @@ export default function ServicePageC({ handlerCloseForm, isActiveForm }: TCloseF
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -107,7 +107,7 @@ export default function ServicePageC({ handlerCloseForm, isActiveForm }: TCloseF
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -117,7 +117,7 @@ export default function ServicePageC({ handlerCloseForm, isActiveForm }: TCloseF
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -127,7 +127,7 @@ export default function ServicePageC({ handlerCloseForm, isActiveForm }: TCloseF
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../markup/img/checkmark.svg"
+                src="../public/img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -141,42 +141,42 @@ export default function ServicePageC({ handlerCloseForm, isActiveForm }: TCloseF
             <div className="work-photo-wrapper-sp">
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp1c.png"
+                  src="../public/img/work-photo-sp1c.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp2c.png"
+                  src="../public/img/work-photo-sp2c.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp3c.png"
+                  src="../public/img/work-photo-sp3c.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp4c.png"
+                  src="../public/img/work-photo-sp4c.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp5c.png"
+                  src="../public/img/work-photo-sp5c.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp6c.png"
+                  src="../public/img/work-photo-sp6c.png"
                   alt=""
                   className="work-photo-img"
                 />
