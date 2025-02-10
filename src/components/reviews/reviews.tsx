@@ -1,8 +1,9 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import { THandleCloseForm } from '../../const';
 
 
-export default function Reviews({handlerCloseForm}) {
+export default function Reviews({handlerCloseForm}: THandleCloseForm) {
   return (
     <section className="reviews conteiner">
       <h2 className="reviews-title title-h2">Отзывы</h2>

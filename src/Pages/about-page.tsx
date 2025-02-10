@@ -5,9 +5,10 @@ import FormOpen from '../components/form-open/form-open';
 import Header from '../components/header/header';
 import OpenButton from '../components/open-button/open-button';
 import Reviews from '../components/reviews/reviews';
+import { TCloseForm } from '../const';
 
 
-export default function About({ handlerCloseForm, isActiveForm}): JSX.Element {
+export default function About({ handlerCloseForm, isActiveForm}: TCloseForm): JSX.Element {
   return (
     <>
       <Header handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />

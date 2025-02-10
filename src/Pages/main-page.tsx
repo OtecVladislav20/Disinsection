@@ -6,11 +6,10 @@ import FormOpen from '../components/form-open/form-open';
 import FormDef from '../components/form-def/form-def';
 import Adventages from '../components/adventages/adventages';
 import Photo from '../components/photo/photo';
-import { AppRoute } from '../const';
-import { Link } from 'react-router-dom';
+import { AppRoute, TCloseForm } from '../const';
 
 
-export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element {
+export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm): JSX.Element {
   return (
     <>
       <Header handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { EMAILTOKEN } from '../../const';
+import { EMAILTOKEN, TCloseForm } from '../../const';
 
-export default function FormOpen({handlerCloseForm, isActiveForm}): JSX.Element {
+
+export default function FormOpen({handlerCloseForm, isActiveForm}: TCloseForm): JSX.Element {
   const handlerSend = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);

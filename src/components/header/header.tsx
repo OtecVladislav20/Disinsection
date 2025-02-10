@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import { AppRoute } from '../../const';
+import { AppRoute, TCloseForm } from '../../const';
 import { useState } from 'react';
 import FormOpen from '../form-open/form-open';
 
-export default function Header({ handlerCloseForm, isActiveForm}): JSX.Element {
+export default function Header({ handlerCloseForm, isActiveForm}: TCloseForm): JSX.Element {
   const [isBurger, setBurger] = useState(false);
   const [isActiveDropMenu, setActiveDropMenu] = useState(false);
 
@@ -81,7 +81,7 @@ export default function Header({ handlerCloseForm, isActiveForm}): JSX.Element {
             <div className="flex nav-phone">
               <img src="../markup/img/phone.svg" alt="" />
               <a href="tel:+79068006808" className="nav-phone-text">
-                +7 906 800 68 08
+                +7 919 909 32 99
               </a>
             </div>
             <div className="flex nav-phone">
