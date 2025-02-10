@@ -1,15 +1,15 @@
 export enum AppRoute {
   Main = '/',
-  ServicesO = '/services/o',
-  ServicesC = '/services/c',
-  ServicesD = '/services/d',
+  ServicesO = '/services/dehumidification',
+  ServicesC = '/services/cleaning',
+  ServicesD = '/services/dismantling',
   ServicesDDDD = '/services/dddd',
   Price = '/price',
   AboutUs = '/aboutus',
   NotFoundScreen = '/*',
 }
 
-export const EMAILTOKEN = '2eb95cf6-e924-449b-9a58-a42e21cf63ef';
+export const EMAILTOKEN = '1d9fc916-ec09-4e39-9f45-7b0b78102371';
 
 export type TCloseForm = {
   handlerCloseForm: () => void;

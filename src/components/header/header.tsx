@@ -62,14 +62,14 @@ export default function Header({ handlerCloseForm, isActiveForm}: TCloseForm): J
         <div className="flex nav-contact">
           <button className="nav-button" onClick={handlerCloseForm}>Обрытный звонок</button>
           <div className="images-contacts">
-            <a href="">
+            <a href="https://t.me/artem2530">
               <img
                 src="../markup/img/Telegram.svg"
                 alt="Telegram"
                 className="image-contacts"
               />
             </a>
-            <a href="">
+            <a href="https://wa.me/+79199093299">
               <img
                 src="../markup/img/WhatsApp.svg"
                 alt="WhatsApp"
@@ -80,14 +80,14 @@ export default function Header({ handlerCloseForm, isActiveForm}: TCloseForm): J
           <div>
             <div className="flex nav-phone">
               <img src="../markup/img/phone.svg" alt="" />
-              <a href="tel:+79068006808" className="nav-phone-text">
+              <a href="tel:+79199093299" className="nav-phone-text">
                 +7 919 909 32 99
               </a>
             </div>
             <div className="flex nav-phone">
               <img src="../markup/img/mail.svg" alt="" />
-              <a href="mailto:maslakov20@mail.ru" className="nav-phone-text">
-                maslakov20@mail.ru
+              <a href="mailto:eckoprofklin@yandex.ru" className="nav-phone-text">
+                eckoprofklin@yandex.ru
               </a>
             </div>
           </div>

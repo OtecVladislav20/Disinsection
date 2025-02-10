@@ -40,24 +40,24 @@ export default function Footer(): JSX.Element {
         </div>
       </div>
       <div className="flex footer-link">
-        <a href="tel:+79068006808" className="footer-title footer-contacts">
+        <a href="tel:+79199093299" className="footer-title footer-contacts">
           +7 919 909 32 99
         </a>
-        <a href="mailto:maslakov20@mail.ru" className="footer-title footer-contacts">
-          maslakov20@mail.ru
+        <a href="mailto:eckoprofklin@yandex.ru" className="footer-title footer-contacts">
+          eckoprofklin@yandex.ru
         </a>
         <p className="footer-title footer-contacts">
-          ул.Мира 19 г.Екатеринбург
+          ул.Лукиных 5, г.Екатеринбург
         </p>
         <div className="images-contacts">
-          <a href="">
+          <a href="https://t.me/artem2530">
             <img
               src="../markup/img/Telegram.svg"
               alt="Telegram"
               className="image-contacts"
             />
           </a>
-          <a href="">
+          <a href="https://wa.me/+79199093299">
             <img
               src="../markup/img/WhatsApp.svg"
               alt="WhatsApp"
