@@ -6,6 +6,8 @@ import FormOpen from '../components/form-open/form-open';
 import FormDef from '../components/form-def/form-def';
 import Adventages from '../components/adventages/adventages';
 import Photo from '../components/photo/photo';
+import { AppRoute } from '../const';
+import { Link } from 'react-router-dom';
 
 
 export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element {
@@ -57,7 +59,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element
         <section className="services conteiner">
           <h2 className="services-title title-h2">Наши услуги</h2>
           <div className="services-cards">
-            <div className="services-card card1 flex">
+            <a href={AppRoute.ServicesO} className="services-card card1 flex">
               <img
                 src="../markup/img/photoServices1.png"
                 alt="photo"
@@ -80,8 +82,8 @@ export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element
                   <img src="../markup/img/row.svg" alt="row" className="row" />
                 </div>
               </div>
-            </div>
-            <div className="services-card card2 flex">
+            </a>
+            <a href={AppRoute.ServicesC} className="services-card card2 flex">
               <img
                 src="../markup/img/photoServices2.png"
                 alt="photo"
@@ -104,8 +106,8 @@ export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element
                   <img src="../markup/img/row.svg" alt="row" className="row" />
                 </div>
               </div>
-            </div>
-            <div className="services-card card3 flex">
+            </a>
+            <a href={AppRoute.ServicesD} className="services-card card3 flex">
               <img
                 src="../markup/img/photoServices3.png"
                 alt="photo"
@@ -115,8 +117,12 @@ export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element
                 <div className="services-card-text flex">
                   <h3 className="services-card-title">Демонтажные работы</h3>
                   <ul className="services-card-ul">
-                    <li className="services-card-li">Вывоз мебели</li>
-                    <li className="services-card-li">Демонтаж старого ремонта</li>
+                    <li className="services-card-li">Вывоз мусора</li>
+                    <li className="services-card-li">Комплексная уборка</li>
+                    <li className="services-card-li">Демонтаж пола</li>
+                    <li className="services-card-li">Демонтаж стен</li>
+                    <li className="services-card-li">Демонтаж потолка</li>
+                    <li className="services-card-li">Демонтаж мебели</li>
                   </ul>
                 </div>
                 <div className="flex services-price">
@@ -124,8 +130,8 @@ export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element
                   <img src="../markup/img/row.svg" alt="row" className="row" />
                 </div>
               </div>
-            </div>
-            <div className="services-card card4 flex">
+            </a>
+            <a href={AppRoute.ServicesDDDD} className="services-card card4 flex">
               <img
                 src="../markup/img/photoServices4.png"
                 alt="photo"
@@ -139,6 +145,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element
                     <li className="services-card-li">Дезинсекция</li>
                     <li className="services-card-li">Дезинфекция</li>
                     <li className="services-card-li">Дератизация</li>
+                    <li className="services-card-li">Гербицидная обработка</li>
                   </ul>
                 </div>
                 <div className="flex services-price">
@@ -146,7 +153,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}): JSX.Element
                   <img src="../markup/img/row.svg" alt="row" className="row" />
                 </div>
               </div>
-            </div>
+            </a>
             <FormService/>
           </div>
         </section>

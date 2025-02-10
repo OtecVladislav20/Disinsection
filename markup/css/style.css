@@ -1184,12 +1184,6 @@ table {
 .drop-menu-item:last-child {
     margin-bottom: 0px;
 }
-.drop-menu-item:hover {
-    color: #86BF88;
-}
-.drop-menu-item:active {
-    color: #000;
-}
 .nav-list-drop {
     min-width: 68px;
     margin: 0px;
@@ -1206,4 +1200,16 @@ table {
 }
 .drop-menu img{
     margin-right: 40px;
+}
+
+.drop-link {
+    font-family: "Inter";
+    font-size: 24px;
+    color: #2A5F4F;
+}
+.drop-link:hover {
+    color: #86BF88;
+}
+.drop-link:active {
+    color: #000;
 }

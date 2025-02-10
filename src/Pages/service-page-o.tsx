@@ -5,7 +5,7 @@ import Header from '../components/header/header';
 import OpenButton from '../components/open-button/open-button';
 
 
-export default function ServicePage({ handlerCloseForm, isActiveForm }): JSX.Element {
+export default function ServicePageO({ handlerCloseForm, isActiveForm }): JSX.Element {
   return (
     <>
       <Header handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
@@ -49,35 +49,35 @@ export default function ServicePage({ handlerCloseForm, isActiveForm }): JSX.Ele
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp1.png"
+                  src="../markup/img/services-sp2.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp1.png"
+                  src="../markup/img/services-sp3.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp1.png"
+                  src="../markup/img/services-sp4.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp1.png"
+                  src="../markup/img/services-sp5.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../markup/img/services-sp1.png"
+                  src="../markup/img/services-sp6.png"
                   alt=""
                   className="services-img-sp"
                 />
@@ -102,7 +102,7 @@ export default function ServicePage({ handlerCloseForm, isActiveForm }): JSX.Ele
                 className="checkmark"
               />
               <p className="achivments-text-sp">
-                Индивидуальный подход к каждому объекту
+                Использование профессионального оборудования и инструмента
               </p>
             </div>
             <div className="flex achivments-block-sp">
@@ -112,7 +112,7 @@ export default function ServicePage({ handlerCloseForm, isActiveForm }): JSX.Ele
                 className="checkmark"
               />
               <p className="achivments-text-sp">
-                Индивидуальный подход к каждому объекту
+                Возможность создания индивидуальных планов уборки под ваши нужды
               </p>
             </div>
             <div className="flex achivments-block-sp">
@@ -122,7 +122,7 @@ export default function ServicePage({ handlerCloseForm, isActiveForm }): JSX.Ele
                 className="checkmark"
               />
               <p className="achivments-text-sp">
-                Индивидуальный подход к каждому объекту
+                Гарантия безопасности для сотрудников и посетителей
               </p>
             </div>
           </section>
@@ -131,42 +131,63 @@ export default function ServicePage({ handlerCloseForm, isActiveForm }): JSX.Ele
             <div className="work-photo-wrapper-sp">
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp1.png"
+                  src="../markup/img/work-photo-sp1o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp1.png"
+                  src="../markup/img/work-photo-sp2o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp1.png"
+                  src="../markup/img/work-photo-sp3o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp1.png"
+                  src="../markup/img/work-photo-sp4o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp1.png"
+                  src="../markup/img/work-photo-sp5o.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../markup/img/work-photo-sp1.png"
+                  src="../markup/img/work-photo-sp6o.png"
+                  alt=""
+                  className="work-photo-img"
+                />
+              </div>
+              <div className="work-photo-sp">
+                <img
+                  src="../markup/img/work-photo-sp7o.png"
+                  alt=""
+                  className="work-photo-img"
+                />
+              </div>
+              <div className="work-photo-sp">
+                <img
+                  src="../markup/img/work-photo-sp8o.png"
+                  alt=""
+                  className="work-photo-img"
+                />
+              </div>
+              <div className="work-photo-sp">
+                <img
+                  src="../markup/img/work-photo-sp9o.png"
                   alt=""
                   className="work-photo-img"
                 />
@@ -185,37 +206,37 @@ export default function ServicePage({ handlerCloseForm, isActiveForm }): JSX.Ele
               профессионалов!
             </h3>
           </section>
-          <section className="price-sp conteiner">
-            <h2 className="services-title title-h2">Цены на осушение</h2>
-            <table cellPadding="15px" rules="rows" bgcolor="#fff">
+          <section className="price-p conteiner">
+            <h2 className="services-title title-h2">Цены на Осушение</h2>
+            <table cellPadding="12px" rules="rows" bgcolor="#fff">
               <tbody>
                 <tr>
                   <td className="table-title">Тип помещения</td>
                   <td className="table-title">Цена</td>
                 </tr>
                 <tr className="blue">
-                  <td className="table-p">1-комнатная квартира</td>
-                  <td className="table-p">от 1000 руб</td>
+                  <td className="table-p">Откачка воды</td>
+                  <td className="table-p">от 800 руб</td>
                 </tr>
                 <tr>
-                  <td className="table-p">1-комнатная квартира</td>
-                  <td className="table-p">от 1000 руб</td>
+                  <td className="table-p">Просушка дома после затопа</td>
+                  <td className="table-p">от 250 р/м2</td>
                 </tr>
                 <tr className="blue">
-                  <td className="table-p">1-комнатная квартира</td>
-                  <td className="table-p">от 1000 руб</td>
+                  <td className="table-p">Просушка пола</td>
+                  <td className="table-p">от 250 р/м2</td>
                 </tr>
                 <tr>
-                  <td className="table-p">1-комнатная квартира</td>
-                  <td className="table-p">от 1000 руб</td>
+                  <td className="table-p">Просушка потолка</td>
+                  <td className="table-p">от 250 р/м2</td>
                 </tr>
                 <tr className="blue">
-                  <td className="table-p">1-комнатная квартира</td>
-                  <td className="table-p">от 1000 руб</td>
+                  <td className="table-p">Просушка стен</td>
+                  <td className="table-p">от 250 р/м2</td>
                 </tr>
                 <tr>
-                  <td className="table-p">1-комнатная квартира</td>
-                  <td className="table-p">от 1000 руб</td>
+                  <td className="table-p">Просушка строительной площадки</td>
+                  <td className="table-p">от 400 р/м2</td>
                 </tr>
               </tbody>
             </table>
@@ -224,9 +245,8 @@ export default function ServicePage({ handlerCloseForm, isActiveForm }): JSX.Ele
             <h2 className="services-title title-h2">Что от вас требуется?</h2>
             <ul>
               <li className="need-cerd-sp">Изолируйте домашних питомцев</li>
-              <li className="need-cerd-sp">Изолируйте домашних питомцев</li>
-              <li className="need-cerd-sp">Изолируйте домашних питомцев</li>
-              <li className="need-cerd-sp">Изолируйте домашних питомцев</li>
+              <li className="need-cerd-sp">Отодвиньте мебель от стен</li>
+              <li className="need-cerd-sp">Предоставьте доступ к электрипитанию</li>
             </ul>
           </section>
         </div>

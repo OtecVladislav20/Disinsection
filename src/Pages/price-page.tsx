@@ -126,29 +126,25 @@ export default function PricePage({ handlerCloseForm, isActiveForm }): JSX.Eleme
                   <td className="table-title">Тип помещения</td>
                   <td className="table-title">Цена</td>
                 </tr>
-                <tr className="blue">
-                  <td className="table-p">1-комнатная квартира</td>
+                <tr>
+                  <td className="table-p">Дезодорация</td>
                   <td className="table-p">от 1500 руб</td>
                 </tr>
+                <tr className="blue">
+                  <td className="table-p">Дезинфекция</td>
+                  <td className="table-p">от 1200 руб</td>
+                </tr>
                 <tr>
-                  <td className="table-p">2-комнатная квартира</td>
-                  <td className="table-p">от 2000 руб</td>
+                  <td className="table-p">Дезинсекция</td>
+                  <td className="table-p">от 1200 руб</td>
                 </tr>
                 <tr className="blue">
-                  <td className="table-p">3-комнатная квартира</td>
-                  <td className="table-p">от 2500 руб</td>
-                </tr>
-                <tr>
-                  <td className="table-p">4-комнатная квартира</td>
+                  <td className="table-p">Дератизация</td>
                   <td className="table-p">от 3000 руб</td>
                 </tr>
-                <tr className="blue">
-                  <td className="table-p">Транспорт</td>
-                  <td className="table-p">от 1500 руб</td>
-                </tr>
                 <tr>
-                  <td className="table-p">Юридические лица</td>
-                  <td className="table-p">Индивидуально</td>
+                  <td className="table-p">Гербицидная обработка</td>
+                  <td className="table-p">от 2000 руб</td>
                 </tr>
               </tbody>
             </table>

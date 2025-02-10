@@ -7,16 +7,16 @@ export default function Footer(): JSX.Element {
       <div className="footer-wrapper">
         <h3 className="footer-title">Услуги</h3>
         <div className="flex footer-link">
-          <Link to={AppRoute.Services} className="footer-text">
+          <Link to={AppRoute.ServicesO} className="footer-text">
             Осушение
           </Link>
-          <Link to={AppRoute.Services} className="footer-text">
+          <Link to={AppRoute.ServicesC} className="footer-text">
             Уборка помещений
           </Link>
-          <Link to={AppRoute.Services} className="footer-text">
+          <Link to={AppRoute.ServicesD} className="footer-text">
             Демонтажные работы
           </Link>
-          <Link to={AppRoute.Services} className="footer-text">
+          <Link to={AppRoute.ServicesDDDD} className="footer-text">
             ДДДД
           </Link>
         </div>

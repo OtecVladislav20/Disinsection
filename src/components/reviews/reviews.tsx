@@ -31,8 +31,8 @@ export default function Reviews({handlerCloseForm}) {
           <div className="review">
             <div className="flex review-title-wrapper">
               <div>
-                <p className="review-name">Владислав</p>
-                <p className="review-service">Клининг помещения</p>
+                <p className="review-name">Николай</p>
+                <p className="review-service">Осушение после затопа</p>
               </div>
               <div>
                 <img
@@ -63,9 +63,87 @@ export default function Reviews({handlerCloseForm}) {
               </div>
             </div>
             <p className="review-text">
-              Очень довольна клининговой компании ЭкоПрофКлин. Женщина
-              справилась с уборкой быстро и качественно. Настоящий мастер
-              своего дела.
+              Компания приехала оперативно, несмотря на позднее время суток.
+              Специалисты сразу провели замеры влажности стен и пола, определили степень повреждений и предложили план действий.
+              Было приятно, что они сразу назвали точную стоимость работ и сроки их выполнения.
+            </p>
+          </div>
+        </SplideSlide>
+        <SplideSlide>
+          <div className="review">
+            <div className="flex review-title-wrapper">
+              <div>
+                <p className="review-name">Ольга</p>
+                <p className="review-service">Уничтожение тараканов</p>
+              </div>
+              <div>
+                <img
+                  src="../markup/img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+                <img
+                  src="../markup/img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+                <img
+                  src="../markup/img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+                <img
+                  src="../markup/img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+              </div>
+            </div>
+            <p className="review-text">
+              Процесс обработки занял около часа, запах был не сильным и быстро выветрился.
+              Результат порадовал. Уже через несколько часов тараканы исчезли.
+              Особенно порадовала профессиональность специалиста и то, что он дал четкие рекомендации по предотвращению повторного появления вредителей.
+            </p>
+          </div>
+        </SplideSlide>
+        <SplideSlide>
+          <div className="review">
+            <div className="flex review-title-wrapper">
+              <div>
+                <p className="review-name">Анастасия</p>
+                <p className="review-service">Уничтожение клопов</p>
+              </div>
+              <div>
+                <img
+                  src="../markup/img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+                <img
+                  src="../markup/img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+                <img
+                  src="../markup/img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+                <img
+                  src="../markup/img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+                <img
+                  src="../markup/img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+              </div>
+            </div>
+            <p className="review-text">
+              Компания приехала в тот же день, специалист провел тщательную диагностику и обработку всех помещений.
+              Работа выполнена качественно, запах после обработки был минимальным. Через две недели никаких признаков клопов не наблюдается.
             </p>
           </div>
         </SplideSlide>
@@ -74,7 +152,7 @@ export default function Reviews({handlerCloseForm}) {
             <div className="flex review-title-wrapper">
               <div>
                 <p className="review-name">Владислав</p>
-                <p className="review-service">Клининг помещения</p>
+                <p className="review-service">Дезодорация помещения</p>
               </div>
               <div>
                 <img
@@ -105,93 +183,10 @@ export default function Reviews({handlerCloseForm}) {
               </div>
             </div>
             <p className="review-text">
-              Очень довольна клининговой компании ЭкоПрофКлин. Женщина
-              справилась с уборкой быстро и качественно. Настоящий мастер
-              своего дела.
-            </p>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className="review">
-            <div className="flex review-title-wrapper">
-              <div>
-                <p className="review-name">Владислав</p>
-                <p className="review-service">Клининг помещения</p>
-              </div>
-              <div>
-                <img
-                  src="../markup/img/Star.svg"
-                  alt=""
-                  className="star"
-                />
-                <img
-                  src="../markup/img/Star.svg"
-                  alt=""
-                  className="star"
-                />
-                <img
-                  src="../markup/img/Star.svg"
-                  alt=""
-                  className="star"
-                />
-                <img
-                  src="../markup/img/Star.svg"
-                  alt=""
-                  className="star"
-                />
-                <img
-                  src="../markup/img/Star.svg"
-                  alt=""
-                  className="star"
-                />
-              </div>
-            </div>
-            <p className="review-text">
-              Очень довольна клининговой компании ЭкоПрофКлин. Женщина
-              справилась с уборкой быстро и качественно. Настоящий мастер
-              своего дела.
-            </p>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className="review">
-            <div className="flex review-title-wrapper">
-              <div>
-                <p className="review-name">Владислав</p>
-                <p className="review-service">Клининг помещения</p>
-              </div>
-              <div>
-                <img
-                  src="../markup/img/Star.svg"
-                  alt=""
-                  className="star"
-                />
-                <img
-                  src="../markup/img/Star.svg"
-                  alt=""
-                  className="star"
-                />
-                <img
-                  src="../markup/img/Star.svg"
-                  alt=""
-                  className="star"
-                />
-                <img
-                  src="../markup/img/Star.svg"
-                  alt=""
-                  className="star"
-                />
-                <img
-                  src="../markup/img/Star.svg"
-                  alt=""
-                  className="star"
-                />
-              </div>
-            </div>
-            <p className="review-text">
-              Очень довольна клининговой компании ЭкоПрофКлин. Женщина
-              справилась с уборкой быстро и качественно. Настоящий мастер
-              своего дела.
+              Пререхал в квартиру после курильщика. Абсолютно все пропахло дымом сигарет.
+              Вначале пытался избавиться от запаха сам, но должного результата не добился.
+              Решил обратиться в ЭкоПрофКлин. Мастер прибыл на следующий день и за 2 часа выполнил всю работу.
+              От запаха удалось полностью избавиться!
             </p>
           </div>
         </SplideSlide>

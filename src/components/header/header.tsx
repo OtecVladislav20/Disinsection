@@ -30,10 +30,26 @@ export default function Header({ handlerCloseForm, isActiveForm}): JSX.Element {
             <p className='nav-list-drop' onClick={handlerDropMenu}>Услуги</p>
             <img src="../markup/img/arrow-header.svg" alt="" />
             <ul className={`drop-menu-list ${isActiveDropMenu ? 'display-block' : ''}`}>
-              <li className='drop-menu-item'>Осушение</li>
-              <li className='drop-menu-item'>Уборка помещений</li>
-              <li className='drop-menu-item'>Демонтажные работы</li>
-              <li className='drop-menu-item'>ДДДД</li>
+              <li className='drop-menu-item'>
+                <Link to={AppRoute.ServicesO} className='drop-link'>
+                  Осушение
+                </Link>
+              </li>
+              <li className='drop-menu-item'>
+                <Link to={AppRoute.ServicesC} className='drop-link'>
+                  Уборка помещений
+                </Link>
+              </li>
+              <li className='drop-menu-item'>
+                <Link to={AppRoute.ServicesD} className='drop-link'>
+                  Демонтажные работы
+                </Link>
+              </li>
+              <li className='drop-menu-item'>
+                <Link to={AppRoute.ServicesDDDD} className='drop-link'>
+                  ДДДД
+                </Link>
+              </li>
             </ul>
           </div>
           <Link to={AppRoute.Price} className="nav-list">

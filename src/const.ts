@@ -1,6 +1,9 @@
 export enum AppRoute {
   Main = '/',
-  Services = '/services',
+  ServicesO = '/services/o',
+  ServicesC = '/services/c',
+  ServicesD = '/services/d',
+  ServicesDDDD = '/services/dddd',
   Price = '/price',
   AboutUs = '/aboutus',
   NotFoundScreen = '/*',
