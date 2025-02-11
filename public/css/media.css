@@ -321,8 +321,9 @@
         font-size: 12px;
     }
     .price {
-        font-size: 16px;
+        font-size: 14px;
         min-width: 80px;
+        margin-right: 10px;
     }
     .services-image {
         height: 200px;

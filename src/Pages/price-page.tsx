@@ -50,7 +50,7 @@ export default function PricePage({ handlerCloseForm, isActiveForm }: TCloseForm
             </table>
           </section>
           <section className="price-p conteiner">
-            <h2 className="services-title title-h2">Цены на Уборку помешений</h2>
+            <h2 className="services-title title-h2">Цены на Уборку помещений</h2>
             <table cellPadding="15px" rules="rows" bgcolor="#fff">
               <tbody>
                 <tr>

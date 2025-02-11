@@ -195,7 +195,7 @@ export default function ServicePageC({ handlerCloseForm, isActiveForm }: TCloseF
             </h3>
           </section>
           <section className="price-p conteiner">
-            <h2 className="services-title title-h2">Цены на Уборку помешений</h2>
+            <h2 className="services-title title-h2">Цены на Уборку помещений</h2>
             <table cellPadding="15px" rules="rows" bgcolor="#fff">
               <tbody>
                 <tr>
