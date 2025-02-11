@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/app/app';
 import { BrowserRouter as Router, } from 'react-router-dom';
+import './fonts/inter_medium.ttf';
+import './fonts/ofont.ru_Rubik.ttf';
 
 
 const root = ReactDOM.createRoot(

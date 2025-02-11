@@ -38,25 +38,25 @@ export default function About({ handlerCloseForm, isActiveForm}: TCloseForm): JS
             <h2 className="services-title title-h2">Реквизиты</h2>
             <ul className="requisites-list">
               <li className="requisites-item">
-                Расчетный счет: 40802810620000072838
+                ИП Томашова Людмила Павловна
               </li>
               <li className="requisites-item">
-                Расчетный счет: 40802810620000072838
+                Юридический адрес: ул.Лукиных 5, г.Екатеринбург
               </li>
               <li className="requisites-item">
-                Расчетный счет: 40802810620000072838
+                ИНН 667353183814
               </li>
               <li className="requisites-item">
-                Расчетный счет: 40802810620000072838
+                ОГРНИП 323665800047950
               </li>
               <li className="requisites-item">
-                Расчетный счет: 40802810620000072838
+                ул.Лукиных 5
               </li>
               <li className="requisites-item">
-                Расчетный счет: 40802810620000072838
+                +7 919 909 32 99
               </li>
               <li className="requisites-item">
-                Расчетный счет: 40802810620000072838
+                eckoprofklin@yandex.ru
               </li>
             </ul>
           </div>
