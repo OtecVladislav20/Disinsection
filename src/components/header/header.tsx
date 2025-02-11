@@ -19,7 +19,7 @@ export default function Header({ handlerCloseForm, isActiveForm}: TCloseForm): J
     <header className="navigation flex">
       <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
       <Link to={AppRoute.Main} className="logo-header">
-        <img src="../public/img/Logo.svg" alt="Logo" className="Logo" />
+        <img src="../img/Logo.svg" alt="Logo" className="Logo" />
       </Link>
       <nav className={`nav-bar ${isBurger ? 'flex' : ''}`}>
         <div className="nav-links flex">
@@ -28,7 +28,7 @@ export default function Header({ handlerCloseForm, isActiveForm}: TCloseForm): J
           </Link>
           <div className="drop-menu flex">
             <p className='nav-list-drop' onClick={handlerDropMenu}>Услуги</p>
-            <img src="../public/img/arrow-header.svg" alt="" />
+            <img src="../img/arrow-header.svg" alt="" />
             <ul className={`drop-menu-list ${isActiveDropMenu ? 'display-block' : ''}`}>
               <li className='drop-menu-item'>
                 <Link to={AppRoute.ServicesO} className='drop-link'>
@@ -64,14 +64,14 @@ export default function Header({ handlerCloseForm, isActiveForm}: TCloseForm): J
           <div className="images-contacts">
             <a href="https://t.me/artem2530">
               <img
-                src="../public/img/Telegram.svg"
+                src="../img/Telegram.svg"
                 alt="Telegram"
                 className="image-contacts"
               />
             </a>
             <a href="https://wa.me/+79199093299">
               <img
-                src="../public/img/WhatsApp.svg"
+                src="../img/WhatsApp.svg"
                 alt="WhatsApp"
                 className="image-contacts"
               />
@@ -79,13 +79,13 @@ export default function Header({ handlerCloseForm, isActiveForm}: TCloseForm): J
           </div>
           <div>
             <div className="flex nav-phone">
-              <img src="../public/img/phone.svg" alt="" />
+              <img src="../img/phone.svg" alt="" />
               <a href="tel:+79199093299" className="nav-phone-text">
                 +7 919 909 32 99
               </a>
             </div>
             <div className="flex nav-phone">
-              <img src="../public/img/mail.svg" alt="" />
+              <img src="../img/mail.svg" alt="" />
               <a href="mailto:eckoprofklin@yandex.ru" className="nav-phone-text">
                 eckoprofklin@yandex.ru
               </a>

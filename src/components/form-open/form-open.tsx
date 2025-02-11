@@ -45,12 +45,14 @@ export default function FormOpen({handlerCloseForm, isActiveForm}: TCloseForm): 
           name="name"
           placeholder="Как вас зовут?"
           className="form-input-def"
+          required
         />
         <input
           type="phone"
           name="phone"
           placeholder="Контактный номер"
           className="form-input-def"
+          required
         />
         <textarea
           name="message"
@@ -62,7 +64,7 @@ export default function FormOpen({handlerCloseForm, isActiveForm}: TCloseForm): 
           Отправить
         </button>
         <button className='close-form' onClick={handlerCloseForm}>
-          <img src="../public/img/close-btn.svg" alt="" className='close-btn-form'/>
+          <img src="../img/close-btn.svg" alt="" className='close-btn-form'/>
         </button>
       </form>
     </section>

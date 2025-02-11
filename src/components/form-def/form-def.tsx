@@ -44,12 +44,14 @@ export default function FormDef(): JSX.Element {
           name="name"
           placeholder="Как вас зовут?"
           className="form-input-def"
+          required
         />
         <input
           type="phone"
           name="phone"
           placeholder="Контактный номер"
           className="form-input-def"
+          required
         />
         <textarea
           name="message"

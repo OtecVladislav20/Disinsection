@@ -37,6 +37,21 @@
         background-repeat: no-repeat;
         background-position: 90% 0%;
     }
+    .hero-info-sp-c {
+        background-image: url('../img/Service-hero-c.png');
+        background-repeat: no-repeat;
+        background-position: 90% 0%;
+    }
+    .hero-info-sp-d {
+        background-image: url('../img/Service-hero-d.png');
+        background-repeat: no-repeat;
+        background-position: 90% 0%;
+    }
+    .hero-info-sp-dd {
+        background-image: url('../img/Service-hero-dd.png');
+        background-repeat: no-repeat;
+        background-position: 90% 0%;
+    }
 
     .price-container {
         padding-right: 0;
@@ -462,6 +477,18 @@
     }
 
     .hero-info-sp {
+        padding-bottom: 100px;
+        background-image: none;
+    }
+    .hero-info-sp-c {
+        padding-bottom: 100px;
+        background-image: none;
+    }
+    .hero-info-sp-d {
+        padding-bottom: 100px;
+        background-image: none;
+    }
+    .hero-info-sp-dd {
         padding-bottom: 100px;
         background-image: none;
     }

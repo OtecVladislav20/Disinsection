@@ -14,15 +14,15 @@ export default function ServicePageD({ handlerCloseForm, isActiveForm }: TCloseF
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <div className="main-left">
           <OpenButton handlerCloseForm={handlerCloseForm}/>
-          <section className="hero-info-sp conteiner">
-            <h1 className="hero-h1-sp close-mobile">Демонтажные работы</h1>
+          <section className="hero-info-sp-d conteiner">
+            <h1 className="hero-h1-sp close-mobile">Демонтаж</h1>
             <h2 className="hero-h2-sp close-mobile">
               Процесс разборки или удаления конструкций, зданий или их частей.
               Что необходимо при реконструкции, ремонте или сносе зданий.
             </h2>
             <div className="hero-mobile-sp">
               <img
-                src="../public/img/hero-sp-mobile1.png"
+                src="../img/hero-sp-mobile1d.png"
                 alt=""
                 className="hero-img-mobile"
               />
@@ -43,42 +43,42 @@ export default function ServicePageD({ handlerCloseForm, isActiveForm }: TCloseF
             <div className="services-cards-sp">
               <div className="services-card-sp">
                 <img
-                  src="../public/img/services-sp1d.png"
+                  src="../img/services-sp1d.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../public/img/services-sp2d.png"
+                  src="../img/services-sp2d.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../public/img/services-sp3d.png"
+                  src="../img/services-sp3d.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../public/img/services-sp4d.png"
+                  src="../img/services-sp4d.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../public/img/services-sp5d.png"
+                  src="../img/services-sp5d.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../public/img/services-sp6d.png"
+                  src="../img/services-sp6d.png"
                   alt=""
                   className="services-img-sp"
                 />
@@ -88,7 +88,7 @@ export default function ServicePageD({ handlerCloseForm, isActiveForm }: TCloseF
           <section className="achivments-sp conteiner">
             <div className="flex achivments-block-sp">
               <img
-                src="../public/img/checkmark.svg"
+                src="../img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -98,7 +98,7 @@ export default function ServicePageD({ handlerCloseForm, isActiveForm }: TCloseF
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../public/img/checkmark.svg"
+                src="../img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -108,7 +108,7 @@ export default function ServicePageD({ handlerCloseForm, isActiveForm }: TCloseF
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../public/img/checkmark.svg"
+                src="../img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -118,7 +118,7 @@ export default function ServicePageD({ handlerCloseForm, isActiveForm }: TCloseF
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../public/img/checkmark.svg"
+                src="../img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -128,7 +128,7 @@ export default function ServicePageD({ handlerCloseForm, isActiveForm }: TCloseF
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../public/img/checkmark.svg"
+                src="../img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -137,53 +137,6 @@ export default function ServicePageD({ handlerCloseForm, isActiveForm }: TCloseF
               </p>
             </div>
           </section>
-          {/* <section className="work-sp conteiner">
-            <h2 className="services-title title-h2">Наша команда за работой</h2>
-            <div className="work-photo-wrapper-sp">
-              <div className="work-photo-sp">
-                <img
-                  src="../public/img/work-photo-sp1.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../public/img/work-photo-sp1.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../public/img/work-photo-sp1.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../public/img/work-photo-sp1.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../public/img/work-photo-sp1.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../public/img/work-photo-sp1.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-            </div>
-          </section> */}
           <section className="info-sp conteiner">
             <p className="info-p-sp">
               Нашими специалистами проводится тщательная оценка объекта, определение сложностей и разработка персонализированной программы демонтажа.

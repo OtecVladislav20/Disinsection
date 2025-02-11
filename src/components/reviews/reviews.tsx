@@ -37,27 +37,27 @@ export default function Reviews({handlerCloseForm}: THandleCloseForm) {
               </div>
               <div>
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
@@ -79,22 +79,22 @@ export default function Reviews({handlerCloseForm}: THandleCloseForm) {
               </div>
               <div>
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
@@ -116,27 +116,27 @@ export default function Reviews({handlerCloseForm}: THandleCloseForm) {
               </div>
               <div>
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
@@ -157,27 +157,27 @@ export default function Reviews({handlerCloseForm}: THandleCloseForm) {
               </div>
               <div>
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />
                 <img
-                  src="../public/img/Star.svg"
+                  src="../img/Star.svg"
                   alt=""
                   className="star"
                 />

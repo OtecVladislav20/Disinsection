@@ -14,14 +14,14 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <div className="main-left">
           <OpenButton handlerCloseForm={handlerCloseForm}/>
-          <section className="hero-info-sp conteiner">
+          <section className="hero-info-sp-dd conteiner">
             <h1 className="hero-h1-sp close-mobile">ДДДД</h1>
             <h2 className="hero-h2-sp close-mobile">
               Процесс уничтожение вредителей, неприятного запаха и патогенных микроорганизмов.
             </h2>
             <div className="hero-mobile-sp">
               <img
-                src="../public/img/hero-sp-mobile1.png"
+                src="../img/hero-sp-mobile1dd.png"
                 alt=""
                 className="hero-img-mobile"
               />
@@ -42,35 +42,35 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
             <div className="services-cards-sp">
               <div className="services-card-sp">
                 <img
-                  src="../public/img/services-sp1dd.png"
+                  src="../img/services-sp1dd.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../public/img/services-sp2dd.png"
+                  src="../img/services-sp2dd.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../public/img/services-sp3dd.png"
+                  src="../img/services-sp3dd.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../public/img/services-sp4dd.png"
+                  src="../img/services-sp4dd.png"
                   alt=""
                   className="services-img-sp"
                 />
               </div>
               <div className="services-card-sp">
                 <img
-                  src="../public/img/services-sp5dd.png"
+                  src="../img/services-sp5dd.png"
                   alt=""
                   className="services-img-sp"
                 />
@@ -80,7 +80,7 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
           <section className="achivments-sp conteiner">
             <div className="flex achivments-block-sp">
               <img
-                src="../public/img/checkmark.svg"
+                src="../img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -90,7 +90,7 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../public/img/checkmark.svg"
+                src="../img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -100,7 +100,7 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../public/img/checkmark.svg"
+                src="../img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -110,7 +110,7 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
             </div>
             <div className="flex achivments-block-sp">
               <img
-                src="../public/img/checkmark.svg"
+                src="../img/checkmark.svg"
                 alt=""
                 className="checkmark"
               />
@@ -124,42 +124,42 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
             <div className="work-photo-wrapper-sp">
               <div className="work-photo-sp">
                 <img
-                  src="../public/img/work-photo-sp1dd.png"
+                  src="../img/work-photo-sp1dd.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../public/img/work-photo-sp2dd.png"
+                  src="../img/work-photo-sp2dd.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../public/img/work-photo-sp3dd.png"
+                  src="../img/work-photo-sp3dd.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../public/img/work-photo-sp4dd.png"
+                  src="../img/work-photo-sp4dd.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../public/img/work-photo-sp5dd.png"
+                  src="../img/work-photo-sp5dd.png"
                   alt=""
                   className="work-photo-img"
                 />
               </div>
               <div className="work-photo-sp">
                 <img
-                  src="../public/img/work-photo-sp6dd.png"
+                  src="../img/work-photo-sp6dd.png"
                   alt=""
                   className="work-photo-img"
                 />

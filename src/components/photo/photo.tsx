@@ -13,21 +13,21 @@ export default function Photo() {
       <div className="flex photo-info">
         <div className={`tabs-item ${activeTab === '1' ? 'tabs-item--active' : ''}`} data-target="one">
           <img
-            src="../public/img/photo-image1.png"
+            src="../img/photo-image1.png"
             alt="photo"
             className="pfoto"
           />
         </div>
         <div className={`tabs-item ${activeTab === '2' ? 'tabs-item--active' : ''}`} data-target="two">
           <img
-            src="../public/img/photo-image2.png"
+            src="../img/photo-image2.png"
             alt="photo"
             className="pfoto"
           />
         </div>
         <div className={`tabs-item ${activeTab === '3' ? 'tabs-item--active' : ''}`} data-target="three">
           <img
-            src="../public/img/photo-image3.png"
+            src="../img/photo-image3.png"
             alt="photo"
             className="pfoto"
           />
@@ -61,21 +61,21 @@ export default function Photo() {
           <div className="flex pfoto-wrapper">
             <button className={`pfoto-btn btn__work ${activeTab === '1' ? 'btn__work--active' : ''}`} data-path="one" onClick={() => handlerTabs('1')}>
               <img
-                src="../public/img/photo-image-button1.png"
+                src="../img/photo-image-button1.png"
                 alt="button"
                 className="pfoto-img"
               />
             </button>
             <button className={`pfoto-btn btn__work ${activeTab === '2' ? 'btn__work--active' : ''}`} data-path="two" onClick={() => handlerTabs('2')}>
               <img
-                src="../public/img/photo-image-button2.png"
+                src="../img/photo-image-button2.png"
                 alt="button"
                 className="pfoto-img"
               />
             </button>
             <button className={`pfoto-btn btn__work ${activeTab === '3' ? 'btn__work--active' : ''}`} data-path="three" onClick={() => handlerTabs('3')}>
               <img
-                src="../public/img/photo-image-button3.png"
+                src="../img/photo-image-button3.png"
                 alt="button"
                 className="pfoto-img"
               />

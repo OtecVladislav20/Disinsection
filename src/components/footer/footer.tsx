@@ -52,14 +52,14 @@ export default function Footer(): JSX.Element {
         <div className="images-contacts">
           <a href="https://t.me/artem2530">
             <img
-              src="../public/img/Telegram.svg"
+              src="../img/Telegram.svg"
               alt="Telegram"
               className="image-contacts"
             />
           </a>
           <a href="https://wa.me/+79199093299">
             <img
-              src="../public/img/WhatsApp.svg"
+              src="../img/WhatsApp.svg"
               alt="WhatsApp"
               className="image-contacts"
             />

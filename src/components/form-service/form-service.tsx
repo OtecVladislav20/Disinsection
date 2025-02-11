@@ -61,7 +61,6 @@ export default function FormService(): JSX.Element {
             placeholder="Ваше сообщение"
             className="form-textarea input3"
             defaultValue=""
-            required
           />
           <button type="submit" className="form-btn input-btn">
             Отправить

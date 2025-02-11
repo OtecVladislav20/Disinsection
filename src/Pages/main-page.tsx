@@ -18,7 +18,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
         <section className="hero conteiner">
           <div className="flex hero-location">
             <img
-              src="../public/img/location.svg"
+              src="../img/location.svg"
               alt=""
               className="hero-location-image"
             />
@@ -60,7 +60,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
           <div className="services-cards">
             <a href={AppRoute.ServicesO} className="services-card card1 flex">
               <img
-                src="../public/img/photoServices1.png"
+                src="../img/photoServices1.png"
                 alt="photo"
                 className="services-image"
               />
@@ -78,13 +78,13 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
                 </div>
                 <div className="flex services-price">
                   <p className="price">от 1000 р</p>
-                  <img src="../public/img/row.svg" alt="row" className="row" />
+                  <img src="../img/row.svg" alt="row" className="row" />
                 </div>
               </div>
             </a>
             <a href={AppRoute.ServicesC} className="services-card card2 flex">
               <img
-                src="../public/img/photoServices2.png"
+                src="../img/photoServices2.png"
                 alt="photo"
                 className="services-image"
               />
@@ -102,13 +102,13 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
                 </div>
                 <div className="flex services-price">
                   <p className="price">от 1000 р</p>
-                  <img src="../public/img/row.svg" alt="row" className="row" />
+                  <img src="../img/row.svg" alt="row" className="row" />
                 </div>
               </div>
             </a>
             <a href={AppRoute.ServicesD} className="services-card card3 flex">
               <img
-                src="../public/img/photoServices3.png"
+                src="../img/photoServices3.png"
                 alt="photo"
                 className="services-image"
               />
@@ -126,13 +126,13 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
                 </div>
                 <div className="flex services-price">
                   <p className="price">от 1000 р</p>
-                  <img src="../public/img/row.svg" alt="row" className="row" />
+                  <img src="../img/row.svg" alt="row" className="row" />
                 </div>
               </div>
             </a>
             <a href={AppRoute.ServicesDDDD} className="services-card card4 flex">
               <img
-                src="../public/img/photoServices4.png"
+                src="../img/photoServices4.png"
                 alt="photo"
                 className="services-image"
               />
@@ -149,7 +149,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
                 </div>
                 <div className="flex services-price">
                   <p className="price">от 1000 р</p>
-                  <img src="../public/img/row.svg" alt="row" className="row" />
+                  <img src="../img/row.svg" alt="row" className="row" />
                 </div>
               </div>
             </a>
@@ -162,19 +162,19 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
             <h2 className="work-title title-h2">Как мы работаем</h2>
             <div className="work-wrapper">
               <div className="flex work-item">
-                <img src="../public/img/1.svg" alt="" className="work-img" />
+                <img src="../img/1.svg" alt="" className="work-img" />
                 <p className="work-text">Оформление заявки</p>
               </div>
               <div className="flex work-item">
-                <img src="../public/img/2.svg" alt="" className="work-img" />
+                <img src="../img/2.svg" alt="" className="work-img" />
                 <p className="work-text">Оценка помещения</p>
               </div>
               <div className="flex work-item">
-                <img src="../public/img/3.svg" alt="" className="work-img" />
+                <img src="../img/3.svg" alt="" className="work-img" />
                 <p className="work-text">Проведение работы</p>
               </div>
               <div className="flex work-item">
-                <img src="../public/img/4.svg" alt="" className="work-img" />
+                <img src="../img/4.svg" alt="" className="work-img" />
                 <p className="work-text">Оплата результата</p>
               </div>
             </div>

@@ -113,7 +113,7 @@ button {
 }
 
 .images-contacts {
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 .open-form {
@@ -184,6 +184,7 @@ button {
     width: 56px;
     margin-right: 20px;
 }
+
 
 .nav-phone {
     align-items: center;
@@ -763,6 +764,24 @@ button {
     background-position: 90% 0%;
     padding: 50px 0px 300px 162px;
 }
+.hero-info-sp-c {
+    background-image: url('../img/Service-hero-c.png');
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+    padding: 50px 0px 300px 162px;
+}
+.hero-info-sp-d {
+    background-image: url('../img/Service-hero-d.png');
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+    padding: 50px 0px 300px 162px;
+}
+.hero-info-sp-dd {
+    background-image: url('../img/Service-hero-dd.png');
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+    padding: 50px 0px 300px 162px;
+}
 
 .hero-h1-sp {
     font-size: 48px;
@@ -1045,8 +1064,8 @@ table {
     display: none;
     position: fixed;
     z-index: 100;
-    bottom: 50px;
-    right: 50px;
+    bottom: 30px;
+    right: 30px;
     transition: transform 0.15s ease;
 }
 .open-button:hover {
@@ -1156,7 +1175,7 @@ table {
     list-style: none;
     padding: 0;
     width: 300px;
-    background-color: #EAF1FF;
+    background-color: #fff;
     border-radius: 16px;
     border: 3px solid #2A5F4F;
     padding: 10px;
@@ -1171,7 +1190,7 @@ table {
     width: 20px;
     height: 20px;
     transform: rotate(45deg);
-    background-color: #EAF1FF;
+    background-color: #fff;
     border-left: 3px solid #2A5F4F;
     border-top: 3px solid #2A5F4F;
 }

@@ -5,7 +5,7 @@ export default function Adventages() {
       <div className="flex advantages-blocks">
         <div className="flex advantages-block">
           <img
-            src="../public/img/advantages1.svg"
+            src="../img/advantages1.svg"
             alt=""
             className="advantages-image"
           />
@@ -18,7 +18,7 @@ export default function Adventages() {
         </div>
         <div className="flex advantages-block">
           <img
-            src="../public/img/advantages2.svg"
+            src="../img/advantages2.svg"
             alt=""
             className="advantages-image"
           />
@@ -31,7 +31,7 @@ export default function Adventages() {
         </div>
         <div className="flex advantages-block">
           <img
-            src="../public/img/advantages3.svg"
+            src="../img/advantages3.svg"
             alt=""
             className="advantages-image"
           />
@@ -44,7 +44,7 @@ export default function Adventages() {
         </div>
         <div className="flex advantages-block">
           <img
-            src="../public/img/advantages4.svg"
+            src="../img/advantages4.svg"
             alt=""
             className="advantages-image"
           />
@@ -57,7 +57,7 @@ export default function Adventages() {
         </div>
         <div className="flex advantages-block">
           <img
-            src="../public/img/advantages5.svg"
+            src="../img/advantages5.svg"
             alt=""
             className="advantages-image"
           />
@@ -70,7 +70,7 @@ export default function Adventages() {
         </div>
         <div className="flex advantages-block">
           <img
-            src="../public/img/advantages6.svg"
+            src="../img/advantages6.svg"
             alt=""
             className="advantages-image"
           />

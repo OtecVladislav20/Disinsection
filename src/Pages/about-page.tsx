@@ -70,112 +70,112 @@ export default function About({ handlerCloseForm, isActiveForm}: TCloseForm): JS
           <div className="photo-wrapper-a">
             <div>
               <img
-                src="../public/img/aboutus1.png"
+                src="../img/aboutus1.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus2.png"
+                src="../img/aboutus2.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus3.png"
+                src="../img/aboutus3.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus4.png"
+                src="../img/aboutus4.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus5.png"
+                src="../img/aboutus5.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus6.png"
+                src="../img/aboutus6.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus7.png"
+                src="../img/aboutus7.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus8.png"
+                src="../img/aboutus8.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus9.png"
+                src="../img/aboutus9.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus10.png"
+                src="../img/aboutus10.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus11.png"
+                src="../img/aboutus11.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus12.png"
+                src="../img/aboutus12.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus13.png"
+                src="../img/aboutus13.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus14.png"
+                src="../img/aboutus14.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus15.png"
+                src="../img/aboutus15.png"
                 alt=""
                 className="photo-a-img"
               />
             </div>
             <div>
               <img
-                src="../public/img/aboutus16.png"
+                src="../img/aboutus16.png"
                 alt=""
                 className="photo-a-img"
               />

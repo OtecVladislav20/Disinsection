@@ -13,6 +13,7 @@ import ServicePageDDDD from '../../Pages/service-page-dddd';
 export default function App(): JSX.Element {
   const [isActiveForm, setActiveForm] = useState(false);
   const handlerCloseForm = () => {
+    // event.preventDefault();
     setActiveForm(!isActiveForm);
   };
 
