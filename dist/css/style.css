@@ -190,9 +190,9 @@ button {
     align-items: center;
     margin-bottom: 10px;
 }
-.nav-phone:nth-child() {
+/* .nav-phone:nth-child() {
     margin-bottom: 0px;
-}
+} */
 
 .nav-phone-text {
     font-family: "Inter";
@@ -244,9 +244,9 @@ button {
     margin: 0;
     margin-bottom: 15px;
 }
-.description-p:nth-child() {
+/* .description-p:nth-child() {
     margin-bottom: 0px;
-}
+} */
 
 .services {
     padding: 150px 162px 50px 162px;

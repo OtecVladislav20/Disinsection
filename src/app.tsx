@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
-import MainPage from '../../Pages/main-page';
-import { AppRoute } from '../../const';
-import PricePage from '../../Pages/price-page';
-import About from '../../Pages/about-page';
+import MainPage from './Pages/main-page';
+import { AppRoute } from './const';
+import PricePage from './Pages/price-page';
+import About from './Pages/about-page';
 import { useState } from 'react';
-import ServicePageO from '../../Pages/service-page-o';
-import ServicePageC from '../../Pages/service-page-c';
-import ServicePageD from '../../Pages/service-page-d';
-import ServicePageDDDD from '../../Pages/service-page-dddd';
+import ServicePageO from './Pages/service-page-o';
+import ServicePageC from './Pages/service-page-c';
+import ServicePageD from './Pages/service-page-d';
+import ServicePageDDDD from './Pages/service-page-dddd';
 
 
 export default function App(): JSX.Element {
