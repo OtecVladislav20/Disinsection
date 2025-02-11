@@ -19,7 +19,7 @@
     }
 
     .locations {
-        background-image: url('../img/map.png');
+        background-image: url('../../../public/img/map.png');
         background-position: 90%;
         background-size: 60%;
         background-repeat: no-repeat;
@@ -33,22 +33,22 @@
     }
 
     .hero-info-sp {
-        background-image: url('../img/Service-hero.png');
+        background-image: url('../../../public/img/Service-hero.png');
         background-repeat: no-repeat;
         background-position: 90% 0%;
     }
     .hero-info-sp-c {
-        background-image: url('../img/Service-hero-c.png');
+        background-image: url('../../../public/img/Service-hero-c.png');
         background-repeat: no-repeat;
         background-position: 90% 0%;
     }
     .hero-info-sp-d {
-        background-image: url('../img/Service-hero-d.png');
+        background-image: url('../../../public/img/Service-hero-d.png');
         background-repeat: no-repeat;
         background-position: 90% 0%;
     }
     .hero-info-sp-dd {
-        background-image: url('../img/Service-hero-dd.png');
+        background-image: url('../../../public/img/Service-hero-dd.png');
         background-repeat: no-repeat;
         background-position: 90% 0%;
     }
@@ -172,7 +172,7 @@
     }
 
     .locations {
-        background-image: url('../img/map.png');
+        background-image: url('../../../public/img/map.png');
         background-position: 90%;
         background-size: 50%;
         background-repeat: no-repeat;
@@ -246,7 +246,7 @@
     }
     
     .hero {
-        background-image: url('../img/bg-hero-mobile.png');
+        background-image: url('../../../public/img/bg-hero-mobile.png');
         background-repeat: repeat;
         background-position: 75% 0%;
         padding-bottom: 200px !important;
@@ -412,7 +412,7 @@
         display: block;
     }
     .locations {
-        background-image: url('../img/def-map.png');
+        background-image: url('../../../public/img/def-map.png');
         background-position: 50%;
         background-size: 90%;
         background-repeat: no-repeat;
@@ -560,7 +560,7 @@
     }
 
     .hero-about {
-        background-image: url('../img/bg-hero-mobile.png');
+        background-image: url('../../../public/img/bg-hero-mobile.png');
         background-repeat: repeat;
     }
     .hero-h1-a {

@@ -3,6 +3,7 @@ import { AppRoute, TCloseForm } from '../../const';
 import { useState } from 'react';
 import FormOpen from '../form-open/form-open';
 
+
 export default function Header({ handlerCloseForm, isActiveForm}: TCloseForm): JSX.Element {
   const [isBurger, setBurger] = useState(false);
   const [isActiveDropMenu, setActiveDropMenu] = useState(false);

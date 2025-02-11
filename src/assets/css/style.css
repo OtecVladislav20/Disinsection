@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "Rubik";
     font-display: swap;
     font-style: normal;
@@ -12,7 +12,7 @@
     font-style: normal;
     font-weight: 800;
     src: url("../fonts/inter_medium.ttf") format("ttf");
-}
+} */
 
 .visually-hidden {
     position:absolute;
@@ -190,9 +190,6 @@ button {
     align-items: center;
     margin-bottom: 10px;
 }
-/* .nav-phone:nth-child() {
-    margin-bottom: 0px;
-} */
 
 .nav-phone-text {
     font-family: "Inter";
@@ -207,7 +204,7 @@ button {
 
 .hero {
     padding: 50px 162px 349px 162px;
-    background-image: url('../img/HeroMan.png');
+    background-image: url('../../../public/img/HeroMan.png');
     background-repeat: no-repeat;
     background-position: 75% 0%;
 }
@@ -520,7 +517,7 @@ button {
 
 .work {
     background-color: #f5f8ff;
-    background-image: url('../img/work.png');
+    background-image: url('../../../public/img/work.png');
     background-repeat: no-repeat;
     background-position: 50% 0%;
     padding: 50px 162px;
@@ -585,7 +582,7 @@ button {
 
 .photo {
     padding: 50px 162px;
-    background-image: url('../img/background-photo.png');
+    background-image: url('../../../public/img/background-photo.png');
     background-position: 15%;
     background-repeat: no-repeat;
 }
@@ -628,7 +625,7 @@ button {
 
 .locations {
     padding: 50px 162px;
-    background-image: url('../img/map.png');
+    background-image: url('../../../public/img/map.png');
     background-position: 78%;
     background-repeat: no-repeat;
 }
@@ -760,25 +757,25 @@ button {
 }
 
 .hero-info-sp {
-    background-image: url('../img/Service-hero.png');
+    background-image: url('../../../public/img/Service-hero.png');
     background-repeat: no-repeat;
     background-position: 90% 0%;
     padding: 50px 0px 300px 162px;
 }
 .hero-info-sp-c {
-    background-image: url('../img/Service-hero-c.png');
+    background-image: url('../../../public/img/Service-hero-c.png');
     background-repeat: no-repeat;
     background-position: 90% 0%;
     padding: 50px 0px 300px 162px;
 }
 .hero-info-sp-d {
-    background-image: url('../img/Service-hero-d.png');
+    background-image: url('../../../public/img/Service-hero-d.png');
     background-repeat: no-repeat;
     background-position: 90% 0%;
     padding: 50px 0px 300px 162px;
 }
 .hero-info-sp-dd {
-    background-image: url('../img/Service-hero-dd.png');
+    background-image: url('../../../public/img/Service-hero-dd.png');
     background-repeat: no-repeat;
     background-position: 90% 0%;
     padding: 50px 0px 300px 162px;
@@ -903,7 +900,7 @@ button {
 
 .price-sp {
     padding: 50px 100px 50px 162px;
-    background-image: url('../img/bg-price-sp.png');
+    background-image: url('../../../public/img/bg-price-sp.png');
     background-repeat: no-repeat;
     background-position: 30px;
     background-size: 95%;
@@ -976,7 +973,7 @@ table {
 .hero-about {
     padding: 50px 162px;
     position: relative;
-    background-image: url('../img/aboutus-bg.png');
+    background-image: url('../../../public/img/aboutus-bg.png');
     background-repeat: no-repeat;
     background-position: 85% 100%;
     background-size: 550px;
