@@ -1,2 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
+Allow: /
+Allow: /aboutus
+Allow: /services/dehumidification
+Allow: /services/cleaning
+Allow: /services/dismantling
+Allow: /services/dddd
+Allow: /price
