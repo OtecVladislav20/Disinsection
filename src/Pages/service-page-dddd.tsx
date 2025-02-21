@@ -75,6 +75,13 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
                   className="services-img-sp"
                 />
               </div>
+              <div className="services-card-sp">
+                <img
+                  src="../img/services-sp6dd.png"
+                  alt=""
+                  className="services-img-sp"
+                />
+              </div>
             </div>
           </section>
           <section className="achivments-sp conteiner">

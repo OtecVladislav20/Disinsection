@@ -145,6 +145,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
                     <li className="services-card-li">Дезинфекция</li>
                     <li className="services-card-li">Дератизация</li>
                     <li className="services-card-li">Гербицидная обработка</li>
+                    <li className="services-card-li">Озонирование и сухой туман</li>
                   </ul>
                 </div>
                 <div className="flex services-price">
