@@ -1230,3 +1230,28 @@ table {
 .drop-link:active {
     color: #000;
 }
+
+.not-found {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-title {
+    color: #2A5F4F;
+    font-size: 52px;
+    margin-right: 20px;
+}
+
+.not-found-body {
+    height: 100%;
+    font-weight: 100%;
+}
+
+.not-found-desc {
+    color: #2A5F4F;
+    font-size: 24px;
+    margin: 0;
+}
+

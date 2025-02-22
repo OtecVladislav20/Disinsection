@@ -35,7 +35,7 @@ export default function Footer(): JSX.Element {
       <div className="footer-wrapper">
         <h3 className="footer-title">Режим работы</h3>
         <div className="flex footer-link">
-          <p className="footer-text footer-p">С 9:00 до 22:00</p>
+          <p className="footer-text footer-p">Круглосуточно</p>
           <p className="footer-text footer-p">7 дней в неделю</p>
         </div>
       </div>

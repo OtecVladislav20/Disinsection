@@ -48,7 +48,7 @@ export default function Header({ handlerCloseForm, isActiveForm}: TCloseForm): J
               </li>
               <li className='drop-menu-item'>
                 <Link to={AppRoute.ServicesDDDD} className='drop-link'>
-                  ДДДД
+                  ДДД
                 </Link>
               </li>
             </ul>

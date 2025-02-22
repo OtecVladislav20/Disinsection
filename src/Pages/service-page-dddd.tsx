@@ -15,7 +15,7 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
         <div className="main-left">
           <OpenButton handlerCloseForm={handlerCloseForm}/>
           <section className="hero-info-sp-dd conteiner">
-            <h1 className="hero-h1-sp close-mobile">ДДДД</h1>
+            <h1 className="hero-h1-sp close-mobile">ДДД</h1>
             <h2 className="hero-h2-sp close-mobile">
               Процесс уничтожение вредителей, неприятного запаха и патогенных микроорганизмов.
             </h2>
@@ -187,7 +187,7 @@ export default function ServicePageDDDD({ handlerCloseForm, isActiveForm }: TClo
             </h3>
           </section>
           <section className="price-p conteiner">
-            <h2 className="services-title title-h2">Цены на ДДДД</h2>
+            <h2 className="services-title title-h2">Цены на ДДД</h2>
             <table cellPadding="15px" rules="rows" bgcolor="#fff">
               <tbody>
                 <tr>

@@ -8,12 +8,12 @@ import ServicePageO from './Pages/service-page-o';
 import ServicePageC from './Pages/service-page-c';
 import ServicePageD from './Pages/service-page-d';
 import ServicePageDDDD from './Pages/service-page-dddd';
+import NotFound from './Pages/not-found-page';
 
 
 export default function App(): JSX.Element {
   const [isActiveForm, setActiveForm] = useState(false);
   const handlerCloseForm = () => {
-    // event.preventDefault();
     setActiveForm(!isActiveForm);
   };
 
@@ -26,7 +26,7 @@ export default function App(): JSX.Element {
       <Route path={AppRoute.ServicesDDDD} element={<ServicePageDDDD handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
       <Route path={AppRoute.Price} element={<PricePage handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
       <Route path={AppRoute.AboutUs} element={<About handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
-      {/* <Route path={AppRoute.NotFoundScreen} element={<MainPage />} /> */}
+      <Route path={AppRoute.NotFoundScreen} element={<NotFound />} />
     </Routes>
   );
 }

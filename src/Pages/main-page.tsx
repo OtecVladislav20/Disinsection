@@ -138,7 +138,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
               />
               <div className="services-card-wrapper flex">
                 <div className="services-card-text flex">
-                  <h3 className="services-card-title">ДДДД</h3>
+                  <h3 className="services-card-title">ДДД</h3>
                   <ul className="services-card-ul">
                     <li className="services-card-li">Дезодорация</li>
                     <li className="services-card-li">Дезинсекция</li>
