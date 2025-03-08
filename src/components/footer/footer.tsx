@@ -1,35 +1,40 @@
-import { Link } from 'react-router-dom';
 import { AppRoute } from '../../const';
+import { ServicesState } from '../../utils/mocks';
 
-export default function Footer(): JSX.Element {
+
+type TFooter = {
+  chooseActivePage: (pageId: string) => void;
+}
+
+export default function Footer({ chooseActivePage }: TFooter): JSX.Element {
   return (
     <footer className="flex footer" id='contacts'>
       <div className="footer-wrapper">
         <h3 className="footer-title">Услуги</h3>
         <div className="flex footer-link">
-          <Link to={AppRoute.ServicesO} className="footer-text">
+          <a onClick={() => chooseActivePage(ServicesState.Dehumidification)} href={`/services/${ServicesState.Dehumidification}`} className="footer-text">
             Осушение
-          </Link>
-          <Link to={AppRoute.ServicesC} className="footer-text">
+          </a>
+          <a onClick={() => chooseActivePage(ServicesState.Cleaning)} href={`/services/${ServicesState.Cleaning}`} className="footer-text">
             Уборка помещений
-          </Link>
-          <Link to={AppRoute.ServicesD} className="footer-text">
+          </a>
+          <a onClick={() => chooseActivePage(ServicesState.Dismantling)} href={`/services/${ServicesState.Dismantling}`} className="footer-text">
             Демонтажные работы
-          </Link>
-          <Link to={AppRoute.ServicesDDDD} className="footer-text">
-            ДДДД
-          </Link>
+          </a>
+          <a onClick={() => chooseActivePage(ServicesState.DDD)} href={`/services/${ServicesState.DDD}`} className="footer-text">
+            ДДД
+          </a>
         </div>
       </div>
       <div className="footer-wrapper">
         <h3 className="footer-title">О нас</h3>
         <div className="flex footer-link">
-          <Link to={AppRoute.AboutUs} className="footer-text">
+          <a href={AppRoute.AboutUs} className="footer-text">
             Контакты
-          </Link>
-          <Link to={AppRoute.AboutUs} className="footer-text">
+          </a>
+          <a href={AppRoute.AboutUs} className="footer-text">
             О компании
-          </Link>
+          </a>
         </div>
       </div>
       <div className="footer-wrapper">

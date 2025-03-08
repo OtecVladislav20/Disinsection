@@ -8,10 +8,10 @@ import Reviews from '../components/reviews/reviews';
 import { TDefaultPages } from '../const';
 
 
-export default function About({ activePage, chooseActivePage, handlerCloseForm, isActiveForm}: TDefaultPages): JSX.Element {
+export default function About({chooseActivePage, handlerCloseForm, isActiveForm}: TDefaultPages): JSX.Element {
   return (
     <>
-      <Header activePage={activePage} chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
+      <Header chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
       <main>
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <OpenButton handlerCloseForm={handlerCloseForm}/>
@@ -184,7 +184,7 @@ export default function About({ activePage, chooseActivePage, handlerCloseForm, 
         </section>
         <Reviews handlerCloseForm={handlerCloseForm}/>
       </main>
-      <Footer/>
+      <Footer chooseActivePage={chooseActivePage}/>
     </>
   );
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import Footer from '../components/footer/footer';
 import FormDef from '../components/form-def/form-def';
 import FormOpen from '../components/form-open/form-open';
@@ -6,18 +7,18 @@ import OpenButton from '../components/open-button/open-button';
 import { TPages } from '../const';
 
 
-export default function ServicePageO({ PagesData, activePage, chooseActivePage, handlerCloseForm, isActiveForm }: TPages): JSX.Element {
+export default function ServicePage({ PagesData, activePage, chooseActivePage, handlerCloseForm, isActiveForm }: TPages): JSX.Element {
   return (
     <>
-      <Header activePage={activePage} chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
+      <Header chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
       <main className="flex">
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <div className="main-left">
           <OpenButton handlerCloseForm={handlerCloseForm}/>
           <section className="hero-info-sp conteiner">
-            <h1 className="hero-h1-sp close-mobile">{PagesData[activePage].hero_h1}</h1>
+            <h1 className="hero-h1-sp close-mobile">{PagesData[activePage].heroH1}</h1>
             <h2 className="hero-h2-sp close-mobile">
-              {PagesData[activePage].hero_h2}
+              {PagesData[activePage].heroH2}
             </h2>
             <div className="hero-mobile-sp">
               <img
@@ -84,46 +85,20 @@ export default function ServicePageO({ PagesData, activePage, chooseActivePage, 
             </div>
           </section>
           <section className="achivments-sp conteiner">
-            <div className="flex achivments-block-sp">
-              <img
-                src="../img/checkmark.svg"
-                alt=""
-                className="checkmark"
-              />
-              <p className="achivments-text-sp">
-                {PagesData[activePage].achivments[0]}
-              </p>
-            </div>
-            <div className="flex achivments-block-sp">
-              <img
-                src="../img/checkmark.svg"
-                alt=""
-                className="checkmark"
-              />
-              <p className="achivments-text-sp">
-                {PagesData[activePage].achivments[0]}
-              </p>
-            </div>
-            <div className="flex achivments-block-sp">
-              <img
-                src="../img/checkmark.svg"
-                alt=""
-                className="checkmark"
-              />
-              <p className="achivments-text-sp">
-                {PagesData[activePage].achivments[0]}
-              </p>
-            </div>
-            <div className="flex achivments-block-sp">
-              <img
-                src="../img/checkmark.svg"
-                alt=""
-                className="checkmark"
-              />
-              <p className="achivments-text-sp">
-                {PagesData[activePage].achivments[0]}
-              </p>
-            </div>
+            {PagesData[activePage].achivments.map((i) =>
+              (
+                <div key={i} className="flex achivments-block-sp">
+                  <img
+                    src="../img/checkmark.svg"
+                    alt=""
+                    className="checkmark"
+                  />
+                  <p className="achivments-text-sp">
+                    {i}
+                  </p>
+                </div>
+              )
+            )}
           </section>
           <section className="work-sp conteiner">
             <h2 className="services-title title-h2">Наша команда за работой</h2>
@@ -195,10 +170,10 @@ export default function ServicePageO({ PagesData, activePage, chooseActivePage, 
           </section>
           <section className="info-sp conteiner">
             <p className="info-p-sp">
-            {PagesData[activePage].info_p}
+              {PagesData[activePage].infoP}
             </p>
             <h3 className="info-title-sp">
-              {PagesData[activePage].info_h3}
+              {PagesData[activePage].infoH3}
             </h3>
           </section>
           <section className="price-p conteiner">
@@ -251,7 +226,7 @@ export default function ServicePageO({ PagesData, activePage, chooseActivePage, 
           </div>
         </div>
       </main>
-      <Footer/>
+      <Footer chooseActivePage={chooseActivePage}/>
     </>
   );
 }

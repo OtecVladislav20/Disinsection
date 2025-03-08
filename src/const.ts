@@ -1,4 +1,4 @@
-import { TPagesData } from "./utils/mocks";
+import { TPagesData } from './utils/mocks';
 
 export enum AppRoute {
   Main = '/',
@@ -28,9 +28,7 @@ export type TPages = {
 }
 
 export type TDefaultPages = {
-  activePage: string;
   chooseActivePage: (pageId: string) => void;
   handlerCloseForm: () => void;
   isActiveForm: boolean;
 }
-

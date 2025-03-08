@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import Footer from '../components/footer/footer';
 import FormDef from '../components/form-def/form-def';
 import FormOpen from '../components/form-open/form-open';
@@ -6,10 +7,10 @@ import OpenButton from '../components/open-button/open-button';
 import { TDefaultPages } from '../const';
 
 
-export default function PricePage({ activePage, chooseActivePage, handlerCloseForm, isActiveForm }: TDefaultPages): JSX.Element {
+export default function PricePage({ chooseActivePage, handlerCloseForm, isActiveForm }: TDefaultPages): JSX.Element {
   return (
     <>
-      <Header activePage={activePage} chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
+      <Header chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
       <main className='flex'>
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <div className="main-left price-container">
@@ -157,7 +158,7 @@ export default function PricePage({ activePage, chooseActivePage, handlerCloseFo
           </div>
         </div>
       </main>
-      <Footer/>
+      <Footer chooseActivePage={chooseActivePage}/>
     </>
   );
 }

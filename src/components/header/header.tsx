@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
-import { AppRoute, TDefaultPages } from '../../const';
+import { AppRoute, TDefaultPages, } from '../../const';
 import { useState } from 'react';
 import FormOpen from '../form-open/form-open';
+import { ServicesState } from '../../utils/mocks';
 
 
-export default function Header({ activePage, chooseActivePage, handlerCloseForm, isActiveForm}: TDefaultPages): JSX.Element {
+export default function Header({ chooseActivePage, handlerCloseForm, isActiveForm}: TDefaultPages): JSX.Element {
   const [isBurger, setBurger] = useState(false);
   const [isActiveDropMenu, setActiveDropMenu] = useState(false);
 
@@ -32,22 +33,22 @@ export default function Header({ activePage, chooseActivePage, handlerCloseForm,
             <img src="../img/arrow-header.svg" alt="" />
             <ul className={`drop-menu-list ${isActiveDropMenu ? 'display-block' : ''}`}>
               <li className='drop-menu-item'>
-                <Link onClick={() => chooseActivePage('dehumidification')} to={`/services/dehumidification`} className='drop-link'>
+                <Link onClick={() => chooseActivePage(ServicesState.Dehumidification)} to={`/services/${ServicesState.Dehumidification}`} className='drop-link'>
                   Осушение
                 </Link>
               </li>
               <li className='drop-menu-item'>
-                <Link onClick={() => chooseActivePage('cleaning')} to={`/services/cleaning`} className='drop-link'>
+                <Link onClick={() => chooseActivePage(ServicesState.Cleaning)} to={`/services/${ServicesState.Cleaning}`} className='drop-link'>
                   Уборка помещений
                 </Link>
               </li>
               <li className='drop-menu-item'>
-                <Link onClick={() => chooseActivePage('dismantling')} to={`/services/dismantling`} className='drop-link'>
+                <Link onClick={() => chooseActivePage(ServicesState.Dismantling)} to={`/services/${ServicesState.Dismantling}`} className='drop-link'>
                   Демонтажные работы
                 </Link>
               </li>
               <li className='drop-menu-item'>
-                <Link onClick={() => chooseActivePage('ddd')} to={`/services/ddd`} className='drop-link'>
+                <Link onClick={() => chooseActivePage(ServicesState.DDD)} to={`/services/${ServicesState.DDD}`} className='drop-link'>
                   ДДД
                 </Link>
               </li>
