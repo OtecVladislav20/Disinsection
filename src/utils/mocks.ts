@@ -2,6 +2,7 @@ export type TPagesData = {
   heroH1: string;
   heroH2: string;
   heroPhoto: string;
+  heroPhotoComp: string;
   description: string;
   servicesPhoto: string[];
   achivments: string[];
@@ -16,6 +17,7 @@ export const PagesData: {[key: string]: TPagesData} = {
     heroH1: 'Осушение',
     heroH2: 'Процесс уменьшения уровня влажности в помещении с помощью специальных устройств',
     heroPhoto: '../img/hero-sp-mobile1.png',
+    heroPhotoComp: '../../../public/img/Service-hero.png',
     description: 'Мы предлагаем профессиональное осушение помещения с использованием современных методов и экологически чистых средств.',
     servicesPhoto: ['../img/services-sp1.png', '../img/services-sp2.png', '../img/services-sp3.png', '../img/services-sp4.png', '../img/services-sp5.png', '../img/services-sp6.png'],
     achivments: ['Индивидуальный подход к каждому объекту', 'Использование профессионального оборудования и инструмента', 'Возможность создания индивидуальных планов уборки под ваши нужды', 'Гарантия безопасности для сотрудников и посетителей'],
@@ -28,6 +30,7 @@ export const PagesData: {[key: string]: TPagesData} = {
     heroH1: 'Уборка помещений',
     heroH2: 'Процесс устранения загрязнений помещения после нестандартных ситуаций',
     heroPhoto: '../img/hero-sp-mobile1c.png',
+    heroPhotoComp: '../../../public/img/Service-hero-c.png',
     description: 'Мы команда высококвалифицированных специалистов в сфере клининга. Благодаря большому опыту мы гарантируем 100% качественный результат.',
     servicesPhoto: ['../img/services-sp1c.png', '../img/services-sp2c.png', '../img/services-sp3c.png', '../img/services-sp4c.png', '../img/services-sp5c.png', '../img/services-sp6c.png'],
     achivments: ['Индивидуальный подход к каждому объекту', 'Использование профессионального оборудования и инструмента', 'Возможность создания индивидуальных планов уборки под ваши нужды', 'Быстрая обработка помещений без нарушения рабочего процесса', 'Гарантия безопасности для сотрудников и посетителей'],
@@ -40,6 +43,7 @@ export const PagesData: {[key: string]: TPagesData} = {
     heroH1: 'Демонтаж',
     heroH2: 'Процесс разборки или удаления конструкций, зданий или их частей. Что необходимо при реконструкции, ремонте или сносе зданий.',
     heroPhoto: '../img/hero-sp-mobile1d.png',
+    heroPhotoComp: '../../../public/img/Service-hero-d.png',
     description: 'Мы предлагаем качественный демонтаж стен, пола и потолка. Вынесем весь мусор и подготовим квартиру к будущему ремонту.',
     servicesPhoto: ['../img/services-sp1d.png', '../img/services-sp2d.png', '../img/services-sp3d.png', '../img/services-sp4d.png', '../img/services-sp5d.png', '../img/services-sp6d.png'],
     achivments: ['Опытная команда специалистов с многолетним стажем', 'Индивидуальный подход к каждому объекту', 'Использование современного оборудования и инструмента', 'Гарантия безопасности при работ', 'Быстрое выполнение работ с минимальным воздействием на окружающую среду'],
@@ -52,6 +56,7 @@ export const PagesData: {[key: string]: TPagesData} = {
     heroH1: 'ДДД',
     heroH2: 'Процесс уничтожение вредителей, неприятного запаха и патогенных микроорганизмов.',
     heroPhoto: '../img/hero-sp-mobile1dd.png',
+    heroPhotoComp: '../../../public/img/Service-hero-dd.png',
     description: 'Мы предлагаем эффективную обработку участка или помещения с использованием современных методов и экологически чистых средств.',
     servicesPhoto: ['../img/services-sp1dd.png', '../img/services-sp2dd.png', '../img/services-sp3dd.png', '../img/services-sp4dd.png', '../img/services-sp5dd.png', '../img/services-sp6dd.png'],
     achivments: ['Профессиональный подход к каждой задаче', 'Использование только качественных средств', 'Быстрая обработка помещений без нарушения работы', 'Гарантия безопасности для сотрудников и посетителей'],
