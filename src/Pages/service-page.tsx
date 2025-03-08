@@ -15,7 +15,7 @@ export default function ServicePage({ PagesData, activePage, chooseActivePage, h
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <div className="main-left">
           <OpenButton handlerCloseForm={handlerCloseForm}/>
-          <section className="hero-info-sp conteiner" style={{backgroundImage:`url(${PagesData[activePage].heroPhotoComp})`}}>
+          <section className="hero-info-sp conteiner" style={{backgroundImage:`url(${PagesData[activePage]})`}}>
             <h1 className="hero-h1-sp close-mobile">{PagesData[activePage].heroH1}</h1>
             <h2 className="hero-h2-sp close-mobile">
               {PagesData[activePage].heroH2}
