@@ -1,9 +1,8 @@
+import { TPagesData } from "./utils/mocks";
+
 export enum AppRoute {
   Main = '/',
-  ServicesO = '/services/dehumidification',
-  ServicesC = '/services/cleaning',
-  ServicesD = '/services/dismantling',
-  ServicesDDDD = '/services/dddd',
+  Services = '/services/:id',
   Price = '/price',
   AboutUs = '/aboutus',
   NotFoundScreen = '/*',
@@ -19,3 +18,19 @@ export type TCloseForm = {
 export type THandleCloseForm = {
   handlerCloseForm: () => void;
 }
+
+export type TPages = {
+  PagesData: {[key: string]: TPagesData};
+  activePage: string;
+  chooseActivePage: (pageId: string) => void;
+  handlerCloseForm: () => void;
+  isActiveForm: boolean;
+}
+
+export type TDefaultPages = {
+  activePage: string;
+  chooseActivePage: (pageId: string) => void;
+  handlerCloseForm: () => void;
+  isActiveForm: boolean;
+}
+

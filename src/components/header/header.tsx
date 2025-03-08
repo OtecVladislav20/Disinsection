@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import { AppRoute, TCloseForm } from '../../const';
+import { AppRoute, TDefaultPages } from '../../const';
 import { useState } from 'react';
 import FormOpen from '../form-open/form-open';
 
 
-export default function Header({ handlerCloseForm, isActiveForm}: TCloseForm): JSX.Element {
+export default function Header({ activePage, chooseActivePage, handlerCloseForm, isActiveForm}: TDefaultPages): JSX.Element {
   const [isBurger, setBurger] = useState(false);
   const [isActiveDropMenu, setActiveDropMenu] = useState(false);
 
@@ -32,22 +32,22 @@ export default function Header({ handlerCloseForm, isActiveForm}: TCloseForm): J
             <img src="../img/arrow-header.svg" alt="" />
             <ul className={`drop-menu-list ${isActiveDropMenu ? 'display-block' : ''}`}>
               <li className='drop-menu-item'>
-                <Link to={AppRoute.ServicesO} className='drop-link'>
+                <Link onClick={() => chooseActivePage('dehumidification')} to={`/services/dehumidification`} className='drop-link'>
                   Осушение
                 </Link>
               </li>
               <li className='drop-menu-item'>
-                <Link to={AppRoute.ServicesC} className='drop-link'>
+                <Link onClick={() => chooseActivePage('cleaning')} to={`/services/cleaning`} className='drop-link'>
                   Уборка помещений
                 </Link>
               </li>
               <li className='drop-menu-item'>
-                <Link to={AppRoute.ServicesD} className='drop-link'>
+                <Link onClick={() => chooseActivePage('dismantling')} to={`/services/dismantling`} className='drop-link'>
                   Демонтажные работы
                 </Link>
               </li>
               <li className='drop-menu-item'>
-                <Link to={AppRoute.ServicesDDDD} className='drop-link'>
+                <Link onClick={() => chooseActivePage('ddd')} to={`/services/ddd`} className='drop-link'>
                   ДДД
                 </Link>
               </li>

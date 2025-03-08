@@ -5,10 +5,8 @@ import PricePage from './Pages/price-page';
 import About from './Pages/about-page';
 import { useState } from 'react';
 import ServicePageO from './Pages/service-page-o';
-import ServicePageC from './Pages/service-page-c';
-import ServicePageD from './Pages/service-page-d';
-import ServicePageDDDD from './Pages/service-page-dddd';
 import NotFound from './Pages/not-found-page';
+import { PagesData } from './utils/mocks';
 
 
 export default function App(): JSX.Element {
@@ -17,15 +15,26 @@ export default function App(): JSX.Element {
     setActiveForm(!isActiveForm);
   };
 
+  const [activePage, setActivePage] = useState('dehumidification');
+  function chooseActivePage(pageId: string): void {
+    setActivePage(pageId);
+  }
+
   return (
     <Routes>
-      <Route path={AppRoute.Main} element={<MainPage handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
-      <Route path={AppRoute.ServicesO} element={<ServicePageO handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
-      <Route path={AppRoute.ServicesC} element={<ServicePageC handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
-      <Route path={AppRoute.ServicesD} element={<ServicePageD handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
-      <Route path={AppRoute.ServicesDDDD} element={<ServicePageDDDD handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
-      <Route path={AppRoute.Price} element={<PricePage handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
-      <Route path={AppRoute.AboutUs} element={<About handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
+      <Route path={AppRoute.Main} element={<MainPage activePage={activePage} chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
+      <Route path={AppRoute.Services} element={
+        <ServicePageO 
+            PagesData={PagesData} 
+            activePage={activePage}
+            chooseActivePage={chooseActivePage}
+            handlerCloseForm={handlerCloseForm} 
+            isActiveForm={isActiveForm}
+          />
+        } 
+      />
+      <Route path={AppRoute.Price} element={<PricePage activePage={activePage} chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
+      <Route path={AppRoute.AboutUs} element={<About activePage={activePage} chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
       <Route path={AppRoute.NotFoundScreen} element={<NotFound />} />
     </Routes>
   );

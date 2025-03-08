@@ -6,13 +6,13 @@ import FormOpen from '../components/form-open/form-open';
 import FormDef from '../components/form-def/form-def';
 import Adventages from '../components/adventages/adventages';
 import Photo from '../components/photo/photo';
-import { AppRoute, TCloseForm } from '../const';
+import { TDefaultPages } from '../const';
 
 
-export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm): JSX.Element {
+export default function MainPage({ activePage, chooseActivePage, handlerCloseForm, isActiveForm}: TDefaultPages): JSX.Element {
   return (
     <>
-      <Header handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
+      <Header activePage={activePage} chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
       <main>
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <section className="hero conteiner">
@@ -58,7 +58,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
         <section className="services conteiner">
           <h2 className="services-title title-h2">Наши услуги</h2>
           <div className="services-cards">
-            <a href={AppRoute.ServicesO} className="services-card card1 flex">
+            <a onClick={() => chooseActivePage('dehumidification')} href={`/services/dehumidification`} className="services-card card1 flex">
               <img
                 src="../img/photoServices1.png"
                 alt="photo"
@@ -82,7 +82,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
                 </div>
               </div>
             </a>
-            <a href={AppRoute.ServicesC} className="services-card card2 flex">
+            <a onClick={() => chooseActivePage('cleaning')} href={`/services/cleaning`} className="services-card card2 flex">
               <img
                 src="../img/photoServices2.png"
                 alt="photo"
@@ -106,7 +106,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
                 </div>
               </div>
             </a>
-            <a href={AppRoute.ServicesD} className="services-card card3 flex">
+            <a onClick={() => chooseActivePage('dismantling')} href={`/services/dismantling`} className="services-card card3 flex">
               <img
                 src="../img/photoServices3.png"
                 alt="photo"
@@ -130,7 +130,7 @@ export default function MainPage({ handlerCloseForm, isActiveForm}: TCloseForm):
                 </div>
               </div>
             </a>
-            <a href={AppRoute.ServicesDDDD} className="services-card card4 flex">
+            <a onClick={() => chooseActivePage('ddd')} href={`/services/ddd`} className="services-card card4 flex">
               <img
                 src="../img/photoServices4.png"
                 alt="photo"

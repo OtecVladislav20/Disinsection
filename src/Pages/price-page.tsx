@@ -3,13 +3,13 @@ import FormDef from '../components/form-def/form-def';
 import FormOpen from '../components/form-open/form-open';
 import Header from '../components/header/header';
 import OpenButton from '../components/open-button/open-button';
-import { TCloseForm } from '../const';
+import { TDefaultPages } from '../const';
 
 
-export default function PricePage({ handlerCloseForm, isActiveForm }: TCloseForm): JSX.Element {
+export default function PricePage({ activePage, chooseActivePage, handlerCloseForm, isActiveForm }: TDefaultPages): JSX.Element {
   return (
     <>
-      <Header handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
+      <Header activePage={activePage} chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
       <main className='flex'>
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <div className="main-left price-container">

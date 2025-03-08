@@ -3,23 +3,21 @@ import FormDef from '../components/form-def/form-def';
 import FormOpen from '../components/form-open/form-open';
 import Header from '../components/header/header';
 import OpenButton from '../components/open-button/open-button';
-import { TCloseForm } from '../const';
-import { PagesData } from '../utils/mocks';
+import { TPages } from '../const';
 
 
-export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseForm): JSX.Element {
+export default function ServicePageO({ PagesData, activePage, chooseActivePage, handlerCloseForm, isActiveForm }: TPages): JSX.Element {
   return (
     <>
-      <Header handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
+      <Header activePage={activePage} chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
       <main className="flex">
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <div className="main-left">
           <OpenButton handlerCloseForm={handlerCloseForm}/>
           <section className="hero-info-sp conteiner">
-            <h1 className="hero-h1-sp close-mobile">{PagesData['dehumidification'].hero_h1}</h1>
+            <h1 className="hero-h1-sp close-mobile">{PagesData[activePage].hero_h1}</h1>
             <h2 className="hero-h2-sp close-mobile">
-              Процесс уменьшения уровня влажности в помещении с помощью специальных
-              устройств
+              {PagesData[activePage].hero_h2}
             </h2>
             <div className="hero-mobile-sp">
               <img
@@ -33,8 +31,7 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
             <div className="description-wrapper-sp">
               <div className="description-block-sp">
                 <p className="description-p-sp">
-                  Мы предлагаем профессиональное осушение помещения с использованием
-                  современных методов и экологически чистых средств.
+                  {PagesData[activePage].description}
                 </p>
               </div>
             </div>
@@ -94,7 +91,7 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
                 className="checkmark"
               />
               <p className="achivments-text-sp">
-                Индивидуальный подход к каждому объекту
+                {PagesData[activePage].achivments[0]}
               </p>
             </div>
             <div className="flex achivments-block-sp">
@@ -104,7 +101,7 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
                 className="checkmark"
               />
               <p className="achivments-text-sp">
-                Использование профессионального оборудования и инструмента
+                {PagesData[activePage].achivments[0]}
               </p>
             </div>
             <div className="flex achivments-block-sp">
@@ -114,7 +111,7 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
                 className="checkmark"
               />
               <p className="achivments-text-sp">
-                Возможность создания индивидуальных планов уборки под ваши нужды
+                {PagesData[activePage].achivments[0]}
               </p>
             </div>
             <div className="flex achivments-block-sp">
@@ -124,7 +121,7 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
                 className="checkmark"
               />
               <p className="achivments-text-sp">
-                Гарантия безопасности для сотрудников и посетителей
+                {PagesData[activePage].achivments[0]}
               </p>
             </div>
           </section>
@@ -198,14 +195,10 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
           </section>
           <section className="info-sp conteiner">
             <p className="info-p-sp">
-              Обращаясь к нам, вы получаете не просто услугу по осушению помещения,
-              а комплексное решение проблемы с гарантией качества и минимальными
-              сроками выполнения работ. Наши специалисты помогут сохранить ваше
-              имущество и вернуть квартиру в отличное состояние как можно быстрее.
+            {PagesData[activePage].info_p}
             </p>
             <h3 className="info-title-sp">
-              Звоните прямо сейчас и заказывайте эффективное осушение у надежных
-              профессионалов!
+              {PagesData[activePage].info_h3}
             </h3>
           </section>
           <section className="price-p conteiner">
@@ -246,9 +239,9 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
           <section className="need-sp conteiner">
             <h2 className="services-title title-h2">Что от вас требуется?</h2>
             <ul>
-              <li className="need-cerd-sp">Изолируйте домашних питомцев</li>
-              <li className="need-cerd-sp">Отодвиньте мебель от стен</li>
-              <li className="need-cerd-sp">Предоставьте доступ к электрипитанию</li>
+              <li className="need-cerd-sp">{PagesData[activePage].need[0]}</li>
+              <li className="need-cerd-sp">{PagesData[activePage].need[0]}</li>
+              <li className="need-cerd-sp">{PagesData[activePage].need[0]}</li>
             </ul>
           </section>
         </div>

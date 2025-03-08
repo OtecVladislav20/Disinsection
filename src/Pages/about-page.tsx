@@ -5,13 +5,13 @@ import FormOpen from '../components/form-open/form-open';
 import Header from '../components/header/header';
 import OpenButton from '../components/open-button/open-button';
 import Reviews from '../components/reviews/reviews';
-import { TCloseForm } from '../const';
+import { TDefaultPages } from '../const';
 
 
-export default function About({ handlerCloseForm, isActiveForm}: TCloseForm): JSX.Element {
+export default function About({ activePage, chooseActivePage, handlerCloseForm, isActiveForm}: TDefaultPages): JSX.Element {
   return (
     <>
-      <Header handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
+      <Header activePage={activePage} chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
       <main>
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <OpenButton handlerCloseForm={handlerCloseForm}/>
