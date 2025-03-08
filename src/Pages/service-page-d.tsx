@@ -32,8 +32,7 @@ export default function ServicePageD({ handlerCloseForm, isActiveForm }: TCloseF
             <div className="description-wrapper-sp">
               <div className="description-block-sp">
                 <p className="description-p-sp">
-                  Мы предлагаем профессиональное осушение помещения с использованием
-                  современных методов и экологически чистых средств.
+                  Мы предлагаем качественный демонтаж стен, пола и потолка. Вынесем весь мусор и подготовим квартиру к будущему ремонту.
                 </p>
               </div>
             </div>

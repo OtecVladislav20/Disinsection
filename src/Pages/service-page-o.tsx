@@ -4,6 +4,7 @@ import FormOpen from '../components/form-open/form-open';
 import Header from '../components/header/header';
 import OpenButton from '../components/open-button/open-button';
 import { TCloseForm } from '../const';
+import { PagesData } from '../utils/mocks';
 
 
 export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseForm): JSX.Element {
@@ -15,7 +16,7 @@ export default function ServicePageO({ handlerCloseForm, isActiveForm }: TCloseF
         <div className="main-left">
           <OpenButton handlerCloseForm={handlerCloseForm}/>
           <section className="hero-info-sp conteiner">
-            <h1 className="hero-h1-sp close-mobile">Осушение</h1>
+            <h1 className="hero-h1-sp close-mobile">{PagesData['dehumidification'].hero_h1}</h1>
             <h2 className="hero-h2-sp close-mobile">
               Процесс уменьшения уровня влажности в помещении с помощью специальных
               устройств
