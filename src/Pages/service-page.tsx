@@ -22,7 +22,7 @@ export default function ServicePage({ PagesData, activePage, chooseActivePage, h
             </h2>
             <div className="hero-mobile-sp">
               <img
-                src="../img/hero-sp-mobile1.png"
+                src={PagesData[activePage].heroPhoto}
                 alt=""
                 className="hero-img-mobile"
               />
@@ -40,48 +40,15 @@ export default function ServicePage({ PagesData, activePage, chooseActivePage, h
           <section className="services-sp conteiner">
             <h2 className="services-title title-h2">Наши предложения</h2>
             <div className="services-cards-sp">
-              <div className="services-card-sp">
-                <img
-                  src="../img/services-sp1.png"
-                  alt=""
-                  className="services-img-sp"
-                />
-              </div>
-              <div className="services-card-sp">
-                <img
-                  src="../img/services-sp2.png"
-                  alt=""
-                  className="services-img-sp"
-                />
-              </div>
-              <div className="services-card-sp">
-                <img
-                  src="../img/services-sp3.png"
-                  alt=""
-                  className="services-img-sp"
-                />
-              </div>
-              <div className="services-card-sp">
-                <img
-                  src="../img/services-sp4.png"
-                  alt=""
-                  className="services-img-sp"
-                />
-              </div>
-              <div className="services-card-sp">
-                <img
-                  src="../img/services-sp5.png"
-                  alt=""
-                  className="services-img-sp"
-                />
-              </div>
-              <div className="services-card-sp">
-                <img
-                  src="../img/services-sp6.png"
-                  alt=""
-                  className="services-img-sp"
-                />
-              </div>
+              {PagesData[activePage].servicesPhoto.map((i) => (
+                <div key={i} className="services-card-sp">
+                  <img
+                    src={i}
+                    alt=""
+                    className="services-img-sp"
+                  />
+                </div>
+              ))}
             </div>
           </section>
           <section className="achivments-sp conteiner">
@@ -103,69 +70,15 @@ export default function ServicePage({ PagesData, activePage, chooseActivePage, h
           <section className="work-sp conteiner">
             <h2 className="services-title title-h2">Наша команда за работой</h2>
             <div className="work-photo-wrapper-sp">
-              <div className="work-photo-sp">
-                <img
-                  src="../img/work-photo-sp1o.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../img/work-photo-sp2o.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../img/work-photo-sp3o.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../img/work-photo-sp4o.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../img/work-photo-sp5o.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../img/work-photo-sp6o.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../img/work-photo-sp7o.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../img/work-photo-sp8o.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
-              <div className="work-photo-sp">
-                <img
-                  src="../img/work-photo-sp9o.png"
-                  alt=""
-                  className="work-photo-img"
-                />
-              </div>
+              {PagesData[activePage].workPhoto.map((i) => (
+                <div key={i} className="work-photo-sp">
+                  <img
+                    src={i}
+                    alt=""
+                    className="work-photo-img"
+                  />
+                </div>
+              ))}
             </div>
           </section>
           <section className="info-sp conteiner">
@@ -214,9 +127,11 @@ export default function ServicePage({ PagesData, activePage, chooseActivePage, h
           <section className="need-sp conteiner">
             <h2 className="services-title title-h2">Что от вас требуется?</h2>
             <ul>
-              <li className="need-cerd-sp">{PagesData[activePage].need[0]}</li>
-              <li className="need-cerd-sp">{PagesData[activePage].need[0]}</li>
-              <li className="need-cerd-sp">{PagesData[activePage].need[0]}</li>
+              {
+                PagesData[activePage].need.map((n) => (
+                  <li key={n} className="need-cerd-sp">{n}</li>
+                ))
+              }
             </ul>
           </section>
         </div>
