@@ -4,7 +4,12 @@ import FormDef from '../components/form-def/form-def';
 import FormOpen from '../components/form-open/form-open';
 import Header from '../components/header/header';
 import OpenButton from '../components/open-button/open-button';
+import CleaningPrice from '../components/price/cleaning-price';
+import DddPrice from '../components/price/ddd-price';
+import DehumidificationPrice from '../components/price/dehumidification-price';
+import DismantlingPrice from '../components/price/dismantling-price';
 import { TPages } from '../const';
+import { ServicesState } from '../utils/mocks';
 
 
 export default function ServicePage({ PagesData, activePage, chooseActivePage, handlerCloseForm, isActiveForm }: TPages): JSX.Element {
@@ -15,7 +20,7 @@ export default function ServicePage({ PagesData, activePage, chooseActivePage, h
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
         <div className="main-left">
           <OpenButton handlerCloseForm={handlerCloseForm}/>
-          <section className="hero-info-sp conteiner" style={{backgroundImage:`url(${PagesData[activePage]})`}}>
+          <section className={`${activePage} conteiner`}>
             <h1 className="hero-h1-sp close-mobile">{PagesData[activePage].heroH1}</h1>
             <h2 className="hero-h2-sp close-mobile">
               {PagesData[activePage].heroH2}
@@ -38,7 +43,7 @@ export default function ServicePage({ PagesData, activePage, chooseActivePage, h
             </div>
           </section>
           <section className="services-sp conteiner">
-            <h2 className="services-title title-h2">Наши предложения</h2>
+            <h2 className="services-title title-h2">Наши услуги</h2>
             <div className="services-cards-sp">
               {PagesData[activePage].servicesPhoto.map((i) => (
                 <div key={i} className="services-card-sp">
@@ -89,41 +94,14 @@ export default function ServicePage({ PagesData, activePage, chooseActivePage, h
               {PagesData[activePage].infoH3}
             </h3>
           </section>
-          <section className="price-p conteiner">
-            <h2 className="services-title title-h2">Цены на Осушение</h2>
-            <table cellPadding="12px" rules="rows" bgcolor="#fff">
-              <tbody>
-                <tr>
-                  <td className="table-title">Тип помещения</td>
-                  <td className="table-title">Цена</td>
-                </tr>
-                <tr className="blue">
-                  <td className="table-p">Откачка воды</td>
-                  <td className="table-p">от 800 руб</td>
-                </tr>
-                <tr>
-                  <td className="table-p">Просушка дома после затопа</td>
-                  <td className="table-p">от 250 р/м2</td>
-                </tr>
-                <tr className="blue">
-                  <td className="table-p">Просушка пола</td>
-                  <td className="table-p">от 250 р/м2</td>
-                </tr>
-                <tr>
-                  <td className="table-p">Просушка потолка</td>
-                  <td className="table-p">от 250 р/м2</td>
-                </tr>
-                <tr className="blue">
-                  <td className="table-p">Просушка стен</td>
-                  <td className="table-p">от 250 р/м2</td>
-                </tr>
-                <tr>
-                  <td className="table-p">Просушка строительной площадки</td>
-                  <td className="table-p">от 400 р/м2</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+          {activePage === ServicesState.Dehumidification ?
+            <DehumidificationPrice/> : ''}
+          {activePage === ServicesState.Cleaning ?
+            <CleaningPrice/> : ''}
+          {activePage === ServicesState.Dismantling ?
+            <DismantlingPrice/> : ''}
+          {activePage === ServicesState.DDD ?
+            <DddPrice/> : ''}
           <section className="need-sp conteiner">
             <h2 className="services-title title-h2">Что от вас требуется?</h2>
             <ul>

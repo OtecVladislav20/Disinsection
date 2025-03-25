@@ -10,7 +10,7 @@ export default function Reviews({handlerCloseForm}: THandleCloseForm) {
       <div className="flex review-btn-wrapper">
         <p className="review-p">
           За более 10 лет работы в сфере клининга мы смогли заслужить репутацию
-          надежного партнера для тысяч клиентов, подтвержденную высоким
+          надежного партнера для тысячи клиентов, подтвержденную высоким
           качеством предоставляемых услуг и профессионализмом нашего персонала.
         </p>
         <button className="review-btn" onClick={handlerCloseForm}>Оставить отзывы</button>
@@ -28,6 +28,46 @@ export default function Reviews({handlerCloseForm}: THandleCloseForm) {
           }
         } }
       >
+        <SplideSlide>
+          <div className="review">
+            <div className="flex review-title-wrapper">
+              <div>
+                <p className="review-name">Павел</p>
+                <p className="review-service">Осушение после затопа</p>
+              </div>
+              <div>
+                <img
+                  src="../img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+                <img
+                  src="../img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+                <img
+                  src="../img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+                <img
+                  src="../img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+                <img
+                  src="../img/Star.svg"
+                  alt=""
+                  className="star"
+                />
+              </div>
+            </div>
+            <p className="review-text">
+              Выражаю огромную благодарность профессионалам своего дела. После серьëзного потопа убрали воду под стяжкой, просушили саму стяжку, убрали грибок по периметру низа стен, а так же устранили запах сырости и запах пожилых людей, ребята меня приятно удивили.
+            </p>
+          </div>
+        </SplideSlide>
         <SplideSlide>
           <div className="review">
             <div className="flex review-title-wrapper">

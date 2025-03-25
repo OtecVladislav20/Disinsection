@@ -26,7 +26,7 @@ export default function App(): JSX.Element {
   return (
     <Routes>
       <Route path={AppRoute.Main} element={<MainPage chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
-      <Route path={AppRoute.Services} element={<ServicePage PagesData={PagesData} activePage={activePage}chooseActivePage={chooseActivePage}handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
+      <Route path={AppRoute.Services} element={<ServicePage PagesData={PagesData} activePage={activePage} chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
       <Route path={AppRoute.Price} element={<PricePage chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
       <Route path={AppRoute.AboutUs} element={<About chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>} />
       <Route path={AppRoute.NotFoundScreen} element={<NotFound />} />

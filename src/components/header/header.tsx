@@ -33,24 +33,24 @@ export default function Header({ chooseActivePage, handlerCloseForm, isActiveFor
             <img src="../img/arrow-header.svg" alt="" />
             <ul className={`drop-menu-list ${isActiveDropMenu ? 'display-block' : ''}`}>
               <li className='drop-menu-item'>
-                <Link onClick={() => chooseActivePage(ServicesState.Dehumidification)} to={`/services/${ServicesState.Dehumidification}`} className='drop-link'>
+                <a onClick={() => chooseActivePage(ServicesState.Dehumidification)} href={`/services/${ServicesState.Dehumidification}`} className='drop-link'>
                   Осушение
-                </Link>
+                </a>
               </li>
               <li className='drop-menu-item'>
-                <Link onClick={() => chooseActivePage(ServicesState.Cleaning)} to={`/services/${ServicesState.Cleaning}`} className='drop-link'>
+                <a onClick={() => chooseActivePage(ServicesState.Cleaning)} href={`/services/${ServicesState.Cleaning}`} className='drop-link'>
                   Уборка помещений
-                </Link>
+                </a>
               </li>
               <li className='drop-menu-item'>
-                <Link onClick={() => chooseActivePage(ServicesState.Dismantling)} to={`/services/${ServicesState.Dismantling}`} className='drop-link'>
+                <a onClick={() => chooseActivePage(ServicesState.Dismantling)} href={`/services/${ServicesState.Dismantling}`} className='drop-link'>
                   Демонтажные работы
-                </Link>
+                </a>
               </li>
               <li className='drop-menu-item'>
-                <Link onClick={() => chooseActivePage(ServicesState.DDD)} to={`/services/${ServicesState.DDD}`} className='drop-link'>
+                <a onClick={() => chooseActivePage(ServicesState.DDD)} href={`/services/${ServicesState.DDD}`} className='drop-link'>
                   ДДД
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

@@ -32,22 +32,22 @@
         display: block;
     }
 
-    .hero-info-sp {
+    .dehumidification {
         background-image: url('../../../public/img/Service-hero.png');
         background-repeat: no-repeat;
         background-position: 90% 0%;
     }
-    .hero-info-sp-c {
+    .cleaning {
         background-image: url('../../../public/img/Service-hero-c.png');
         background-repeat: no-repeat;
         background-position: 90% 0%;
     }
-    .hero-info-sp-d {
+    .dismantling {
         background-image: url('../../../public/img/Service-hero-d.png');
         background-repeat: no-repeat;
         background-position: 90% 0%;
     }
-    .hero-info-sp-dd {
+    .ddd {
         background-image: url('../../../public/img/Service-hero-dd.png');
         background-repeat: no-repeat;
         background-position: 90% 0%;
@@ -477,19 +477,19 @@
         display: none;
     }
 
-    .hero-info-sp {
+    .dehumidification {
         padding-bottom: 100px;
         background-image: none;
     }
-    .hero-info-sp-c {
+    .cleaning {
         padding-bottom: 100px;
         background-image: none;
     }
-    .hero-info-sp-d {
+    .dismantling {
         padding-bottom: 100px;
         background-image: none;
     }
-    .hero-info-sp-dd {
+    .ddd {
         padding-bottom: 100px;
         background-image: none;
     }

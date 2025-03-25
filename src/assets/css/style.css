@@ -756,25 +756,25 @@ button {
     transform: scale(0.9);
 }
 
-.hero-info-sp {
+.dehumidification {
     background-image: url('../../../public/img/Service-hero.png');
     background-repeat: no-repeat;
     background-position: 90% 0%;
     padding: 50px 0px 300px 162px;
 }
-.hero-info-sp-c {
+.cleaning {
     background-image: url('../../../public/img/Service-hero-c.png');
     background-repeat: no-repeat;
     background-position: 90% 0%;
     padding: 50px 0px 300px 162px;
 }
-.hero-info-sp-d {
+.dismantling {
     background-image: url('../../../public/img/Service-hero-d.png');
     background-repeat: no-repeat;
     background-position: 90% 0%;
     padding: 50px 0px 300px 162px;
 }
-.hero-info-sp-dd {
+.ddd {
     background-image: url('../../../public/img/Service-hero-dd.png');
     background-repeat: no-repeat;
     background-position: 90% 0%;
