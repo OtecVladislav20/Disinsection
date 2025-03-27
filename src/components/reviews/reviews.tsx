@@ -6,7 +6,10 @@ import { THandleCloseForm } from '../../const';
 export default function Reviews({handlerCloseForm}: THandleCloseForm) {
   return (
     <section className="reviews conteiner">
-      <h2 className="reviews-title title-h2">Отзывы</h2>
+      <div className='flex reviews-title-wrapper'>
+        <h2 className="reviews-title title-h2 mr-20">Отзывы</h2>
+        <iframe width="150" height="50" frameBorder="0" src="https://yandex.ru/sprav/widget/rating-badge/85586176333?type=rating"></iframe>
+      </div>
       <div className="flex review-btn-wrapper">
         <p className="review-p">
           За более 10 лет работы в сфере клининга мы смогли заслужить репутацию
