@@ -34,6 +34,19 @@ export default function FormService(): JSX.Element {
     };
   }, [isSendedForm]);
 
+
+  const [nameValue, setNameValue] = useState('');
+  const [phoneValue, setPhoneValue] = useState('');
+
+  const isDisabled = nameValue.trim().length > 0 && phoneValue.trim().length > 0;
+
+  const handlerChangeName = (e) => {
+    setNameValue(e.target.value);
+  };
+  const handlerChangePhone = (e) => {
+    setPhoneValue(e.target.value);
+  };
+
   return (
     <>
       <div className={`sended-window ${isSendedForm ? 'display-block' : ''}`}>Форма успешно отправлена!</div>
@@ -48,6 +61,7 @@ export default function FormService(): JSX.Element {
             placeholder="Как вас зовут?"
             className="form-input input1"
             required
+            value={nameValue} onChange={handlerChangeName}
           />
           <input
             type="phone"
@@ -55,6 +69,7 @@ export default function FormService(): JSX.Element {
             placeholder="Контактный номер"
             className="form-input input2"
             required
+            value={phoneValue} onChange={handlerChangePhone}
           />
           <textarea
             name="message"
@@ -62,7 +77,7 @@ export default function FormService(): JSX.Element {
             className="form-textarea input3"
             defaultValue=""
           />
-          <button type="submit" className="form-btn input-btn">
+          <button type="submit" className="form-btn input-btn" disabled={!isDisabled}>
             Отправить
           </button>
         </form>

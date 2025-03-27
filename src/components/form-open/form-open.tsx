@@ -20,7 +20,6 @@ export default function FormOpen({handlerCloseForm, isActiveForm}: TCloseForm): 
     }
   };
 
-
   const [isSendedForm, setSendedForm] = useState(false);
 
   const handlerSendedForm = () => {
@@ -35,6 +34,19 @@ export default function FormOpen({handlerCloseForm, isActiveForm}: TCloseForm): 
     };
   }, [isSendedForm]);
 
+
+  const [nameValue, setNameValue] = useState('');
+  const [phoneValue, setPhoneValue] = useState('');
+
+  const isDisabled = nameValue.trim().length > 0 && phoneValue.trim().length > 0;
+
+  const handlerChangeName = (e) => {
+    setNameValue(e.target.value);
+  };
+  const handlerChangePhone = (e) => {
+    setPhoneValue(e.target.value);
+  };
+
   return (
     <section className={`open-form ${isActiveForm ? 'flex' : ''}`}>
       <div className={`sended-window ${isSendedForm ? 'display-block' : ''}`}>Форма успешно отправлена!</div>
@@ -46,6 +58,7 @@ export default function FormOpen({handlerCloseForm, isActiveForm}: TCloseForm): 
           placeholder="Как вас зовут?"
           className="form-input-def"
           required
+          value={nameValue} onChange={handlerChangeName}
         />
         <input
           type="phone"
@@ -53,6 +66,7 @@ export default function FormOpen({handlerCloseForm, isActiveForm}: TCloseForm): 
           placeholder="Контактный номер"
           className="form-input-def"
           required
+          value={phoneValue} onChange={handlerChangePhone}
         />
         <textarea
           name="message"
@@ -60,7 +74,7 @@ export default function FormOpen({handlerCloseForm, isActiveForm}: TCloseForm): 
           className="form-textarea-def"
           defaultValue=""
         />
-        <button type="submit" className="form-btn">
+        <button type="submit" className="form-btn" disabled={!isDisabled}>
           Отправить
         </button>
         <button className='close-form' onClick={handlerCloseForm}>
