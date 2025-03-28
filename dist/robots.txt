@@ -1,3 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
+Allow: /services/*
+Allow: /price
+Allow: /aboutus
+Sitemap: https://eckoprofklin.ru/sitemap.xml

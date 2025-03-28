@@ -12,7 +12,7 @@ import { ServicesState } from '../utils/mocks';
 
 export default function MainPage({ chooseActivePage, handlerCloseForm, isActiveForm}: TDefaultPages): JSX.Element {
   return (
-    <>
+    <div itemType="http://schema.org/LocalBusiness">
       <Header chooseActivePage={chooseActivePage} handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm} />
       <main>
         <FormOpen handlerCloseForm={handlerCloseForm} isActiveForm={isActiveForm}/>
@@ -25,24 +25,20 @@ export default function MainPage({ chooseActivePage, handlerCloseForm, isActiveF
             />
             <p className="hero-pf">Работаем по городам России</p>
           </div>
-          <h1 className="hero-h1">ЭкоПрофКлин</h1>
+          <h1 className="hero-h1">Сушка помещений после затопа</h1>
           <h2 className="hero-h2">
-            Ваш партнер по чистоте <br /> и безопасности!
+            Уничтожение клопов, тараканов, <br></br> любых видов насекомых и грызунов
           </h2>
-          <p className="hero-p">
-            Оставьте заявку, и менеджер ответит на все вопросы, проконсультирует по
-            набору услуг и рассчитает стоимость
-          </p>
+          <h3 className="hero-p">
+            Профессиональные услуги по сушке помещений, дезинфекции, дезинсекции и дератизации!
+          </h3>
           <button className="hero-btn" onClick={handlerCloseForm}>Заказать клининг</button>
         </section>
         <section className="description">
           <div className="description-wrapper">
             <div className="description-block">
               <p className="description-p">
-                <b>ЭкоПрофКлин</b> - мы команда профессионалов, специализирующихся
-                на клининге помещений после происшествий и уничтожении вредителей.
-                Все сотрудники являются опытными специалистами со стажем более 3-х
-                лет.
+                <b itemProp="name">ЭкоПрофКлин</b> -  Помогаем привести помещение в порядок после трупа, пожара или потопа. Сделаем сушку помещения после затопа и избавим дом от тараканов, клопов, блох, любых других насекомых и грызунов.
               </p>
               <p className="description-p">
                 Наши эксперты, при проведении работ, используют современное
@@ -64,6 +60,7 @@ export default function MainPage({ chooseActivePage, handlerCloseForm, isActiveF
                 src="../img/photoServices1.png"
                 alt="photo"
                 className="services-image"
+                itemProp="image"
               />
               <div className="services-card-wrapper flex">
                 <div className="services-card-text flex">
@@ -88,6 +85,7 @@ export default function MainPage({ chooseActivePage, handlerCloseForm, isActiveF
                 src="../img/photoServices2.png"
                 alt="photo"
                 className="services-image"
+                itemProp="image"
               />
               <div className="services-card-wrapper flex">
                 <div className="services-card-text flex">
@@ -112,6 +110,7 @@ export default function MainPage({ chooseActivePage, handlerCloseForm, isActiveF
                 src="../img/photoServices3.png"
                 alt="photo"
                 className="services-image"
+                itemProp="image"
               />
               <div className="services-card-wrapper flex">
                 <div className="services-card-text flex">
@@ -136,6 +135,7 @@ export default function MainPage({ chooseActivePage, handlerCloseForm, isActiveF
                 src="../img/photoServices4.png"
                 alt="photo"
                 className="services-image"
+                itemProp="image"
               />
               <div className="services-card-wrapper flex">
                 <div className="services-card-text flex">
@@ -220,6 +220,6 @@ export default function MainPage({ chooseActivePage, handlerCloseForm, isActiveF
         <Reviews handlerCloseForm={handlerCloseForm}/>
       </main>
       <Footer chooseActivePage={chooseActivePage}/>
-    </>
+    </div>
   );
 }

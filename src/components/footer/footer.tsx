@@ -39,21 +39,23 @@ export default function Footer({ chooseActivePage }: TFooter): JSX.Element {
       </div>
       <div className="footer-wrapper">
         <h3 className="footer-title">Режим работы</h3>
-        <div className="flex footer-link">
+        <div className="flex footer-link" itemProp="openingHoursSpecification" itemScope itemType="http://schema.org/OpeningHoursSpecification">
           <p className="footer-text footer-p">Круглосуточно</p>
-          <p className="footer-text footer-p">7 дней в неделю</p>
+          <span itemProp="dayOfWeek" itemScope itemType="http://schema.org/DayOfWeek">
+            <p itemProp="name" className="footer-text footer-p">7 дней в неделю</p>
+          </span>
         </div>
       </div>
       <div className="flex footer-link">
         <a href="tel:+79199093299" className="footer-title footer-contacts">
-          +7 919 909 32 99
+          <span itemProp="telephone">+7 919 909 32 99</span>
         </a>
         <a href="mailto:eckoprofklin@yandex.ru" className="footer-title footer-contacts">
-          eckoprofklin@yandex.ru
+          <span itemProp="email">eckoprofklin@yandex.ru</span>
         </a>
-        <p className="footer-title footer-contacts">
-          ул.Лукиных 5, г.Екатеринбург
-        </p>
+        <span itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+          <p itemProp="streetAddress" className="footer-title footer-contacts">ул.Лукиных 5, г.Екатеринбург</p>
+        </span>
         <div className="images-contacts">
           <a href="https://t.me/artem2530">
             <img
