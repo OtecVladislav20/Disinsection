@@ -35,14 +35,10 @@ export default function FormDef(): JSX.Element {
   }, [isSendedForm]);
 
 
-  const [nameValue, setNameValue] = useState('');
   const [phoneValue, setPhoneValue] = useState('');
 
-  const isDisabled = nameValue.trim().length > 0 && phoneValue.trim().length > 0;
+  const isDisabled = phoneValue.trim().length > 0;
 
-  const handlerChangeName = (e) => {
-    setNameValue(e.target.value);
-  };
   const handlerChangePhone = (e) => {
     setPhoneValue(e.target.value);
   };
@@ -58,7 +54,6 @@ export default function FormDef(): JSX.Element {
           placeholder="Как вас зовут?"
           className="form-input-def"
           required
-          value={nameValue} onChange={handlerChangeName}
         />
         <input
           type="phone"
