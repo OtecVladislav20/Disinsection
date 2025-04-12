@@ -65,7 +65,7 @@ export default function FormDef(): JSX.Element {
         />
         <textarea
           name="message"
-          placeholder="Ваше сообщение"
+          placeholder="Проблема, улица и город?"
           className="form-textarea-def"
           defaultValue=""
         />

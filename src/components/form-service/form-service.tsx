@@ -68,7 +68,7 @@ export default function FormService(): JSX.Element {
           />
           <textarea
             name="message"
-            placeholder="Ваше сообщение"
+            placeholder="Проблема, улица и город?"
             className="form-textarea input3"
             defaultValue=""
           />
