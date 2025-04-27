@@ -32,7 +32,7 @@ export const PagesData: {[key: string]: TPagesData} = {
     heroPhoto: '../img/hero-sp-mobile1c.png',
     heroPhotoComp: '../../../public/img/Service-hero-c.png',
     description: 'Мы команда высококвалифицированных специалистов в сфере клининга. Благодаря большому опыту мы гарантируем 100% качественный результат.',
-    servicesPhoto: ['../img/services-sp1c.png', '../img/services-sp2c.png', '../img/services-sp3c.png', '../img/services-sp4c.png', '../img/services-sp5c.png', '../img/services-sp6c.png'],
+    servicesPhoto: ['../img/services-sp1c.png', '../img/services-sp2c.png', '../img/services-sp3c.png', '../img/services-sp4c.png', '../img/services-sp5c.png', '../img/services-sp6c.png', '../img/services-sp7c.png', '../img/services-sp8c.png'],
     achivments: ['Индивидуальный подход к каждому объекту', 'Использование профессионального оборудования и инструментов', 'Возможность создания индивидуальных планов уборки под ваши нужды', 'Быстрая обработка помещений без нарушения рабочего процесса', 'Гарантия безопасности для сотрудников и посетителей'],
     workPhoto: ['../img/work-photo-sp1c.png', '../img/work-photo-sp2c.png', '../img/work-photo-sp3c.png', '../img/work-photo-sp4c.png', '../img/work-photo-sp5c.png', '../img/work-photo-sp6c.png'],
     infoP: 'Делая выбор в нашу сторону, вы получаете не только чистоту и порядок, но и дополнительное время для вашей основной деятельности. Наши специалисты также предоставляют рекомендации по правильному уходу за поверхностями и профилактике появления грязи в будущем.',

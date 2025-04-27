@@ -1,6 +1,5 @@
 import Adventages from '../components/adventages/adventages';
 import Footer from '../components/footer/footer';
-import FormDef from '../components/form-def/form-def';
 import FormOpen from '../components/form-open/form-open';
 import Header from '../components/header/header';
 import OpenButton from '../components/open-button/open-button';
@@ -60,9 +59,7 @@ export default function About({chooseActivePage, handlerCloseForm, isActiveForm}
               </li>
             </ul>
           </div>
-          <div className='form-close-1100'>
-            <FormDef/>
-          </div>
+          <img src="../img/Licens.png" alt="" className='licens'/>
         </section>
         <Adventages/>
         <section className="photo-a conteiner">
@@ -182,7 +179,7 @@ export default function About({chooseActivePage, handlerCloseForm, isActiveForm}
             </div>
           </div>
         </section>
-        <Reviews handlerCloseForm={handlerCloseForm}/>
+        <Reviews/>
       </main>
       <Footer chooseActivePage={chooseActivePage}/>
     </>

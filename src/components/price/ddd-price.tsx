@@ -28,6 +28,10 @@ export default function DddPrice(): JSX.Element {
             <td className="table-p">Гербицидная обработка</td>
             <td className="table-p">от 2000 руб</td>
           </tr>
+          <tr>
+            <td className="table-p">Озонирование и сухой туман</td>
+            <td className="table-p">от 500 руб</td>
+          </tr>
         </tbody>
       </table>
     </section>

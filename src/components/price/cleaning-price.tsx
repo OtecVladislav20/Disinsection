@@ -32,6 +32,10 @@ export default function CleaningPrice(): JSX.Element {
             <td className="table-p">Уничтожение плесени</td>
             <td className="table-p">от 1000 руб</td>
           </tr>
+          <tr>
+            <td className="table-p">Чистка фасадов</td>
+            <td className="table-p">от 25 руб/м2</td>
+          </tr>
         </tbody>
       </table>
     </section>

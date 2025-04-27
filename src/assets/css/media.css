@@ -70,7 +70,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: 20px;
-        grid-template-areas: 
+        grid-template-areas:
         "card1 card2"
         "card3 card4"
         "form1 form1";
@@ -86,7 +86,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2);
         gap: 40px;
-        grid-template-areas: 
+        grid-template-areas:
         "input-title1 input-title1 input-title1 input-title1"
         "input1 input1 input3 input3"
         "input2 input2 input-btn input-btn";
@@ -166,7 +166,7 @@
         background-size: 50%;
         background-position: 75% 60%;
     }
-    
+
     .description {
         height: 400px;
     }
@@ -189,6 +189,12 @@
     .photo-a-img {
         width: 300px;
     }
+}
+
+@media (max-width: 1200px) {
+  .review-photo-close-first {
+    display: none;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -220,7 +226,7 @@
     .logo-header {
         margin: 0;
     }
-    
+
     .Logo {
         height: 62px;
     }
@@ -236,15 +242,15 @@
         display: flex;
     }
 
-    
+
     .navigation {
         padding: 10px 30px;
     }
-    
+
     .conteiner {
         padding: 20px 30px;
     }
-    
+
     .hero {
         background-image: url('../../../public/img/bg-hero-mobile.png');
         background-repeat: repeat;
@@ -298,7 +304,7 @@
     .services-cards {
         grid-template-columns: repeat(1, 100%);
         gap: 20px;
-        grid-template-areas: 
+        grid-template-areas:
         "card1"
         "card2"
         "card3"
@@ -628,6 +634,24 @@
     .services-img-sp {
         height: 100px;
     }
+
+    .review-photo {
+      display: none;
+    }
+
+    .review-btn-wrapper {
+      margin-bottom: 10px;
+    }
+
+    .licens {
+      height: 400px;
+    }
+}
+
+@media (max-width: 668px) {
+  .requisites {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 558px) {
