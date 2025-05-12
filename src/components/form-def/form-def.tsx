@@ -21,6 +21,7 @@ export default function FormDef(): JSX.Element {
 
 
   const [isSendedForm, setSendedForm] = useState(false);
+  const [phoneValue, setPhoneValue] = useState('');
 
   const handlerSendedForm = () => {
     setSendedForm(true);
@@ -33,9 +34,6 @@ export default function FormDef(): JSX.Element {
       clearTimeout(timer);
     };
   }, [isSendedForm]);
-
-
-  const [phoneValue, setPhoneValue] = useState('');
 
   const isDisabled = phoneValue.trim().length > 0;
 
