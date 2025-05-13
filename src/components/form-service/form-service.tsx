@@ -4,7 +4,7 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { TForm } from '../form-open/form-open';
 
 export default function FormService(): JSX.Element {
-  const { register, reset, handleSubmit, formState: {errors, isValid} } = useForm<TForm>({mode: 'onChange'});
+  const { register, reset, handleSubmit, formState: {isValid} } = useForm<TForm>({mode: 'onChange'});
 
   const [isSendedForm, setSendedForm] = useState(false);
   const handlerSendedForm = () => {
@@ -54,31 +54,32 @@ export default function FormService(): JSX.Element {
             type="text"
             name="name"
             placeholder="* ФИО"
-            className={`form-input-def ${errors?.name ? 'true' : 'false'}`}
+            className='form-input-def input1'
             {...register('name', { required: true})}
           />
           <input
             type="tel"
             name="phone"
             placeholder="* 8-900-000-00-00"
-            className="form-input-def"
+            className="form-input-def input2"
             {...register('phone', { required: true})}
           />
           <input
             type="text"
             name="locaion"
             placeholder="* Город"
-            className="form-input-def"
+            className="form-input-def input3"
             {...register('location', { required: true})}
           />
-          <textarea
+          <input
+            type="text"
             name="message"
             placeholder="Какая у вас проблема?"
-            className="form-textarea-def"
+            className="form-input-def input4"
             defaultValue=""
             {...register('message')}
           />
-          <button type="submit" className="form-btn" disabled={!isValid}>
+          <button type="submit" className="form-btn input-btn" disabled={!isValid}>
             Отправить
           </button>
         </form>

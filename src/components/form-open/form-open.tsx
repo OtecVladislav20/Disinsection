@@ -11,7 +11,7 @@ export type TForm = {
 };
 
 export default function FormOpen({handlerCloseForm, isActiveForm}: TCloseForm): JSX.Element {
-  const { register, reset, handleSubmit, formState: {errors, isValid} } = useForm<TForm>({mode: 'onChange'});
+  const { register, reset, handleSubmit, formState: {isValid} } = useForm<TForm>({mode: 'onChange'});
 
   const [isSendedForm, setSendedForm] = useState(false);
   const handlerSendedForm = () => {
@@ -58,21 +58,21 @@ export default function FormOpen({handlerCloseForm, isActiveForm}: TCloseForm): 
           type="text"
           name="name"
           placeholder="* ФИО"
-          className={`form-input-def ${errors?.name ? 'true' : 'false'}`}
+          className='form-input-def form-input-def-open'
           {...register('name', { required: true})}
         />
         <input
           type="tel"
           name="phone"
           placeholder="* 8-900-000-00-00"
-          className="form-input-def"
+          className="form-input-def form-input-def-open"
           {...register('phone', { required: true})}
         />
         <input
           type="text"
           name="locaion"
           placeholder="* Город"
-          className="form-input-def"
+          className="form-input-def form-input-def-open"
           {...register('location', { required: true})}
         />
         <textarea

@@ -300,7 +300,7 @@ button {
     transition: transform 0.15s ease;
 }
 .services-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 .services-card:active {
     transform: scale(0.9);

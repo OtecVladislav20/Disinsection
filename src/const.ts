@@ -8,8 +8,8 @@ export enum AppRoute {
   NotFoundScreen = '/*',
 }
 
-// export const EMAILTOKEN = '1d9fc916-ec09-4e39-9f45-7b0b78102371';
-export const EMAILTOKEN = '45fffb7e-0401-4be9-8aaa-623800990150';
+export const EMAILTOKEN = '1d9fc916-ec09-4e39-9f45-7b0b78102371';
+// export const EMAILTOKEN = '45fffb7e-0401-4be9-8aaa-623800990150';
 
 export type TCloseForm = {
   handlerCloseForm: () => void;

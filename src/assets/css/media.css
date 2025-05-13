@@ -76,20 +76,27 @@
         "form1 form1";
     }
 
+    .form-input-def-open {
+      width: 100% !important;
+    }
+
     .form1 {
         grid-column-end: -1;
     }
 
     .services-form {
         display: grid;
-        height: 273px;
+        height: 350px;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2);
-        gap: 40px;
+        gap: 20px;
         grid-template-areas:
         "input-title1 input-title1 input-title1 input-title1"
         "input1 input1 input3 input3"
-        "input2 input2 input-btn input-btn";
+        "input2 input2 input4 input4"
+        "... input-btn input-btn ...";
+    }
+    .form-input-def {
+      width: auto;
     }
     .input-title1 {
         grid-area: input-title1;
@@ -153,6 +160,10 @@
 }
 
 @media (max-width: 1400px) {
+    .row {
+        width: 30px;
+    }
+
     .nav-contact {
         flex-direction: column-reverse;
     }
@@ -198,6 +209,17 @@
 }
 
 @media (max-width: 1100px) {
+    .form-input-def-open{
+      margin-bottom: 20px !important;
+      border-radius: 16px !important;
+    }
+
+    .form-input-def {
+      width: 100%;
+      margin-bottom: 0px;
+      border-radius: 10px;
+    }
+
     .burger {
         display: flex;
     }
@@ -340,7 +362,7 @@
 
     .services-form {
         display: flex;
-        height: 450px;
+        /* height: 450px; */
     }
 
     .title-h2 {
@@ -595,6 +617,10 @@
 }
 
 @media (max-width: 790px) {
+    .form-input-def-open{
+      border-radius: 10px !important;
+    }
+
     .work-photo-wrapper-sp {
         grid-template-columns: 150px 150px 150px;
     }

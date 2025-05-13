@@ -5,7 +5,7 @@ import { TForm } from '../form-open/form-open';
 
 
 export default function FormDef(): JSX.Element {
-  const { register, reset, handleSubmit, formState: {errors, isValid} } = useForm<TForm>({mode: 'onChange'});
+  const { register, reset, handleSubmit, formState: {isValid} } = useForm<TForm>({mode: 'onChange'});
 
   const [isSendedForm, setSendedForm] = useState(false);
   const handlerSendedForm = () => {
@@ -52,7 +52,7 @@ export default function FormDef(): JSX.Element {
           type="text"
           name="name"
           placeholder="* ФИО"
-          className={`form-input-def ${errors?.name ? 'true' : 'false'}`}
+          className='form-input-def'
           {...register('name', { required: true})}
         />
         <input
